@@ -1,0 +1,297 @@
+[
+  {
+    "pregunta": "Los protocolos de routing en redes MANETs",
+    "respuesta_correcta": "d. Deben tener en cuenta las desconexiones en la red y adaptarse a los cambios de topología",
+    "opciones": [
+      "a. El protocolo IP se utiliza para el routing en redes MANETs",
+      "b. No necesitan ninguna característica especial y son iguales que el resto de protocolos de routing en redes convencionales (p.e. RIP, OSPF)",
+      "c. No se necesita routing en redes MANETs para alcanzar el destino",
+      "d. Deben tener en cuenta las desconexiones en la red y adaptarse a los cambios de topología"
+    ]
+  },
+  {
+    "pregunta": "El estándar IEEE 802.11n",
+    "respuesta_correcta": "d. Permite trabajar en las bandas de frecuencia de 2.4GHz y 5GHz",
+    "opciones": [
+      "a. Sólo permite trabajar en la banda de 2.4GHz",
+      "b. Sólo permite trabajar en la banda de 5GHz",
+      "c. Trabaja en la banda de frecuencia de 11GHz",
+      "d. Permite trabajar en las bandas de frecuencia de 2.4GHz y 5GHz"
+    ]
+  },
+  {
+    "pregunta": "A nivel físico, en la banda de 2.4GHz no se encuentran superpuestos los canales",
+    "respuesta_correcta": "c. CH1, CH6, CH11",
+    "opciones": [
+      "a. CH4, CH9, CH13",
+      "b. CH2, CH5, CH12",
+      "c. CH1, CH6, CH11",
+      "d. CH3, CH7, CH11"
+    ]
+  },
+  {
+    "pregunta": "El problema del terminal oculto",
+    "respuesta_correcta": "a. Posibilita que dos estaciones detecten el medio libre y transmitan a la vez",
+    "opciones": [
+      "a. Posibilita que dos estaciones detecten el medio libre y transmitan a la vez",
+      "b. Permite que la transmisión esté libre de colisiones al no haber interferencias entre los nodos transmisores",
+      "c. Se da también en redes Ethernet entre estaciones muy alejadas",
+      "d. Se evita con el protocolo CSMA/CD"
+    ]
+  },
+  {
+    "pregunta": "La velocidad de transmisión, en bits/seg, depende de la relación SNR y del tipo de modulación",
+    "respuesta_correcta": "c. En igualdad de condiciones, la velocidad de transmisión con una modulación 64QAM es mayor que con una modulación QPSK",
+    "opciones": [
+      "a. En igualdad de condiciones, la velocidad de transmisión con una modulación QPSK es mayor que con una modulación 64QAM",
+      "b. Cuanto más alejados estén los dispositivos mayor será la relación SNR y, por tanto, mayor será la velocidad de transmisión",
+      "c. En igualdad de condiciones, la velocidad de transmisión con una modulación 64QAM es mayor que con una modulación QPSK",
+      "d. Cuanto más alejados estén los dispositivos menor será la relación SNR y, por tanto, mayor será la velocidad de transmisión"
+    ]
+  },
+  {
+    "pregunta": "La tecnología WiMax, basada en el estándar 802.16",
+    "respuesta_correcta": "b. Proporciona acceso de banda ancha inalámbrico en redes de área metropolitana (MAN)",
+    "opciones": [
+      "a. Proporciona acceso de banda ancha inalámbrico en redes de área local (LAN)",
+      "b. Proporciona acceso de banda ancha inalámbrico en redes de área metropolitana (MAN)",
+      "c. Permite anchos de banda de hasta 10Gbits/s",
+      "d. Proporciona acceso de banda ancha inalámbrico en redes de área personal (PAN)"
+    ]
+  },
+  {
+    "pregunta": "Los radios de cobertura típicos en WiMax son (redes WiMax, transparencia #31)",
+    "respuesta_correcta": "d. De 1 a 3 Kms en entornos urbanos, con alta densidad de usuarios y de 5 a 10 Kms en entornos rurales, con baja densidad de usuarios",
+    "opciones": [
+      "a. 10 veces mayor en entornos urbanos que en entornos rurales",
+      "b. De 5 a 10 Kms en entornos urbanos, con alta densidad de usuarios y de 1 a 3 Kms en entornos rurales, con baja densidad de usuarios",
+      "c. De 10 a 30 Kms en entornos urbanos, con alta densidad de usuarios y de 50 a 100 Kms en entornos rurales, con baja densidad de usuarios",
+      "d. De 1 a 3 Kms en entornos urbanos, con alta densidad de usuarios y de 5 a 10 Kms en entornos rurales, con baja densidad de usuarios"
+    ]
+  },
+  {
+    "pregunta": "El estándar 802.11g permite velocidades de transmisión hasta",
+    "respuesta_correcta": "b. 54Mbps",
+    "opciones": ["a. 1Mbps", "b. 54Mbps", "c. 150Mbps", "d. 11Mbps"]
+  },
+  {
+    "pregunta": "En el acceso al medio por contienda DCF, cuando una estación (A) está transmitiendo datos",
+    "respuesta_correcta": "c. La siguiente estación en transmitir es siempre la que tiene su trama lista durante la transmisión de A y su tiempo de back-off es menor",
+    "opciones": [
+      "a. La siguiente estación en transmitir es siempre la primera que tiene su trama lista durante la transmisión de A y espera un tiempo igual a DIFS más el tiempo de back-off",
+      "b. Las otras estaciones pueden transmitir simultáneamente",
+      "c. La siguiente estación en transmitir es siempre la que tiene su trama lista durante la transmisión de A y su tiempo de back-off es menor",
+      "d. La siguiente estación en transmitir es siempre la primera que tiene su trama lista durante la transmisión de A"
+    ]
+  },
+  {
+    "pregunta": "Para el acceso al medio en IEEE 802.11 se utiliza",
+    "respuesta_correcta": "a. Mecanismo RTS-CTS",
+    "opciones": [
+      "a. Mecanismo RTS-CTS",
+      "b. Detección de portadora (Carrier Sense)",
+      "c. Detección de colisión (Collision Detection)",
+      "d. CSMA/CD"
+    ]
+  },
+  {
+    "pregunta": "Las redes wireless ad-hoc (redes MANET)",
+    "respuesta_correcta": "d. Permiten la comunicación directa entre los terminales de usuario",
+    "opciones": [
+      "a. Ningún elemento puede tener movilidad",
+      "b. No hay comunicación directa entre los equipos de la red",
+      "c. Necesitan obligatoriamente de un punto de acceso",
+      "d. Permiten la comunicación directa entre los terminales de usuario"
+    ]
+  },
+  {
+    "pregunta": "Redes WiMax: La transmisión de televisión estándar (SDTV) requiere un ancho de banda de 2-5Mbps por canal. Seleccione una:",
+    "respuesta_correcta": "a. La tecnología WiMax no es adecuada para la distribución de SDTV",
+    "opciones": [
+      "a. La tecnología WiMax no es adecuada para la distribución de SDTV",
+      "b. WiMax no es adecuado para el servicio de VoIP",
+      "c. La tecnología WiMax es la más adecuada para la transmisión de un número elevado de canales de distribución SDTV",
+      "d. La tecnología WiMax es también la recomendada para la transmisión de High Definition TV (HDTV)"
+    ]
+  },
+  {
+    "pregunta": "Algunas características de las redes MANETs son",
+    "respuesta_correcta": "b. Son redes con movilidad, que no necesitan infraestructura y los propios terminales son nodos de comunicación",
+    "opciones": [
+      "a. Son redes móviles ad-hoc, en las que hay separación entre los nodos de comunicación y los terminales de usuario",
+      "b. Son redes con movilidad, que no necesitan infraestructura y los propios terminales son nodos de comunicación",
+      "c. Son redes con movilidad, se necesita una infraestructura previa de comunicaciones",
+      "d. Son redes ad-hoc, que necesitan de una infraestructura de comunicaciones y en las que no se permite la movilidad de los usuarios"
+    ]
+  },
+  {
+    "pregunta": "Los protocolos pro-activos en redes MANETs evalúan rutas continuamente y usan actualizaciones periódicas para mantener la tabla de rutas. Con este método se reduce la latencia en el descubrimiento de las rutas.",
+    "respuesta_correcta": "c. El protocolo OLSR es un ejemplo de protocolo pro-activo en redes MANETs",
+    "opciones": [
+      "a. El protocolo AODV es un ejemplo de protocolo pro-activo en redes MANETs",
+      "b. El protocolo RIP es un ejemplo de protocolo pro-activo en redes MANETs",
+      "c. El protocolo OLSR es un ejemplo de protocolo pro-activo en redes MANETs",
+      "d. El protocolo OSPF es un ejemplo de protocolo pro-activo en redes MANETs"
+    ]
+  },
+  {
+    "pregunta": "El estándar 802.11n",
+    "respuesta_correcta": "b. Permite velocidades útiles por encima de 100Mbps",
+    "opciones": [
+      "a. Sólo puede trabajar con canales de 20MHz",
+      "b. Permite velocidades útiles por encima de 100Mbps",
+      "c. Tiene una velocidad de transmisión inferior a 802.11g",
+      "d. Es incompatible con equipos 802.11a/g"
+    ]
+  },
+  {
+    "pregunta": "Los intervalos de tiempo SIFS (Short Inter-Frame Space)",
+    "respuesta_correcta": "b. Representan el tiempo de espera para las transmisiones de más alta prioridad, como ACK, RTS-CTS",
+    "opciones": [
+      "a. Representan el tiempo de espera ante errores de transmisión en una trama",
+      "b. Representan el tiempo de espera para las transmisiones de más alta prioridad, como ACK, RTS-CTS",
+      "c. Indican el tiempo de espera antes de una transmisión de datos de capas superiores",
+      "d. Son intervalos de tiempos de espera mayores que DIFS (DCF Inter-Frame Space)"
+    ]
+  },
+  {
+    "pregunta": "El modo de funcionamiento DCF (Distributed Coordination Function)",
+    "respuesta_correcta": "b. Se utiliza en prácticamente todas las implementaciones de redes wireless",
+    "opciones": [
+      "a. Está escasamente implementado",
+      "b. Se utiliza en prácticamente todas las implementaciones de redes wireless",
+      "c. Una estación coordina la gestión de utilización del medio",
+      "d. La transmisión de datos se realiza en periodos libres de contención"
+    ]
+  },
+  {
+    "pregunta": "En los protocolos reactivos en redes MANETs, el routing es iniciado por los nodos fuente en demanda. Cuando un nodo requiere una ruta a un destino se inicia un proceso de “descubrimiento de ruta” dentro de la red MANET. El procedimiento de “descubrimiento de ruta” finaliza cuando se ha encontrado una ruta y además se han analizado todas las posibles permutaciones de rutas.",
+    "respuesta_correcta": "c. El protocolo \"Ad Hoc On-Demand Distance Vector Routing\" (AODV) es un protocolo reactivo en redes MANETs",
+    "opciones": [
+      "a. El protocolo RIP es un ejemplo de protocolo reactivo en redes MANETs",
+      "b. El protocolo \"Optimized Link State Routing\" (OLSR) es un protocolo reactivo en redes MANETs",
+      "c. El protocolo \"Ad Hoc On-Demand Distance Vector Routing\" (AODV) es un protocolo reactivo en redes MANETs",
+      "d. Los protocolos reactivos son adecuados para aplicaciones en tiempo real ya que el retardo de descubrimiento de la ruta es mínimo"
+    ]
+  },
+  {
+    "pregunta": "La \"Alianza Wi-Fi\" (http://www.wi-fi.org)\nSeleccione una:",
+    "respuesta_correcta": "b. Tiene un programa \"Wi-Fi CERTIFIED\" para chequear productos 802.11 para interoperabilidad, seguridad, facilidad de instalación y fiabilidad",
+    "opciones": [
+      "a. Es una agrupación de hackers con el objetivo de publicar redes inalábricas desprotegidas",
+      "b. Tiene un programa \"Wi-Fi CERTIFIED\" para chequear productos 802.11 para interoperabilidad, seguridad, facilidad de instalación y fiabilidad",
+      "c. Tiene un programa \"Wi-Fi CERTIFIED\" para asegurar la cobertura de las redes Wi-Fi ya instaladas",
+      "d. No tiene ningún producto certificado 802.11n"
+    ]
+  },
+  {
+    "pregunta": "Las redes MANET Sparse Disconneted Networks (SDNET) son redes poco densas en las que hay desconexiones temporales entre algunos nodos y en ocasiones no se tiene conexión extremo a extremo.\nSeleccione una:",
+    "respuesta_correcta": "a. En estas redes, la estrategia para progresar en la transmitir los datos al destino consiste en almacenar la información en un nodo, transportarla durante un tiempo y retransmitirla a otro nodo",
+    "opciones": [
+      "a. En estas redes, la estrategia para progresar en la transmitir los datos al destino consiste en almacenar la información en un nodo, transportarla durante un tiempo y retransmitirla a otro nodo",
+      "b. En estas redes, al haber tan pocos nodos es imposible transmitir los datos al destino final",
+      "c. En estas redes es apropiado el protocolo de routing RIP utilizado en redes cableadas",
+      "d. No se requiere ninguna actuación especial para enrutar los paquetes en las redes SDNETs"
+    ]
+  },
+  {
+    "pregunta": "Las tramas Beacon en redes 802.11",
+    "respuesta_correcta": "b. Son transmitidas por el punto de acceso para anunciar la existencia de una red",
+    "opciones": [
+      "a. Se transmiten cada hora para sincronizar los relojes de las estaciones",
+      "b. Son transmitidas por el punto de acceso para anunciar la existencia de una red",
+      "c. Son transmitidas por las estaciones para asociarse a la red",
+      "d. Es un mecanismo de seguridad en las redes inalámbricas"
+    ]
+  },
+  {
+    "pregunta": "Los mensajes NAV (Network Allocation Vector), que se utilizan para estimar la duración de una operación de transmisión",
+    "respuesta_correcta": "d. Se envían tanto en los RTS como en los CTS",
+    "opciones": [
+      "a. Se envían únicamente asociados a los mensajes RTS",
+      "b. Los envía siempre el punto de acceso al resto de nodos",
+      "c. Se envían únicamente asociados a los mensajes CTS",
+      "d. Se envían tanto en los RTS como en los CTS"
+    ]
+  },
+  {
+    "pregunta": "Las direcciones de las estaciones wireless en 802.11",
+    "respuesta_correcta": "a. Tienen un formato similar a las direcciones MAC Ethernet, con 48 bits",
+    "opciones": [
+      "a. Tienen un formato similar a las direcciones MAC Ethernet, con 48 bits",
+      "b. Tienen un formato similar a las direcciones IPv6, con 128 bits",
+      "c. No son únicas para cada estación",
+      "d. Tienen un formato similar a las direcciones IPv4, con 32 bits"
+    ]
+  },
+  {
+    "pregunta": "Para la transmisión de voz sobre IP (VoIP) sin supresión de silencios en WiMax (IEEE 802.16) es recomendable configurar la clase de servicio (tredes WiMax, transparencia #19):",
+    "respuesta_correcta": "d. UGS: Unsolicited Grant Service",
+    "opciones": [
+      "a. nrtPS: Non Real-Time Polling Service",
+      "b. rtPS: Real-Time Polling Service",
+      "c. BE: Best Effort",
+      "d. UGS: Unsolicited Grant Service"
+    ]
+  },
+  {
+    "pregunta": "IEEE 802.11 define las capas",
+    "respuesta_correcta": "b. Control de acceso al medio (MAC) y física (PHY)",
+    "opciones": [
+      "a. Red (IP) y control de acceso al medio (MAC)",
+      "b. Control de acceso al medio (MAC) y física (PHY)",
+      "c. Red (IP) y física (PHY)",
+      "d. Transporte (TCP/UDP) y red (IP)"
+    ]
+  },
+  {
+    "pregunta": "IEEE 802.11 define las capas",
+    "respuesta_correcta": "b. Control de acceso al medio (MAC) y física (PHY)",
+    "opciones": [
+      "a. Red (IP) y control de acceso al medio (MAC)",
+      "b. Control de acceso al medio (MAC) y física (PHY)",
+      "c. Red (IP) y física (PHY)",
+      "d. Transporte (TCP/UDP) y red (IP)"
+    ]
+  },
+  {
+    "pregunta": "802.11 no contempla",
+    "respuesta_correcta": "d. Tránsito entre ESS (Extended Service Set)",
+    "opciones": [
+      "a. Tránsito entre BSS (Basic Service Set)",
+      "b. Autenticación después del proceso de asociación",
+      "c. Comunicación entre los terminales de usuario y los puntos de acceso",
+      "d. Tránsito entre ESS (Extended Service Set)"
+    ]
+  },
+  {
+    "pregunta": "Redes WiMax. Soporte de QoS: Para un acceso genérico a Internet a servicios sin requisitos de calidad de servicio, como pueden ser acceso web o e-mail, lo habitual es configurar (redes WiMax, transparencia #19)",
+    "respuesta_correcta": "d. BE: Best Effort",
+    "opciones": [
+      "a. UGS: Unsolicited Grant Service",
+      "b. nrtPS: Non Real-Time Polling Service",
+      "c. rtPS: Real-Time Polling Service",
+      "d. BE: Best Effort"
+    ]
+  },
+  {
+    "pregunta": "Tipo de red que define la tecnología IEEE 802.15.4 (Zigbee)",
+    "respuesta_correcta": "b. Red de área personal (PAN)",
+    "opciones": [
+      "a. Red de área local (LAN)",
+      "b. Red de área personal (PAN)",
+      "c. Red de área metropolitana (MAN)",
+      "d. Red de área amplia (WAN)"
+    ]
+  },
+  {
+    "pregunta": "Los BSS (Basic Service Set)",
+    "respuesta_correcta": "d. Son un grupo de estaciones que se comunican entre sí",
+    "opciones": [
+      "a. Son agrupaciones de puntos de acceso (AP) a través de un backbone",
+      "b. No pueden configurarse en modo infraestructura",
+      "c. No pueden configurarse en modo ad-hoc",
+      "d. Son un grupo de estaciones que se comunican entre sí"
+    ]
+  }
+]

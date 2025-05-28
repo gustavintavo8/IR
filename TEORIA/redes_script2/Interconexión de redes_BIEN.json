@@ -1,0 +1,191 @@
+[
+  {
+    "pregunta": "¿Cómo se configuran habitualmente las estaciones con el tipo de servicio 'Best Effort' en DOCSIS 1.1?",
+    "respuesta_correcta": "a. Las estaciones configuradas con 'Best Effort' utilizan, principalmente, el modo de reserva normal (request-grant), reservando ancho de banda y esperando la concesión correspondiente por parte del CMTS",
+    "opciones": [
+      "a. Las estaciones configuradas con 'Best Effort' utilizan, principalmente, el modo de reserva normal (request-grant), reservando ancho de banda y esperando la concesión correspondiente por parte del CMTS",
+      "b. Las estaciones configuradas con 'Best Effort' sólo pueden trasmitir durante los 'mini-slots' dedicados a la reserva de tiempo de transmisión",
+      "c. Las estaciones configuradas con 'Best Effort' utilizan un modo de acceso isócrono para poder transmitir datos de forma periódica",
+      "d. Las estaciones configuradas con 'Best Effort' utilizan un modo de acceso de sondeo periódico de solicitud para que el CMTS les asigne tiempo de transmisión cuando tengan datos que enviar, sin necesidad de reservar tiempo de transmisión"
+    ]
+  },
+  {
+    "pregunta": "En un protocolo de vector-distancia, ¿qué característica es cierta?",
+    "respuesta_correcta": "b. Cada nodo intercambia información con los nodos que están directamente conectados a la misma red. RIP es un ejemplo de protocolo vector-distancia",
+    "opciones": [
+      "a. Cuanto mayor sea el valor de la métrica mejor será la ruta al destino del paquete",
+      "b. Cada nodo intercambia información con los nodos que están directamente conectados a la misma red. RIP es un ejemplo de protocolo vector-distancia",
+      "c. Cada nodo intercambia información con todos los nodos de la red mediante mensajes de actualización LSA (Link State Advertisements)",
+      "d. Cada nodo intercambia información con los nodos que están directamente conectados a la misma red. OSPF es un ejemplo de protocolo de vector-distancia"
+    ]
+  },
+  {
+    "pregunta": "¿Qué métrica utiliza OSPF para establecer las rutas de camino más corto?",
+    "respuesta_correcta": "a. OSPF utiliza como métrica el coste de cada salto en cada dirección",
+    "opciones": [
+      "a. OSPF utiliza como métrica el coste de cada salto en cada dirección",
+      "b. OSPF no necesita ninguna métrica porque las tablas de encaminamiento se configura manualmente",
+      "c. OSPF utiliza como métrica el mayor número de equipos de los diferentes switchs conectados a sus interfaces",
+      "d. OSPF utiliza como métrica el número de saltos para alcanzar el destino"
+    ]
+  },
+  {
+    "pregunta": "¿Qué algoritmo utilizan los protocolos vector-distancia?",
+    "respuesta_correcta": "d. Con los protocolos vector-distancia el router no conoce la topología exacta de la red",
+    "opciones": [
+      "a. Con los protocolos vector-distancia el router conoce la topología exacta de la red debido a que recibe información actualizada y periódica del resto de nodos",
+      "b. Con los protocolos vector distancia el router conoce la topología exacta de la red hasta los nodos que se encuentran a 5 saltos de distancia",
+      "c. Los protocolos vector-distancia utilizan como métrica el número de switchs que tienen conectados a sus interfaces",
+      "d. Con los protocolos vector-distancia el router no conoce la topología exacta de la red"
+    ]
+  },
+  {
+    "pregunta": "En la red de la Figura 1 (documento 'Figuras_test_sesion3_interconexion_redes'), si se utiliza OSPF como protocolo de encaminamiento, ¿qué ruta seguirán los paquetes con origen en la red A y destino en la red B?",
+    "respuesta_correcta": "c. R1-R3-R4-R2",
+    "opciones": [
+      "a. R1-R2",
+      "b. Los paquetes serán descartados en el router R4",
+      "c. R1-R3-R4-R2",
+      "d. R1-R4-R2"
+    ]
+  },
+  {
+    "pregunta": "BGP (Border Gateway Protocol) es un ejemplo de protocolo de encaminamiento exterior (ERP)",
+    "respuesta_correcta": "a. Los protocolos ERP no incluyen el envío de información de distancia o estimación de costes a todos los routers para la determinación de la ruta a seguir para alcanzar el destino",
+    "opciones": [
+      "a. Los protocolos ERP, como BGP, toman las decisiones de encaminamiento en el interior de cada sistema autónomo, como lo hacen RIP y OSPF",
+      "b. Los protocolos ERP no incluyen el envío de información de distancia o estimación de costes a todos los routers para la determinación de la ruta a seguir para alcanzar el destino",
+      "c. Los protocolos ERP utilizan la métrica del número de saltos para el establecimiento de sus tablas de rutas",
+      "d. Los protocolos ERP utilizan el coste de los enlaces para el establecimiento de sus tablas de rutas"
+    ]
+  },
+  {
+    "pregunta": "La versión 1 del protocolo RIP (RIPv1) tiene algunas ventajas como son la sencillez de configuración y que lo soporta casi cualquier router del mercado. Sin embargo, presenta algunos inconvenientes, mejorados con RIPv2, entre los que se encuentran:",
+    "respuesta_correcta": "b. RIPv1 no soporta VLSM, obligando a trabajar con subredes de tamaño idéntico. RIPv2 introduce la máscara de red en los anuncios. RIP v1 no soporta autenticación de los mensajes. RIPv2 implementa autenticación de los mensajes basada en password.",
+    "opciones": [
+      "a. RIPv1 sí soporta VLSM, obligando a trabajar con subredes de tamaño idéntico. RIPv2 introduce la máscara de red en los anuncios. RIP v1 sí soporta autenticación de los mensajes. RIPv2 también implementa autenticación de los mensajes basada en password.",
+      "b. RIPv1 no soporta VLSM, obligando a trabajar con subredes de tamaño idéntico. RIPv2 introduce la máscara de red en los anuncios. RIP v1 no soporta autenticación de los mensajes. RIPv2 implementa autenticación de los mensajes basada en password.",
+      "c. RIPv1 sí soporta VLSM, obligando a trabajar con subredes de tamaño idéntico. RIPv2 no introduce la máscara de red en los anuncios. RIP v1 no soporta autenticación de los mensajes. RIPv2 implementa autenticación de los mensajes basada en password."
+    ]
+  },
+  {
+    "pregunta": "Los mensajes LSA (Link State Advertisements) son mensajes de pequeño tamaño difundidos por los routers que comunican los cambios en la topología de la red",
+    "respuesta_correcta": "d. Estos mensajes se utilizan en los protocolos de estado de enlace",
+    "opciones": [
+      "a. Estos mensajes se utilizan en los protocolos de encaminamiento exterior",
+      "b. Estos mensajes se utilizan en el protocolo RIP",
+      "c. Estos mensajes se utilizan en los protocolos de vector-distancia",
+      "d. Estos mensajes se utilizan en los protocolos de estado de enlace"
+    ]
+  },
+  {
+    "pregunta": "Diferencias entre protocolos de vector-distancia (DV) y estado de enlace (LS)",
+    "respuesta_correcta": "a. DV no tiene conocimiento de la topología de la red, mientras que LS sí tiene una visión de la topología de red completa.\nLS converge mediante intercambios periódicos de las tablas de routing entre vecinos. En DV las actualizaciones provienen de cambios en la topología. Los tiempos de convergencia son menores en DV que en LS",
+    "opciones": [
+      "a. DV no tiene conocimiento de la topología de la red, mientras que LS sí tiene una visión de la topología de red completa.\nLS converge mediante intercambios periódicos de las tablas de routing entre vecinos. En DV las actualizaciones provienen de cambios en la topología. Los tiempos de convergencia son menores en DV que en LS",
+      "b. No hay prácticamente diferencias entre los protocolos DV y LV",
+      "c. DV no tiene conocimiento de la topología de la red, mientras que LS sí tiene una visión de la topología de red completa.\nDV converge mediante intercambios periódicos de las tablas de routing entre vecinos. En LS las actualizaciones provienen de cambios en la topología. Los tiempos de convergencia son menores en LS que en DV",
+      "d. DV sí tiene conocimiento de la topología de la red, mientras que LS no tiene una visión de la topología de red completa.\nDV converge mediante intercambios periódicos de las tablas de routing entre vecinos. En LS las actualizaciones provienen de cambios en la topología. Los tiempos de convergencia son menores en LS que en DV"
+    ]
+  },
+  {
+    "pregunta": "La convergencia en una red se produce cuando todos los routers operan con el mismo conocimiento en sus tablas de encaminamiento",
+    "respuesta_correcta": "b. En redes de gran tamaño, empleando OSPF, pueden darse situaciones de distribución incorrecta de paquetes LSA lo que puede causar problemas de convergencia",
+    "opciones": [
+      "a. El problema de la convergencia solamente afecta a los protocolos de vector-distancia, como RIP",
+      "b. En redes de gran tamaño, empleando OSPF, pueden darse situaciones de distribución incorrecta de paquetes LSA lo que puede causar problemas de convergencia",
+      "c. Con OSPF, aunque existan problemas de convergencia debido a las dificultades de distribución de los paquetes LSA, nunca se puede dar el caso de que algunas redes sean inaccesibles",
+      "d. Con protocolos de estado de enlace, debido a la técnica de distribución de paquetes LSA, nunca se da el problema de la convergencia en las tablas de encaminamiento"
+    ]
+  },
+  {
+    "pregunta": "En un sistema autónomo (AS)",
+    "respuesta_correcta": "d. Se utiliza un protocolo de encaminamiento interior (IRP) y los equipos son administrados por una única organización",
+    "opciones": [
+      "a. Existe al menos una ruta entre cada par de nodos y se emplea el protocolo BGP para el enrutamiento dentro del AS",
+      "b. Las redes y routers son adminstradas por varias organizaciones y se emplea un protocolo de enrutamiento exterior (ERP) dentro del AS",
+      "c. Se utiliza un protocolo de encaminamiento exterior (ERP) y los equipos son administrados por una única organización",
+      "d. Se utiliza un protocolo de encaminamiento interior (IRP) y los equipos son administrados por una única organización"
+    ]
+  },
+  {
+    "pregunta": "En la red de la figura 2 (documento 'Figuras_test_interconexion_redes') si se utiliza RIP como protocolo de encaminamiento, ¿qué ruta siguen los paquetes con origen en la red B y destino en la red D?",
+    "respuesta_correcta": "b. Router B-Router D",
+    "opciones": [
+      "a. Router B-Router E-Router D",
+      "b. Router B-Router D",
+      "c. Router B-Router C-Router D",
+      "d. Los paquetes son descartados en el router D"
+    ]
+  },
+  {
+    "pregunta": "Los protocolos de encaminamiento interior (IRP) son utilizados por los routers de un sistema autónomo para intercambiar información de encaminamiento.",
+    "respuesta_correcta": "c. Los protocolos OSPF, EIGRP y RIP son protocolos de encaminamiento interior",
+    "opciones": [
+      "a. El protocolo BGP es un protocolo de encaminamiento interior",
+      "b. El protocolo RTP (Real-Time Protocol) es un protocolo de encaminamiento interior",
+      "c. Los protocolos OSPF, EIGRP y RIP son protocolos de encaminamiento interior",
+      "d. Los protocolos de encaminamiento interior utilizan routing estático"
+    ]
+  },
+  {
+    "pregunta": "Uno de los problemas de RIPv1 es que los mensajes del protocolo viajan en claro sobre tráfico broadcast. Cualquier equipo de la red puede introducir mensajes UDP destinados a 255.255.255.2555 y puerto 520 para crear inconsistencias en las tablas de rutas o redirigir el tráfico a través de él.",
+    "respuesta_correcta": "b. OSPF permite la autenticación de mensajes para evitar ese problema de seguridad",
+    "opciones": [
+      "a. En OSPF los mensajes van obligatoriamente cifrados con el objetivo de aumentar la confidencialidad de las transmisiones LSA",
+      "b. OSPF permite la autenticación de mensajes para evitar ese problema de seguridad",
+      "c. En OSPF no es necesario tomar medidas de seguridad ya que nadie puede acceder a la información que se intercambian los routers",
+      "d. OSPF no permite la autenticación de mensajes para disminuir la complejidad de ejecución del protocolo"
+    ]
+  },
+  {
+    "pregunta": "El protocolo RIP (Routing Information Protocol) fue el algoritmo de encaminamiento original de la red ARPANET.",
+    "respuesta_correcta": "c. RIP es un protocolo de encaminamiento por vector-distancia que utiliza el algoritmo de Bellman-Ford para el establecimiento de las tablas de routing. Las actualizaciones de red se envían cada 30 segundos y la métrica para una ruta no válida se considera de 16 saltos",
+    "opciones": [
+      "a. RIP es un protocolo de encaminamiento por vector-distancia que utiliza el algoritmo de Bellman-Ford para el establecimiento de las tablas de routing. Las actualizaciones de red se envían solamente en cada cambio de la topología de red y la métrica para una ruta no válida se considera de 16 saltos",
+      "b. RIP es un protocolo de encaminamiento por vector-distancia que utiliza el algoritmo de Dijkstra para el establecimiento de las tablas de routing. Las actualizaciones de red se envían cada 30 segundos y la métrica para una ruta no válida se considera de 8 saltos",
+      "c. RIP es un protocolo de encaminamiento por vector-distancia que utiliza el algoritmo de Bellman-Ford para el establecimiento de las tablas de routing. Las actualizaciones de red se envían cada 30 segundos y la métrica para una ruta no válida se considera de 16 saltos",
+      "d. RIP es un protocolo de encaminamiento por vector-distancia que utiliza el algoritmo de Bellman-Ford para el establecimiento de las tablas de routing. Las actualizaciones de red se envían cada 30 segundos y la métrica que utiliza es el número de switchs conectados a sus interfaces"
+    ]
+  },
+  {
+    "pregunta": "En un protocolo de estado de enlace",
+    "respuesta_correcta": "d. Los routers disponen de la información completa de la topología de la red, con una base de datos más compleja que los protocolos de vector-distancia",
+    "opciones": [
+      "a. Los routers tienen configurado BGP (Border Gateway Protocol) como protocolo de encaminamiento",
+      "b. Los routers no pueden disponer de la información completa de la topología de la red, ya que mantienen una base de datos más simple que los protocolos de vector-distancia",
+      "c. Los routers utilizan el protocolo de Bellman-Ford distribuido para buscar el camino más corto a un destino determinado",
+      "d. Los routers disponen de la información completa de la topología de la red, con una base de datos más compleja que los protocolos de vector-distancia"
+    ]
+  },
+  {
+    "pregunta": "El encaminamiento estático",
+    "respuesta_correcta": "a. Se configura manualmente y puede ser adecuado para redes de tamaño pequeño que no presenten cambios frecuentes en su topología",
+    "opciones": [
+      "a. Se configura manualmente y puede ser adecuado para redes de tamaño pequeño que no presenten cambios frecuentes en su topología",
+      "b. Utiliza el protocolo RIP para la configuración de la tabla de encaminamiento",
+      "c. Utiliza un protocolo de encaminamiento para el intercambio de información entre los routers que forman la red",
+      "d. Se configura manualmente y es adecuado para redes de gran tamaño con cambios frecuentes en su topología"
+    ]
+  },
+  {
+    "pregunta": "La tabla de encaminamiento de un router (routing table)",
+    "respuesta_correcta": "d. Es una tabla que indica la red destino del paquete y el siguiente salto a nivel IP",
+    "opciones": [
+      "a. La utilizan los routers para hacer la conmutación a nivel 2 con las direcciones MAC de los equipos que puede alcanzar por cada una de sus interfaces",
+      "b. Sólo se puede configurar manualmente y nunca cambia",
+      "c. Es una tabla que relaciona la dirección IP del equipo con la dirección física MAC",
+      "d. Es una tabla que indica la red destino del paquete y el siguiente salto a nivel IP"
+    ]
+  },
+  {
+    "pregunta": "En OSPF, cuando un router recibe una actualización de la topología por parte de otro router",
+    "respuesta_correcta": "b. Debe enviar una confirmación, con el inconveniente de generar más tráfico en la red",
+    "opciones": [
+      "a. Envía una confirmación sólo si el enlace tiene una disponibilidad superior al 50% de su capacidad",
+      "b. Debe enviar una confirmación, con el inconveniente de generar más tráfico en la red",
+      "c. No envía una confirmación si no es requerida por el router que envía el mensaje LSA",
+      "d. No envía una confirmación, ya que así se evita sobrecargar la red con el tráfico de encaminamiento"
+    ]
+  }
+]

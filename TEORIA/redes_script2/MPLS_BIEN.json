@@ -1,0 +1,129 @@
+[
+  {
+    "pregunta": "Para transportar paquetes de datos a través de la red",
+    "respuesta_correcta": "b. Los routers con MPLS utilizan un mecanismo basado en etiquetas para alcanzar la red destino",
+    "opciones": [
+      "a. Los routers con MPLS utilizan la dirección IP de destino del paquete y la tabla de rutas para alcanzar la red destino",
+      "b. Los routers con MPLS utilizan un mecanismo basado en etiquetas para alcanzar la red destino",
+      "c. MPLS no proporciona servicio de transporte de datos a través de las redes",
+      "d. Los routers con MPLS utilizan la dirección MAC (layer 2) de destino del paquete y la tabla MAC para alcanzar la red destino"
+    ]
+  },
+  {
+    "pregunta": "Protocolos que puede soportar MPLS",
+    "respuesta_correcta": "a. MPLS puede soportar diferentes protocolos layer 3 (IPv4, IPv6, etc) y diferentes protocolos layer 2 (Ethernet, ATM, Frame Relay, PPP, etc)",
+    "opciones": [
+      "a. MPLS puede soportar diferentes protocolos layer 3 (IPv4, IPv6, etc) y diferentes protocolos layer 2 (Ethernet, ATM, Frame Relay, PPP, etc)",
+      "b. MPLS puede soportar cualquier protocolo layer 3 (IPv4, IPv6, etc) pero en nivel de enlace solamente soporta IEEE 802.3 (Ethernet)",
+      "c. MPLS solamente soporta IPv4 en layer 3, aunque puede hacerlo sobre cualquier protocolo Layer 2 (Ethernet, ATM, Frame Relay, PPP, etc)",
+      "d. MPLS trabaja en la capa 4 por lo que puede soportar todos los protocolos layer 3 y layer 2"
+    ]
+  },
+  {
+    "pregunta": "Organizaciones que desarrollan los estándares y especificaciones MPLS",
+    "respuesta_correcta": "c. Internet Engineering Task Force (IETF) es la organización que lidera el desarrollo de especificaciones y estándares relacionados con MPLS",
+    "opciones": [
+      "a. En Europa, RIPE NCC es la organización que lidera el desarrollo de especificaciones y estándares relacionados con MPLS",
+      "b. IANA es la organización que lidera el desarrollo de especificaciones y estándares relacionados con MPLS",
+      "c. Internet Engineering Task Force (IETF) es la organización que lidera el desarrollo de especificaciones y estándares relacionados con MPLS",
+      "d. ICANN es la organización que lidera el desarrollo de especificaciones y estándares relacionados con MPLS"
+    ]
+  },
+  {
+    "pregunta": "En MPLS se pueden apilar etiquetas (label stacking) para permitir, por ejemplo, la creación de túneles VPN",
+    "respuesta_correcta": "d. Para apilar etiquetas se utiliza el campo S de la cabecera MPLS. S=0 indica que hay más etiquetas apiladas y S=1 indica la última etiqueta MPLS del stack",
+    "opciones": [
+      "a. Para apilar etiquetas se utiliza el campo S de la cabecera MPLS. S=1 indica que hay más etiquetas apiladas y S=0 indica la última etiqueta MPLS del stack",
+      "b. Para apilar etiquetas se utiliza el campo TC (Traffic Class) de la cabecera MPLS. TC=0 indica que hay más etiquetas apiladas y TC=1 indica la última etiqueta MPLS del stack",
+      "c. Para apilar etiquetas se utiliza el campo TC (Traffic Class) de la cabecera MPLS. TC=1 indica que hay más etiquetas apiladas y TC=0 indica la última etiqueta MPLS del stack",
+      "d. Para apilar etiquetas se utiliza el campo S de la cabecera MPLS. S=0 indica que hay más etiquetas apiladas y S=1 indica la última etiqueta MPLS del stack"
+    ]
+  },
+  {
+    "pregunta": "A continuación se muestra una captura de un paquete IP con las cabeceras Ethernet, MPLS e IPv4. Los datos están en hexadecimal. ¿Cuál es el valor del campo TYPE en la cabecera Ethernet?",
+    "respuesta_correcta": "a. En el paquete capturado el campo TYPE a nivel 2 indica la cabecera MPLS a continuación de Ethernet: TYPE=0X8847",
+    "opciones": [
+      "a. En el paquete capturado el campo TYPE a nivel 2 indica la cabecera MPLS a continuación de Ethernet: TYPE=0X8847",
+      "b. En el paquete capturado el campo TYPE a nivel 2 indica que no hay cabecera MPLS a continuación de Ethernet, sólo un paquete IPv6: TYPE=0X86DD",
+      "c. En el paquete capturado el campo TYPE a nivel 2 indica que no hay cabecera MPLS a continuación de Ethernet, sólo un paquete IPv4: TYPE=0X0800",
+      "d. No hay diferenciación de MPLS e IP a nivel 2. El campo TYPE en la cabecera Ethernet indica que se trata de un enlace GigabitEthernet a 1Gbps"
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es el valor de la etiqueta (label) MPLS en el paquete de datos capturado?",
+    "respuesta_correcta": "c. En el paquete de datos capturado la etiqueta (label) MPLS toma el valor 0x362B0 = 221872",
+    "opciones": [
+      "a. En el paquete de datos capturado la etiqueta (label) MPLS toma el valor 0x8847 = 34887",
+      "b. En el paquete de datos capturado la etiqueta (label) MPLS toma el valor 0x2B0140 = 2818368",
+      "c. En el paquete de datos capturado la etiqueta (label) MPLS toma el valor 0x362B0 = 221872",
+      "d. En el paquete de datos capturado la etiqueta (label) MPLS toma el valor 0x14045 = 81989"
+    ]
+  },
+  [
+    {
+      "pregunta": "¿Qué indica el valor del campo Bottom of label Stack (S) en la cabecera MPLS del paquete de datos capturado?",
+      "respuesta_correcta": "a. En el paquete de datos capturado el campo Bottom of label Stack (S) toma el valor S=1 lo que indica que es la última etiqueta y a continuación se encapsula un datagrama IPv4",
+      "opciones": [
+        "a. En el paquete de datos capturado el campo Bottom of label Stack (S) toma el valor S=1 lo que indica que es la última etiqueta y a continuación se encapsula un datagrama IPv4",
+        "b. En el paquete de datos capturado el campo Bottom of label Stack (S) toma el valor S=1 lo que indica que hay otra etiqueta MPLS apilada con contenido 0x450004",
+        "c. En el paquete de datos capturado el campo Bottom of label Stack (S) toma el valor S=0 lo que indica que hay otra etiqueta MPLS apilada con contenido 0x404500",
+        "d. En el paquete de datos capturado el campo Bottom of label Stack (S) toma el valor S=0 lo que indica que es la última etiqueta y a continuación se encapsula un datagrama IPv4"
+      ]
+    },
+    {
+      "pregunta": "¿Cuál es el valor del campo TTL en la cabecera MPLS del paquete de datos capturado?",
+      "respuesta_correcta": "b. El campo TTL en MPLS es 0x40=64",
+      "opciones": [
+        "a. No hay campo TTL en MPLS. Hay que buscarlo en el campo TTL del paquete IPv4",
+        "b. El campo TTL en MPLS es 0x40=64",
+        "c. El campo TTL en MPLS vale 0x45=69",
+        "d. El campo TTL en MPLS vale 0x01=1"
+      ]
+    },
+    {
+      "pregunta": "¿Cuál es el valor del campo TTL en la cabecera del paquete IPv4?",
+      "respuesta_correcta": "a. El campo TTL en la cabecera del paquete IPv4 vale 0x40=64",
+      "opciones": [
+        "a. El campo TTL en la cabecera del paquete IPv4 vale 0x40=64",
+        "b. No hay campo TTL en las cabeceras IPv4, sólo lo hay en las cabeceras MPLS",
+        "c. El campo TTL en la cabecera del paquete IPv4 vale 0x01=1",
+        "d. El campo TTL en la cabecera del paquete IPv4 vale 0xE3=227"
+      ]
+    }
+  ],
+  {
+    "pregunta": "¿Qué es Penultimate Hop Popping (PHP) en MPLS?",
+    "respuesta_correcta": "c. Con PHP el último router ELSR en el LSP advierte al penúltimo router LSR en el LSP para eliminar (pop) la etiqueta MPLS antes de enviar el paquete al último ELSR con destino a una red final. Esto descarga al ELSR de hacer dos lookup para eliminar la etiqueta final y reenviar el paquete IP al destino",
+    "opciones": [
+      "a. Con PHP el router ELSR advierte al penúltimo router LSR para insertar (push) una nueva etiqueta MPLS apilada (label stacking) antes de enviar el paquete al último ELSR con destino a una red final. Este mecanismo aumenta la fiabilidad de la transmisión de datos",
+      "b. Con PHP el router LSR (penúltimo en el LSP) advierte al último router ELSR que va a eliminar (pop) la etiqueta MPLS antes de que le envíe un paquete (ELSR->LSR). Este mecanismo descarga al penúltimo router (LSR) al no tener que abrir la etiqueta MPLS para reenviar el paquete IP al destino",
+      "c. Con PHP el último router ELSR en el LSP advierte al penúltimo router LSR en el LSP para eliminar (pop) la etiqueta MPLS antes de enviar el paquete al último ELSR con destino a una red final. Esto descarga al ELSR de hacer dos lookup para eliminar la etiqueta final y reenviar el paquete IP al destino",
+      "d. En MPLS no existe la posibilidad de configurar PHP ya que este mecanismo rompe el modelo extremo a extremo basado en etiquetas"
+    ]
+  },
+  {
+    "pregunta": "¿Qué posibilita MPLS Layer 3 VPN?",
+    "respuesta_correcta": "d. Dos clientes diferentes (Customer A y Customer B) pueden estar usando el mismo espacio de direcciones IP privadas",
+    "opciones": [
+      "a. Dos clientes diferentes (Customer A y Customer B) tienen que estar usando obligatoriamente el mismo espacio de direcciones IP privadas para poder hacer la diferenciación por VRF",
+      "b. Dos clientes diferentes (Customer A y Customer B) no pueden estar usando el mismo espacio de direcciones IP privadas porque habría colisión de direcciones",
+      "c. Layer 3 VPN es una aplicación software en la que un cliente remoto se conecta a su red corporativa mediante sus credenciales privadas",
+      "d. Dos clientes diferentes (Customer A y Customer B) pueden estar usando el mismo espacio de direcciones IP privadas"
+    ]
+  },
+  {
+    "pregunta": "¿Qué se necesita para comunicar redes privadas de cliente con MPLS Layer 3 VPN?",
+    "respuesta_correcta": "d. Son necesarias dos etiquetas: Etiqueta para identificar la VPN y Etiquetas LDP para transportar el tráfico a través del dominio MPLS",
+    "opciones": [
+      "a. Son necesarias dos etiquetas: Etiqueta para identificar al router ingress ELSR y Etiqueta final para identificar al router egress ELSR",
+      "b. Se pueden comunicar redes privadas de cliente con MPLS LAyer 3 VPN enviando tráfico a través del dominio MPLS únicamente con la etiqueta identificativa de la VPN",
+      "c. Es necesario utilizar tres etiquetas apiladas gracias al bit S: Etiqueta identificativa del router ingress ELSR, Etiqueta para identificar la VPN y Etiqueta identificativa del router egress ELSR",
+      "d. Son necesarias dos etiquetas: Etiqueta para identificar la VPN y Etiquetas LDP para transportar el tráfico a través del dominio MPLS"
+    ]
+  },
+  {
+    "pregunta": "Ingeniería de tráfico: MPLS soporta la creación de rutas diferentes entre un origen y un destino en un backbone de routers en Internet",
+    "respuesta_correcta": "a. Verdadero",
+    "opciones": ["a. Verdadero", "b. Falso"]
+  }
+]

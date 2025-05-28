@@ -1,0 +1,243 @@
+[
+  {
+    "pregunta": "Un host tiene la siguiente dirección MAC: 00-0D-83-CB-2A-45. Está en una subred donde se anuncia el prefijo 2001:840:3500:425::/64. Si se utiliza autoconfiguración, ¿cuál de las siguientes es su dirección 'global unicast'?",
+    "respuesta_correcta": "a. 2001:840:3500:425:20D:83FF:FECB:2A45",
+    "opciones": [
+      "a. 2001:840:3500:425:20D:83FF:FECB:2A45",
+      "b. 2001:840:3500:425:000D:83CB:2A45",
+      "c. FE80::20D:83FF:FECB:2A45",
+      "d. 2001:840:3500:425:000D:83FF:FECB:2A45"
+    ]
+  },
+  {
+    "pregunta": "Un usuario al que su ISP (proveedor de servicios de Internet) le asigne las direcciones 2001:0800:D35A::/48",
+    "respuesta_correcta": "c. Puede crear una red doméstica formada por un máximo de 2^16 subredes de 2^64 dispositivos cada una",
+    "opciones": [
+      "a. Se le asigna una sola dirección IP pública, como con IPv4 y tiene que utilizar NAT/PAT para poder direccionar más dispositivos dentro de su red privada",
+      "b. Puede crear una red doméstica formada por un máximo de 2 subredes (red fija y red Wi-Fi) con 2^16 dispositivos cada una",
+      "c. Puede crear una red doméstica formada por un máximo de 2^16 subredes de 2^64 dispositivos cada una",
+      "d. Puede crear una red doméstica formada por un máximo de 2 subredes (red fija y red Wi-Fi) con 2^64 dispositivos cada una"
+    ]
+  },
+  {
+    "pregunta": "El mecanismo de tunneling permite que nodos o redes IPv6 se comuniquen sobre las redes IPv4 o viceversa. En el primero de los casos (nodos IPv6 comunicándose sobre redes IPv4) el mecanismo de tunneling",
+    "respuesta_correcta": "d. Encapsula paquetes IPv6 dentro de IPv4, usando IPv4 como si fuera una capa de enlace para IPv6",
+    "opciones": [
+      "a. Encapsula paquetes IPv4 dentro de IPv6, usando IPv6 como si fuera una capa de enlace para IPv4",
+      "b. No es posible transmitir paquetes IPv6 sobre redes IPv4 debido a que las direcciones IP de 128 bits no pueden ser procesadas por los routers de las redes IPv4",
+      "c. Necesita obligatoriamente que todos los routers de la red IPv4 tengan implementada la arquitectura de doble pila (dual stack) para realizar la conmutación de los paquetes IPv6",
+      "d. Encapsula paquetes IPv6 dentro de IPv4, usando IPv4 como si fuera una capa de enlace para IPv6"
+    ]
+  },
+  {
+    "pregunta": "En IPv6 un paquete enviado a una dirección multicast es entregado a",
+    "respuesta_correcta": "b. Todas las interfaces identificadas por esa dirección",
+    "opciones": [
+      "a. La interfaz más cercana identificada por esa dirección",
+      "b. Todas las interfaces identificadas por esa dirección",
+      "c. Todas las interfaces de la subred a la que pertenece esa dirección",
+      "d. Ninguna interfaz. No existen direcciones multicast en IPv6"
+    ]
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una dirección IPv6 válida?",
+    "respuesta_correcta": "d. 2001:0800:34:0:0:34F5:0:4567",
+    "opciones": [
+      "a. 2001:0800:34:0:0:34F5:4567",
+      "b. 2001:0800:34:0:34F5:0:4567",
+      "c. 2001:0800:34::34F5::4567",
+      "d. 2001:0800:34:0:0:34F5:0:4567"
+    ]
+  },
+
+  {
+    "pregunta": "En los paquetes Ethernet, el campo 'Type' se utiliza para indicar el protocolo de nivel superior que transporta la capa de enlace. El identificador para los paquetes IPv6 es",
+    "respuesta_correcta": "c. 0x86DD",
+    "opciones": [
+      "a. 0x0800",
+      "b. No se pueden transportar paquetes IPv6 en tramas Ethernet",
+      "c. 0x86DD",
+      "d. 0x08DD"
+    ]
+  },
+  {
+    "pregunta": "Las direcciones IPv6 constan de 128 bits, y se representan mediante 8 agrupaciones de 16 bits en hexadecimal separadas por ':'. Para facilitar la representación, se pueden comprimir agrupaciones de ceros. Otra posible representación válida de la dirección '2001:0db8:85a3:0000:0000:8a2e:0370:7334' es:",
+    "respuesta_correcta": "b. 2001:db8:85a3:0:0:8a2e:370:7334",
+    "opciones": [
+      "a. 2001:db8:85a3:0:0:8a2e:0:370:7334",
+      "b. 2001:db8:85a3:0:0:8a2e:370:7334",
+      "c. 2001:0:db8:85a3::8a2e:0:370:7334",
+      "d. 2001:db8:85a3:0:8a2e:370:7334"
+    ]
+  },
+  {
+    "pregunta": "El prefijo FF00::/8 corresponde a una dirección IPv6",
+    "respuesta_correcta": "b. Multicast",
+    "opciones": ["a. Link-local", "b. Multicast", "c. Unicast", "d. Anycast"]
+  },
+  {
+    "pregunta": "En IPv6 un paquete enviado a una dirección anycast es entregado a",
+    "respuesta_correcta": "b. La interfaz más cercana identificada por esa dirección",
+    "opciones": [
+      "a. Todas las interfaces de la subred a la que pertenece esa dirección",
+      "b. La interfaz más cercana identificada por esa dirección",
+      "c. Todas las interfaces identificadas por esa dirección",
+      "d. Ninguna interfaz. No existen direcciones anycast en IPv6"
+    ]
+  },
+  {
+    "pregunta": "Una dirección IPv6 global unicast puede tener el prefijo:",
+    "respuesta_correcta": "b. 2001::/8",
+    "opciones": ["a. FF00::/8", "b. 2001::/8", "c. FE80::/48", "d. FE80::/10"]
+  },
+  {
+    "pregunta": "IPv6: ¿Porqué NAT no es la solución ideal para resolver el problema del agotamiento de direcciones IPv4?",
+    "respuesta_correcta": "c. NAT, aunque permite direccionar varios equipos con pocas direcciones IP públicas, rompe el modelo 'end-to-end' de IP",
+    "opciones": [
+      "a. NAT consume un gran número de direcciones IP públicas para direccionar un reducido número de equipos en una organización privada",
+      "b. NAT no permite solucionar el problema de las direcciones IPv4 ya que con este método se necesitan más direcciones IP públicas que equipos a direccionar",
+      "c. NAT, aunque permite direccionar varios equipos con pocas direcciones IP públicas, rompe el modelo 'end-to-end' de IP",
+      "d. NAT, al permitir más velocidad de conmutación de paquetes en los routers, satura los equipos finales"
+    ]
+  },
+  {
+    "pregunta": "IPv6 mejora las prestaciones de seguridad en la red respecto a IPv4",
+    "respuesta_correcta": "d. Cierto, porque IPsec es obligatorio en IPv6, forma parte del protocolo, y se implementa en todos los nodos de la red, a diferencia de IPv4 donde IPsec es opcional",
+    "opciones": [
+      "a. IPv6 no aporta ninguna diferencia en temas de seguridad respecto a IPv4",
+      "b. Falso, ya que una red basada en IPv6 es más insegura que las basadas en IPv4 debido a que un mayor número de direcciones IP y la estructura jerárquica facilitan los ataques de los nodos de la red",
+      "c. Cierto, porque IPv6 posiblita el enrutamiento jerárquico gracias a la política de asignación de direcciones, a diferencia de IPv4, que no permite una estructura de red jerárquica",
+      "d. Cierto, porque IPsec es obligatorio en IPv6, forma parte del protocolo, y se implementa en todos los nodos de la red, a diferencia de IPv4 donde IPsec es opcional"
+    ]
+  },
+  {
+    "pregunta": "En los escnarios de transición, los mecanismos de traducción para comunicar nodos “sólo-IPv4” con nodos “sólo-IPv6” presentan los siguientes inconvenientes:",
+    "respuesta_correcta": "b. El mecanismo de traducción añade complejidad y no toda la información puede ser preservada durante la traducción",
+    "opciones": [
+      "a. Las direcciones privadas no pueden ser traducidas y las direcciones IPv4 no pueden convertirse en direcciones IPv6",
+      "b. El mecanismo de traducción añade complejidad y no toda la información puede ser preservada durante la traducción",
+      "c. Los routers no pueden traducir direcciones, por lo que se necesitan otros dispositivos de red lo que hace mucho más complejo el routing en Internet",
+      "d. Las direcciones IPv6 no pueden traducirse a direcciones IPv4 y la traducción de puertos no es compatible entre IPv6 e IPv4"
+    ]
+  },
+  {
+    "pregunta": "La cabecera de los paquetes IPv6 está mejor organizada y es más simple que la de IPv4 con el objetivo de facilitar el procesamiento de los paquetes en los dispositivos de enrutamiento y aumentar con ello la velocidad de conmutación. Los campos que se han eliminado de la cabecera IPv4 son:",
+    "respuesta_correcta": "c. Header Length (IHL), Identification, Flags, Fragment Offset, Header Checksum, Padding",
+    "opciones": [
+      "a. Header Length (IHL), Identification, Flags, Type of Service (Traffic Class), Header Checksum, Padding",
+      "b. Header Length (IHL), Identification, Flags, Fragment Offset, Protocol (Next Header), Source Address",
+      "c. Header Length (IHL), Identification, Flags, Fragment Offset, Header Checksum, Padding",
+      "d. Header Length (IHL), Version, Flags, Fragment Offset, Header Checksum, Padding"
+    ]
+  },
+  {
+    "pregunta": "Las direcciones IPv4 mapeadas a IPv6 se utilizan para representar las direcciones de nodos IPv4 como direcciones IPv6. Un equipo IPv4 con dirección 143.34.78.23 tendrá la dirección IPv6 siguiente:",
+    "respuesta_correcta": "c. ::FFFF:143.34.78.23",
+    "opciones": [
+      "a. ::FFFE:143.34.78.23::/80",
+      "b. FE80::143.34.78.23/16",
+      "c. ::FFFF:143.34.78.23",
+      "d. 143.34.78.23:FFFF::"
+    ]
+  },
+  {
+    "pregunta": "La implementación de doble pila (Dual-stack) permite que IPv4 e IPv6 se ejecuten sobre la misma infraestructura de red.",
+    "respuesta_correcta": "a. Con dual-stack no es necesario que los routers de las red tengan implementadas las dos pilas de protocolos. Basta con que se implemente la doble pila en los dispositivos finales de la comunicación",
+    "opciones": [
+      "a. Con dual-stack no es necesario que los routers de las red tengan implementadas las dos pilas de protocolos. Basta con que se implemente la doble pila en los dispositivos finales de la comunicación",
+      "b. Con dual-stack los paquetes IPv4 se encapsulan dentro de los paquetes IPv6 para posibilitar la comunicación entre los equipos finales de la red",
+      "c. Con dual-stack no es necesario encapsular paquetes IPv6 dentro de paquetes IPv4 o viceversa",
+      "d. Con dual-stack los paquetes IPv6 se encapsulan dentro de los paquetes IPv4 para posibilitar la comunicación entre los equipos finales de la red"
+    ]
+  },
+  {
+    "pregunta": "Las direcciones IPv6 constan de 128 bits, y se representan mediante 8 agrupaciones de 16 bits en hexadecimal separadas por ':'. Para facilitar la representación, se pueden comprimir agrupaciones de ceros. Otra posible representación válida de la dirección '2001:0db8:0000:85a3:0000:0000:0370:7334' es:",
+    "respuesta_correcta": "a. 2001:db8:0:85a3::370:7334",
+    "opciones": [
+      "a. 2001:db8:0:85a3::370:7334",
+      "b. 2001:db8::85a3:0:0:370::7334",
+      "c. 2001:0:db8:0:85a3::0370:7334",
+      "d. 2001:db8::85a3::370:7334"
+    ]
+  },
+  {
+    "pregunta": "Classless Inter-Domain Routing (CIDR) es un método para la asginación de direcciones IP. RIPE NCC está ya distribuyendo las últimas direcciones IPv4 a los Registros Locales (LIRs) de acuerdo a la sección 5.6 de su Política de Asignación, lo que implica que únicamente se otorgarán segmentos de direcciones IPv4 de capacidad máxima /22. El número máximo de equipos que pueden direccionarse en las subredes /22 es de:",
+    "opciones": [
+      "a. 2046 equipos con direcciones IP",
+      "b. 2^22 - 2  = 4194302 equipos con direcciones IP",
+      "c. 1022 equipos con direcciones IP",
+      "d. 1024 equipos con direcciones IP"
+    ],
+    "respuesta_correcta": "c. 1022 equipos con direcciones IP"
+  },
+  {
+    "pregunta": "Hay 3 tipos principales de direcciones IPv6",
+    "opciones": [
+      "a. Unicast, broadcast, anycast",
+      "b. Broadcast, multicast, anycast",
+      "c. Unicast, multicast, broadcast",
+      "d. Unicast, multicast, anycast"
+    ],
+    "respuesta_correcta": "d. Unicast, multicast, anycast"
+  },
+  {
+    "pregunta": "2001:0800:25:1034::/64 y 2001:0800:25:3500::/64 son las subredes con identificadores (subnet ID) 1034 y 3500, respectivamente, de la red con prefijo:\nSeleccione una:",
+    "opciones": [
+      "a. Las dos subredes no pertenecen a la misma red ya que el prefijo no tiene nada en común",
+      "b. 2001:0800:25::/48",
+      "c. 2001:0800::/48",
+      "d. 2001:0800:25::/64"
+    ],
+    "respuesta_correcta": "b. 2001:0800:25::/48"
+  },
+  {
+    "pregunta": "ICANN (Internet Corporation for Assigned Names and Numbers) se encarga de coordinar las direcciones IP y asignar rangos de direcciones a los RIR (Regional Internet Register). El RIR correspondiente a Europa es:",
+    "opciones": [
+      "a. EURNIC (Eureopean Network Information Centre)",
+      "b. RIPE NCC (Réseaux IP Européens)",
+      "c. APNIC (Asia-Pacific-Europe Network Information Centre)",
+      "d. ERIN (European Registry for Internet Numbers)"
+    ],
+    "respuesta_correcta": "b. RIPE NCC (Réseaux IP Européens)"
+  },
+  {
+    "pregunta": "Un host tiene la siguiente dirección MAC: 00-0D-83-CB-2A-45. Está en una subred donde se anuncia el prefijo 2001:840:3500:425::/64. Si se utiliza autoconfiguración, ¿cuál de las siguientes es su dirección \"link-local unicast\"?",
+    "opciones": [
+      "a. FE80::000D:83FF:FECB:2A45",
+      "b. FE80::20D:83FF:FECB:2A45",
+      "c. 2001:840:3500:425:20D:83FF:FECB:2A45",
+      "d. 2001:840:3500:425:000D:83CB:2A45"
+    ],
+    "respuesta_correcta": "b. FE80::20D:83FF:FECB:2A45"
+  },
+  {
+    "pregunta": "Cuando se utilizan túneles para enviar paquetes IPv6 sobre redes de encaminamiento IPv4\nSeleccione una:",
+    "opciones": [
+      "a. No es posible enviar paquetes IPv6 sobre redes IPv4 debido al formato de direcciones de ambos protocolos (128 bits y 32 bits de direcciones)",
+      "b. Todos los routers de la red IPv4 tienen que trabajar obligatoriamente en modo dual-stack",
+      "c. Hay que sustituir todos los nodos (routers) de la red IPv4 por otros que sean compatibles IPv6 de manera que los paquetes IPv6 puedan ser enrutados por estos nodos",
+      "d. Los nodos finales tienen que trabajar en modo dual-stack"
+    ],
+    "respuesta_correcta": "d. Los nodos finales tienen que trabajar en modo dual-stack"
+  },
+  {
+    "pregunta": "En la asignación de direcciones IPv6 global unicast, los 3 primeros bits están reservados (001) para indicar que se trata de este tipo de direcciones. Si a un usuario final le asignan prefijos del rango /48, ¿se está haciendo un mal uso de la distribución de direcciones IPv6, despilfarrando millones de direcciones?",
+    "opciones": [
+      "a. Si, se está haciendo un mal uso del reparto de direcciones porque con 45 bits (infraestructura) las direcciones IPv6 se agotarán en poco tiempo debido al crecimiento de Internet",
+      "b. No, porque con 45 bits (infraestructura) es suficiente para direccionar 35 billones de prefijos /48 y una uniformidad en los prefijos (/48) facilita la gestión en el direccionamiento IPv6",
+      "c. No, porque con un prefijo /48 se pueden direccionar solamente 2^16 equipos en la red del usuario final, con lo que se ajusta bien a las necesidades de organización de la red doméstica",
+      "d. Si, se está haciendo un mal reparto de direcciones IPv6 ya que 45 bits (infraestructura) suponen solamente 13 veces más direcciones que la actual Internet (IPv4 de 32 bits) lo que provocará un nuevo agotamiento de direcciones en los próximos años"
+    ],
+    "respuesta_correcta": "b. No, porque con 45 bits (infraestructura) es suficiente para direccionar 35 billones de prefijos /48 y una uniformidad en los prefijos (/48) facilita la gestión en el direccionamiento IPv6"
+  },
+  {
+    "pregunta": "La dirección \"loopback address\" que en IPv6 permite que un nodo se envíe un paquete a sí mismo es:",
+    "opciones": [
+      "a. No existe \"loopback address\" en IPv6",
+      "b. ::1",
+      "c. 0:0:0:0:0:0:0:0",
+      "d. FE80::/16"
+    ],
+    "respuesta_correcta": "b. ::1"
+  }
+]

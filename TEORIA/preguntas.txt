@@ -1,0 +1,1429 @@
+Pregunta 1: ¿Por qué NAT no es la solución ideal para resolver el problema del agotamiento de direcciones IPv4?
+a. NAT permite direccionar varios equipos con pocas direcciones IP públicas, pero rompe el modelo "end-to-end" de IP.
+b. NAT permite más velocidad de conmutación de paquetes en los routers, saturando los equipos finales.
+c. NAT no permite solucionar el problema de las direcciones IPv4 ya que se necesitan más direcciones IP públicas que equipos a direccionar.
+d. NAT consume un gran número de direcciones IP públicas para direccionar un reducido número de equipos en una organización privada.
+Respuesta correcta: a
+
+Pregunta 2: La cabecera de los paquetes IPv6 está mejor organizada y es más simple que la de IPv4 con el objetivo de facilitar el procesamiento de los paquetes en los dispositivos de enrutamiento y aumentar con ello la velocidad de conmutación. Los paquetes que se han eliminado de la cabecera IPv4 son:
+a. Header Length (IHL), Identification, Flags, Fragment Offset, Header Checksum, Padding
+b. Header Length (IHL), Identification, Flags, Fragment Offset, Protocol (Next Header), Source Address
+c. Header Length (IHL), Version, Flags, Fragment Offset, Header Checksum, Padding
+d. Header Length (IHL), Identification, Flags, Type of Service (Traffic Class), Header Checksum, Padding
+Respuesta correcta: a
+
+Pregunta 3: Las direcciones IPv6 constan de 128 bits, y se representan mediante 8 agrupaciones de 16 bits en hexadecimal separadas por ":". Para facilitar la representación, se pueden comprimir agrupaciones de ceros. Otra posible representación válida de la dirección "2001:0db8:85a3:0000:0000:8a2e:0370:7334" es:
+a. 2001:0:db8:85a3::8a2e:0:370:7334
+b. 2001:db8:85a3:0:0:8a2e:0:370:7334
+c. 2001:db8:85a3:0:8a2e:370:7334
+d. 2001:db8:85a3:0:0:8a2e:370:7334
+Respuesta correcta: d
+
+Pregunta 4: Las direcciones IPv6 constan de 128 bits, y se representan mediante 8 agrupaciones de 16 bits en hexadecimal separadas por ":". Para facilitar la representación, se pueden comprimir agrupaciones de ceros. Otra posible representación válida de la dirección "2001:0db8:0000:85a3:0000:0000:0370:7334" es:
+a. 2001:db8::85a3:0:0:370::7334
+b. 2001:0:db8:0:85a3::0370:7334
+c. 2001:db8:0:85a3::370:7334
+d. 2001:db8::85a3::370:7334
+Respuesta correcta: c
+
+Pregunta 5: 2001:0800:25:1034::/64 y 2001:0800:25:3500::/64 son las subredes con identificadores (subnet ID) 1034 y 3500, respectivamente, de la red con prefijo:
+a. 2001:0800:25::/48
+b. 2001:0800::/48
+c. 2001:0800:25::/64
+d. Las dos subredes no pertenecen a la misma red ya que el prefijo no tiene nada en común
+Respuesta correcta: a
+
+Pregunta 6: ¿Cuál de las siguientes es una dirección IPv6 válida?
+a. 2001:0800:34:0:0:34F5:0:4567
+b. 2001:0800:34::34F5::4567
+c. 2001:0800:34:0:0:34F5:4567
+d. 2001:0800:34:0:34F5:0:4567
+Respuesta correcta: a
+
+Pregunta 7: Hay 3 tipos principales de direcciones IPv6:
+a. Broadcast, multicast, anycast
+b. Unicast, multicast, anycast
+c. Unicast, multicast, broadcast
+d. Unicast, broadcast, anycast
+Respuesta correcta: b
+
+Pregunta 8: En IPv6 un paquete enviado a una dirección anycast es entregado a:
+a. La interfaz más cercana identificada por esa dirección
+b. Todas las interfaces identificadas por esa dirección
+c. Todas las interfaces de la subred a la que pertenece esa dirección
+d. Ninguna interfaz. No existen direcciones anycast en IPv6
+Respuesta correcta: a
+
+Pregunta 9: En IPv6 un paquete enviado a una dirección multicast es entregado a:
+a. La interfaz más cercana identificada por esa dirección
+b. Todas las interfaces identificadas por esa dirección
+c. Todas las interfaces de la subred a la que pertenece esa dirección
+d. Ninguna interfaz. No existen direcciones multicast en IPv6
+Respuesta correcta: b
+
+Pregunta 10: El prefijo FF00::/8 corresponde a una dirección IPv6:
+a. Multicast
+b. Link-local
+c. Unicast
+d. Anycast
+Respuesta correcta: a
+
+Pregunta 11: Una dirección IPv6 global unicast puede tener el prefijo:
+a. FE80::/10
+b. FF00::/8
+c. FE80::/48
+d. 2001::/8
+Respuesta correcta: d
+
+Pregunta 12: Un host tiene la siguiente dirección MAC: 00-0D-83-CB-2A-45. Está en una subred donde se anuncia el prefijo 2001:840:3500:425::/64. Si se utiliza autoconfiguración, ¿cuál de las siguientes es su dirección "global unicast"?
+a. 2001:840:3500:425:000D:83CB:2A45
+b. 2001:840:3500:425:000D:83FF:FECB:2A45
+c. FE80::20D:83FF:FECB:2A45
+d. 2001:840:3500:425:20D:83FF:FECB:2A45
+Respuesta correcta: d
+
+Pregunta 13: Un host tiene la siguiente dirección MAC: 00-0D-83-CB-2A-45. Está en una subred donde se anuncia el prefijo 2001:840:3500:425::/64. Si se utiliza autoconfiguración, ¿cuál de las siguientes es su dirección "link-local unicast"?
+a. FE80::000D:83FF:FECB:2A45
+b. 2001:840:3500:425:20D:83FF:FECB:2A45
+c. FE80::20D:83FF:FECB:2A45
+d. 2001:840:3500:425:000D:83CB:2A45
+Respuesta correcta: c
+
+Pregunta 14: IPv6 mejora las prestaciones de seguridad en la red respecto a IPv4:
+a. Falso, ya que una red basada en IPv6 es más insegura que las basadas en IPv4 debido a que un mayor número de direcciones IP y la estructura jerárquica facilitan los ataques de los nodos de la red.
+b. Cierto, porque IPv6 posibilita el enrutamiento jerárquico gracias a la política de asignación de direcciones, a diferencia de IPv4, que no permite una estructura de red jerárquica.
+c. Cierto, porque IPsec es obligatorio en IPv6, forma parte del protocolo, y se implementa en todos los nodos de la red, a diferencia de IPv4 donde IPsec es opcional.
+d. IPv6 no aporta ninguna diferencia en temas de seguridad respecto a IPv4.
+Respuesta correcta: c
+
+Pregunta 15: La dirección "loopback address" que en IPv6 permite que un nodo se envíe un paquete a sí mismo es:
+a. 0:0:0:0:0:0:0:0
+b. FE80::/16
+c. No existe "loopback address" en IPv6
+d. ::1
+Respuesta correcta: d
+
+Pregunta 16: ICANN (Internet Corporation for Assigned Names and Numbers) se encarga de coordinar las direcciones IP y asignar rangos de direcciones a los RIR (Regional Internet Register). El RIR correspondiente a Europa es:
+a. EURNIC (European Network Information Centre)
+b. RIPE NCC (Réseaux IP Européens)
+c. APNIC (Asia-Pacific-Europe Network Information Centre)
+d. ERIN (European Registry for Internet Numbers)
+Respuesta correcta: b
+
+Pregunta 17: Classless Inter-Domain Routing (CIDR) es un método para la asignación de direcciones IP. RIPE NCC está ya distribuyendo las últimas direcciones IPv4 a los Registros Locales (LIRs) de acuerdo a la sección 5.6 de su Política de Asignación, lo que implica que únicamente se otorgarán segmentos de direcciones IPv4 de capacidad máxima /22. El número máximo de equipos que pueden direccionarse en este segmento es:
+a. 256
+b. 510
+c. 1022
+d. 2048
+Respuesta correcta: c
+
+Pregunta 18 : La implementación de doble pila (Dual-stack) permite que IPv4 e IPv6 se ejecuten sobre la misma infraestructura de red. Seleccione una:
+a. Con dual-stack no es necesario encapsular paquetes IPv6 dentro de paquetes IPv4 o viceversa
+b. Con dual-stack no es necesario que los routers de las red tengan implementadas las dos pilas de protocolos. Basta con que se implemente la doble pila en los dispositivos finales de la comunicación
+c. Con dual-stack los paquetes IPv4 se encapsulan dentro de los paquetes IPv6 para posibilitar la comunicación entre los equipos finales de la red
+d. Con dual-stack los paquetes IPv6 se encapsulan dentro de los paquetes IPv4 para posibilitar la comunicación entre los equipos finales de la red
+Respuest correcta: a
+
+Pregunta 19: En el mecanismo de tunneling, ¿qué sucede cuando se envían paquetes IPv6 sobre redes de encaminamiento IPv4?Seleccione una:
+a. No es posible enviar paquetes IPv6 sobre redes IPv4 debido al formato de direcciones de ambos protocolos (128 bits y 32 bits de direcciones).
+b. Los nodos finales tienen que trabajar en modo dual-stack.
+c. Todos los routers de la red IPv4 tienen que trabajar obligatoriamente en modo dual-stack.
+d. Hay que sustituir todos los nodos (routers) de la red IPv4 por otros que sean compatibles IPv6 de manera que los paquetes IPv6 puedan ser enrutados por estos nodos.
+Respuesta correcta: b
+
+Pregunta 20: Cuando se utilizan túneles para enviar paquetes IPv6 sobre redes de encaminamiento IPv4. Seleccione una:
+a. No es posible enviar paquetes IPv6 sobre redes IPv4 debido al formato de direcciones de ambos protocolos (128 bits y 32 bits de direcciones)
+b. Los nodos finales tienen que trabajar en modo dual-stack
+c. Todos los routers de la red IPv4 tienen que trabajar obligatoriamente en modo dual-stack
+d. Hay que sustituir todos los nodos (routers) de la red IPv4 por otros que sean compatibles IPv6 de manera que los paquetes IPv6 puedan ser enrutados por estos nodos
+Respuesta correcta: b
+
+Pregunta 21: En los escenarios de transición, ¿cuáles son los inconvenientes de los mecanismos de traducción para comunicar nodos "solo-IPv4" con nodos "solo-IPv6"? Seleccione una:
+a. El mecanismo de traducción añade complejidad y no toda la información puede ser preservada durante la traducción.
+b. Las direcciones privadas no pueden ser traducidas y las direcciones IPv4 no pueden convertirse en direcciones IPv6.
+c. Los routers no pueden traducir direcciones, por lo que se necesitan otros dispositivos de red lo que hace mucho más complejo el routing en Internet.
+d. Las direcciones IPv6 no pueden traducirse a direcciones IPv4 y la traducción de puertos no es compatible entre IPv6 e IPv4.
+Respuesta correcta: a
+
+Pregunta 22: ¿Cuántas subredes y dispositivos puede crear un usuario al que su ISP le asigne el prefijo 2001:0800:D35A::/48? Seleccione una:
+a. Puede crear una red doméstica formada por un máximo de 2 subredes (red fija y red Wi-Fi) con 2^64 dispositivos cada una
+b. Se le asigna una sola dirección IP pública, como con IPv4 y tiene que utilizar NAT/PAT para poder direccionar más dispositivos dentro de su red privada
+c. Puede crear una red doméstica formada por un máximo de 2 subredes (red fija y red Wi-Fi) con 2^16 dispositivos cada una
+d. Puede crear una red doméstica formada por un máximo de 2^16 subredes de 2^64 dispositivos cada una
+Respuesta correcta: d
+
+Pregunta 23: En la asignación de direcciones IPv6 global unicast, los 3 primeros bits están reservados (001) para indicar que se trata de este tipo de direcciones. Si a un usuario final le asignan prefijos del rango /48, ¿se está haciendo un mal uso de la distribución de direcciones IPv6, despilfarrando millones de direcciones?
+a. No, porque con un prefijo /48 se pueden direccionar solamente 2^16 equipos en la red del usuario final, con lo que se ajusta bien a las necesidades de organización de la red doméstica
+b. Si, se está haciendo un mal reparto de direcciones IPv6 ya que 45 bits (infraestructura) suponen solamente 13 veces más direcciones que la actual Internet (IPv4 de 32 bits) lo que provocará un nuevo agotamiento de direcciones en los próximos años
+c. Si, se está haciendo un mal uso del reparto de direcciones porque con 45 bits (infraestructura) las direcciones IPv6 se agotarán en poco tiempo debido al crecimiento de Internet
+d. No, porque con 45 bits (infraestructura) es suficiente para direccionar 35 billones de prefijos /48 y una uniformidad en los prefijos (/48) facilita la gestión en el direccionamiento IPv6
+Respuesta correcta: d
+
+Pregunta 24: En los paquetes Ethernet, el campo "Type" se utiliza para indicar el protocolo de nivel superior que transporta la capa de enlace. El identificador para los paquetes IPv6 es
+a. No se pueden transportar paquetes IPv6 en tramas Ethernet
+b. 0x86DD
+c. 0x0800
+d. 0x08DD
+Respuesta correcta: b
+
+Pregunta 25: Las direcciones IPv4 mapeadas a IPv6 se utilizan para representar las direcciones de nodos IPv4 como direcciones IPv6. Un equipo IPv4 con dirección 143.34.78.23 tendrá la dirección IPv6 siguiente:
+a. ::FFFE:143.34.78.23::/80
+b. FE80::143.34.78.23/16
+c. 143.34.78.23:FFFF::
+d. ::FFFF:143.34.78.23
+Respuesta correcta: d
+
+Pregunta 26: A lo largo del encaminamiento IP. Seleccione una:
+a. Los campos del datagrama no son modificados en los routers
+b. La suma de comprobación de la cabecera de un datagrama se recalcula en cada router
+c. Los routers no examinan el valor de la suma de comprobación de la cabecera de un datagrama al llegar a ellos
+d. Las opciones b) y c) son ciertas
+Respuesta correcta: b
+
+Pregunta 27: ¿Cuándo se crea una entrada en la tabla MAC y qué se almacena?. Seleccione una:
+a. Cada vez que se retransmite una trama se almacena la dirección de destino y el puerto por el que se retransmite
+b. Cada vez que se recibe una trama se almacena la dirección de destino y el puerto por el que se recibe
+c. Cada vez que se recibe una trama se almacena la dirección de origen y el puerto por el que se recibe
+d. Cada vez que se retransmite una trama se almacena la dirección de origen y el puerto por el que se retransmite
+Respuesta correcta: c
+
+Pregunta 28: En la conmutación LAN en un switch ¿Cuándo se filtra una trama?. Seleccione una:
+a. Cuando no se conoce el puerto asociado a la dirección física destino
+b. Cuando no se conoce el puerto asociado a la dirección física origen
+c. Cuando la dirección destino es unicast y el puerto de salida es el mismo por el que entró
+d. Cuando la dirección es broadcast
+Respuesta correcta: c
+
+Pregunta 29: ¿Cuándo se retransmite una trama por todos los puertos en la técnica del árbol de expansión? Seleccione una:
+a. Sólo cuando la dirección destino de la trama es broadcast
+b. Cuando la dirección destino de la trama es unicast y no tiene entrada en la tabla MAC o cuando es broadcast
+c. Cuando la dirección origen es la misma que la destino
+d. Sólo cuando la dirección destino de la trama es unicast y no tiene una entrada en la tabla MAC
+Respuesta correcta: b
+
+Pregunta 30: El control de errores en la capa Internet. Seleccione una:
+a. Lo realiza el protocolo ICMP
+b. No se realiza control de errores
+c. Lo realiza el protocolo IP
+d. Lo realiza el protocolo TCP
+Respuesta correcta: a
+
+Pregunta 31: El control del flujo en redes LAN. Seleccione una:
+a. Lo realizan tanto la subcapa de control de acceso al medio como la de control de enlace lógico
+b. No se realizar control de flujo
+c. Lo realiza la subcapa de control de acceso al medio
+d. Lo realiza la subcapa de control de enlace lógico
+Respuesta correcta: d
+
+Pregunta 32: El proceso de segmentación se realiza. Seleccione una:
+a. En la capa de acceso a la red
+b. En la capa física
+c. En la capa de transporte
+d. En la capa Internet
+Respuesta correcta: d
+
+Pregunta 33: El protocolo ARP. Seleccione una:
+a. Permite utilizar direcciones virtuales dentro de una red LAN
+b. Traduce direcciones IP a direcciones físicas
+c. Traduce direcciones físicas a direcciones IP
+d. Obtiene los parámetros de configuración de acceso a la red para una máquina
+Respuesta correcta: b
+
+Pregunta 34: El protocolo DHCP. Seleccione una:
+a. Traduce direcciones físicas a direcciones IP
+b. Traduce direcciones IP a direcciones físicas
+c. Permite utilizar direcciones virtuales dentro de una red LAN
+d. Obtiene los parámetros de configuración de acceso a la red para una máquina
+Respuesta correcta: d
+
+Pregunta 35: El protocolo IP. Seleccione una:
+a. Garantiza la entrega de los datos
+b. Cada datagrama se encamina de forma independiente
+c. Se utiliza en la capa de acceso a la red
+d. Las opciones a) y b) son ciertas
+Respuesta correcta: b
+
+Pregunta 36: El protocolo IP es. Seleccione una:
+a. No orientado a la conexión y fiable
+b. Orientado a la conexión y fiable
+c. Orientado a la conexión y no fiable
+d. No orientado a la conexión y no fiable
+Respuesta correcta: d
+
+Pregunta 37: El protocolo NAPT. Seleccione una:
+a. Permite utilizar direcciones virtuales dentro de una red LAN
+b. Traduce direcciones físicas a direcciones IP
+c. Traduce direcciones IP a direcciones físicas
+d. Obtiene los parámetros de configuración de acceso a la red para una máquina
+Respuesta correcta: a
+
+Pregunta 38: El protocolo Spanning tree se utiliza para. Seleccione una:
+a. Eliminar bucles de la red LAN
+b. Decidir las tramas que se van a propagar en una red LAN
+c. Decidir si una trama va destinada al router de la red LAN
+d. Calcular la dirección física de destino
+Respuesta correcta: a
+
+Pregunta 39: El protocolo TCP. Seleccione una:
+a. No puede detectar duplicados
+b. Envía asentimientos para los segmentos que llegaron de forma correcta
+c. No utiliza reenvíos
+d. Las opciones a) y b) son ciertas
+Respuesta correcta: b
+
+Pregunta 40: El protocolo TCP. Seleccione una:
+a. Puede transportar asentimientos con las tramas de datos
+b. El número de ACK de una trama contiene el número de la siguiente trama a recibir
+c. Las opciones a) y b) son ciertas
+d. Las tramas de datos no pueden transportar asentimientos
+Respuesta correcta: a
+
+Pregunta 41: El protocolo TCP. Seleccione una:
+a. Es un protocolo de la capa de transporte orientado a la conexión
+b. Es un protocolo de la capa de transporte no orientado a la conexión
+c. Es un protocolo de la capa de red no orientado a la conexión
+d. Es un protocolo de la capa de red orientado a la conexión
+Respuesta correcta: a
+
+Pregunta 42: El protocolo UDP. Seleccione una:
+a. No puede detectar duplicados
+b. Envía asentimientos para los segmentos que llegaron de forma correcta
+c. Utiliza reenvíos
+d. Las opciones b) y c) son ciertas
+Respuesta correcta: a
+
+Pregunta 43: El protocolo UDP. Seleccione una:
+a. Envía menos información suplementaria que el protocolo TCP y es orientado a la conexión
+b. Envía menos información suplementaria que el protocolo TCP y es no orientado a la conexión
+c. Envía más información suplementaria que el protocolo TCP y es no orientado a la conexión
+d. Envía más información suplementaria que el protocolo TCP y es orientado a la conexión
+Respuesta correcta: b
+
+Pregunta 44: El tiempo de vida es. Seleccione una:
+a. El tiempo que dura una conexión entre un origen y un destino
+b. El tiempo que se espera por la recepción de un asentimiento
+c. El tiempo que puede estar transmitiendo una máquina de forma ininterrumpida
+d. El tiempo que puede viajar un datagrama por la red
+Respuesta correcta: d
+
+Pregunta 45: El tiempo que un datagrama puede circular por la red. Seleccione una:
+a. Se decrementa en cada puente por el que pase
+b. Se aumenta en cada puente por el que pase
+c. Se aumenta en cada encaminador por el que pase
+d. Se decrementa en cada encaminador por el que pase
+Respuesta correcta: d
+
+Pregunta 46: En el encaminamiento IP. Seleccione una:
+a. En cada salto del datagrama se modifica sólo la dirección física de destino
+b. En cada salto del datagrama se modifican las direcciones físicas origen y destino
+c. En cada salto del datagrama se modifica sólo la dirección IP de destino
+d. En cada salto del datagrama se modifican las direcciones IP origen y destino
+Respuesta correcta: b
+
+Pregunta 47: En el protocolo Ethernet. Seleccione una:
+a. Las máquinas no pueden detectar colisiones
+b. Cuando se produce una colisión se detiene la transmisión y se avisa a las demás máquinas para que no intenten transmitir
+c. No se producen colisiones
+d. Cuando se produce una colisión se detiene la transmisión pero no se avisa a las demás máquinas de ello
+Respuesta correcta: b
+
+Pregunta 48: En el protocolo Ethernet, cuando una máquina tiene información para transmitir. Seleccione una:
+a. Transmite si el canal está libre y si está ocupado lo vuelve a intentar después de un tiempo aleatorio
+b. Intenta transmitir tanto si el medio está libre u ocupado
+c. Detiene las transmisiones de otras máquinas y después se pone a transmitir
+d. Transmite si el canal está libre y si está ocupado espera escuchando hasta que esté libre
+Respuesta correcta: d
+
+Pregunta 49: En el protocolo Ethernet. Seleccione una:
+a. Las direcciones origen y destino son direcciones físicas
+b. Las direcciones origen y destino son direcciones IP
+c. La dirección destino siempre es la dirección física del router
+d. Las opciones a) y c) son ciertas
+Respuesta correcta: a
+
+Pregunta 50: En el protocolo que permite obtener una dirección IP de forma dinámica. Seleccione una:
+a. La máquina que no tiene dirección IP difunde una petición a toda la red para buscar servidores que le proporcionen dicha dirección IP
+b. Todos los servidores que pueden ofrecer direcciones IP le envían una dirección IP a la máquina que hizo la solicitud
+c. La opción a) es cierta y además la máquina que difunde la petición sólo va a recibir la dirección IP de un servidor
+d. Las opciones a) y b) son ciertas
+Respuesta correcta: c
+
+Pregunta 51: En el protocolo TCP. Seleccione una:
+a. Se utiliza la suma de comprobación para controlar el flujo de información
+b. Se utiliza la suma de comprobación para detectar errores
+c. Se utiliza la suma de comprobación para descartar segmentos
+d. Las opciones b) y c) son ciertas
+Respuesta correcta: d
+
+Pregunta 52: En los niveles de direccionamiento. Seleccione una:
+a. Los puertos se utilizan para identificar a las máquinas de una red WAN
+b. La dirección física se utiliza para identificar a las máquina de una red LAN
+c. La dirección IP es lo mismo que la dirección física
+d. Las opciones a) y b) son ciertas
+Respuesta correcta: b
+
+Pregunta 53: En redes punto a punto… Seleccione una:
+a. El canal es compartido por todas las máquinas de la red
+b. Se necesita un mecanismo de control de acceso al medio
+c. Las opciones a) y b) son ciertas
+d. Se utilizan conexiones entre cada par de máquinas de la red
+Respuesta correcta: d
+
+Pregunta 54: En una LAN utilizando el protocolo Ethernet se han producido 11 colisiones seguidas, por lo que. Seleccione una:
+a. Se transmite un error a las capas superiores
+b. El número de ranuras a utilizar es 2048
+c. En el protocolo Ethernet no se pueden producir colisiones
+d. El número de ranuras a utilizar es 1024
+Respuesta correcta: d
+
+Pregunta 55: La capa de enlace en la norma IEEE 802. Seleccione una:
+a. Es la misma que en el modelo OSI
+b. Se divide en dos subcapas: control de acceso al medio y sesión
+c. Se divide en tres subcapas: control del enlace lógico, control de acceso al medio y sesión
+d. Se divide en dos subcapas: control del enlace lógico y control de acceso al medio
+Respuesta correcta: d
+
+Pregunta 56: La capa encargada de controlar la comunicación entre los sistemas finales (origen y destino de la comunicación) es. Seleccione una:
+a. La capa de trasporte
+b. La capa de red
+c. La capa de enlace
+d. Las opciones a) y b) son ciertas
+Respuesta correcta: a
+
+Pregunta 57: La capa encargada de la transmisión de bits por el medio de transmisión es. Seleccione una:
+a. La capa de transporte
+b. La capa de red
+c. La capa física
+d. La capa de enlace
+Respuesta correcta: c
+
+Pregunta 58: La capa encargada del control del flujo es. Seleccione una:
+a. La capa de transporte
+b. La capa de red
+c. La capa de enlace
+d. Las opciones a) y c) son ciertas
+Respuesta correcta: d
+
+Pregunta 59: La capa encargada del encaminamiento por la subred de comunicaciones es. Seleccione una:
+a. La capa de trasporte
+b. La capa de red
+c. La capa de enlace
+d. Las opciones a) y b) son ciertas
+Respuesta correcta: b
+
+Pregunta 60: La dirección física es procesada por. Seleccione una:
+a. La capa física
+b. La capa de control de acceso al medio
+c. La capa de red
+d. La capa de control de enlace lógico
+Respuesta correcta: b
+
+Pregunta 61: La dirección MAC se utiliza para: Seleccione una:
+a. Determinar la red de destino de la información
+b. Para determinar tanto la red de destino como la máquina de destino dentro de la red Internet
+c. Determinar la máquina de destino dentro de la red WAN
+d. Determinar la máquina de destino dentro de la red LAN
+Respuesta correcta: d
+
+Pregunta 62: La tabla de encaminamiento. Seleccione una:
+a. Indica el siguiente salto que debe realizar la información en base a la dirección física de destino
+b. Indica el siguiente salto que debe realizar la información en base a la dirección IP de destino
+c. La opción a) es cierta y además la tabla es cubierta por un algoritmo de encaminamiento
+d. La opción b) es cierta y además la tabla es cubierta por un algoritmo de control de flujo
+Respuesta correcta: b
+
+Pregunta 63: Los dispositivos encargados únicamente de amplificar y regenerar la señal son: Seleccione una:
+a. Repetidores (Hubs)
+b. Encaminadores (Routers)
+c. Conmutadores (Switches)
+d. Conmutadores y repetidores (Switches, Hubs)
+Respuesta correcta: a
+
+Pregunta 64: Los dispositivos que comprueban la dirección IP de destino son: Seleccione una:
+a. Hubs
+b. Switches
+c. Routers
+d. Switches y routers
+Respuesta correcta: c
+
+Pregunta 65: Los dispositivos que pueden conectar redes de distinto tipo son: Seleccione una:
+a. Routers
+b. Switches
+c. Hubs
+d. Switches y routers
+Respuesta correcta: d
+
+Pregunta 66: Los dispositivos que siempre retransmiten la información por todos puertos excepto por el que entró son: Seleccione una:
+a. Hubs
+b. Routers
+c. Switches y routers
+d. Switches
+Respuesta correcta: a
+
+Pregunta 67: Los dispositivos que utilizan una tabla MAC son: Seleccione una:
+a. Hubs
+b. Switches y routers
+c. Switches
+d. Routers
+Respuesta correcta: c
+
+Pregunta 68: Los elementos de conmutación ... Seleccione una:
+a. Son las máquinas donde los usuarios ejecutan sus programas
+b. Procesan los datos de entrada para determinar la línea de salida
+c. Sólo pueden estar conectados a otros elementos de conmutación
+d. Las opciones b) y c) son ciertas
+Respuesta correcta: b
+
+Pregunta 69: Para separar dominios de colisión se utilizan. Seleccione una:
+a. Repetidores
+b. Puentes
+c. Encaminadores
+d. Puentes y encaminadores
+Respuesta correcta: d
+
+Pregunta 70: Para traducir una dirección IP Seleccione una:
+a. Se envía una solicitud a toda la red buscando un servidor que realice la traducción
+b. Se envía una solicitud a toda la red para que la máquina con dicha dirección IP responda con su dirección física
+c. La opción a) es cierta y además en la solicitud se envía la dirección IP y la dirección física de la máquina que quiere hacer la traducción
+d. La opción b) es cierta y además en la solicitud se envía la dirección IP y la dirección física de la máquina que quiere hacer la traducción
+Respuesta correcta: d
+
+Pregunta 71: ¿Qué capas de la arquitectura están presentes en los encaminadores? Seleccione una:
+a. Física, enlace de datos, red, transporte y aplicación
+b. Enlace de datos, red y aplicación
+c. Física, enlace de datos y red
+d. Física, enlace de datos, red y transporte
+Respuesta correcta: c
+
+Pregunta 72: Una colisión se produce cuando: Seleccione una:
+a. Dos ordenadores colisionan en una caída
+b. Se quema el cable por el que circulan los datos
+c. Dos paquetes de datos intentan compartir el mismo medio de transmisión al mismo tiempo
+d. Dos paquetes se dirigen a un destinatario
+Respuesta correcta: c
+
+Pregunta 73: Una VLAN. Seleccione una:
+a. Define un dominio de difusión lógico para un grupo de máquinas situadas en diferentes segmentos físicos
+b. Define un dominio de difusión lógico para un grupo de máquinas situadas dentro de un mismo segmento físico o varios segmentos conectados con repetidores
+c. Es una LAN con una topología en V
+d. Las opciones a) y c) son ciertas
+Respuesta correcta: a
+
+Pregunta 74: Un datagrama. Seleccione una:
+a. Sólo se descarta si tiene errores
+b. Tiene un tiempo máximo para circular por la red
+c. Tiene un tiempo mínimo para circular por la red
+d. No tiene campo de control de errores en la cabecera
+Respuesta correcta: b
+
+Pregunta 75: Un dominio de colisión. Seleccione una:
+a. Está formado por todas las máquinas de una red, unidas por repetidores o puentes
+b. Está formado por máquinas que pueden estar en distintos segmentos si están unidas por un repetidor
+c. Sólo está formado por máquinas que están en el mismo segmento
+d. Está formado por máquinas que pueden estar en distintos segmentos si están unidas por un puente
+Respuesta correcta: b
+
+Pregunta 76: En un sistema autónomo (AS) Seleccione una:
+a. Las redes y routers son adminstradas por varias organizaciones y se emplea un protocolo de enrutamiento exterior (ERP) dentro del AS
+b. Existe al menos una ruta entre cada par de nodos y se emplea el protocolo BGP para el enrutamiento dentro del AS
+c. Se utiliza un protocolo de encaminamiento exterior (ERP) y los equipos son administrados por una única organización
+d. Se utiliza un protocolo de encaminamiento interior (IRP) y los equipos son administrados por una única organización
+Respuesta correcta: d
+
+Pregunta 77: Los protocolos de encaminamiento interior (IRP) son utilizados por los routers de un sistema autónomo para intercambiar información de encaminamiento. Seleccione una:
+a. Los protocolos OSPF, EIGRP y RIP son protocolos de encaminamiento interior
+b. El protocolo RTP (Real-Time Protocol) es un protocolo de encaminamiento interior
+c. Los protocolos de encaminamiento interior utilizan routing estático
+d. El protocolo BGP es un protocolo de encaminamiento interior
+Respuesta correcta: a
+
+Pregunta 78: La tabla de encaminamiento de un router (routing table). Seleccione una:
+a. La utilizan los routers para hacer la conmutación a nivel 2 con las direcciones MAC de los equipos que puede alcanzar por cada una de sus interfaces
+b. Sólo se puede configurar manualmente y nunca cambia
+c. Es una tabla que relaciona la dirección IP del equipo con la dirección física MAC
+d. Es una tabla que indica la red destino del paquete y el siguiente salto a nivel IP
+Respuesta correcta: d
+
+Pregunta 79: El encaminamiento estático. Seleccione una:
+a. Utiliza el protocolo RIP para la configuración de la tabla de encaminamiento
+b. Utiliza un protocolo de encaminamiento para el intercambio de información entre los routers que forman la red
+c. Se configura manualmente y es adecuado para redes de gran tamaño con cambios frecuentes en su topología
+d. Se configura manualmente y puede ser adecuado para redes de tamaño pequeño que no presenten cambios frecuentes en su topología
+Respuesta correcta: d
+
+Pregunta 80: En un protocolo de vector-distancia. Seleccione una:
+a. Cuanto mayor sea el valor de la métrica mejor será la ruta al destino del paquete
+b. Cada nodo intercambia información con todos los nodos de la red mediante mensajes de actualización LSA (Link State Advertisements)
+c. Cada nodo intercambia información con los nodos que están directamente conectados a la misma red. OSPF es un ejemplo de protocolo de vector-distancia
+d. Cada nodo intercambia información con los nodos que están directamente conectados a la misma red. RIP es un ejemplo de protocolo vector-distancia
+Respuesta correcta: d
+
+Pregunta 81: El algoritmo utilizado en los protocolos vector-distancia recopila información acerca de las distancias a las que se encuentran las redes destino. Seleccione una:
+a. Los protocolos vector-distancia utilizan como métrica el número de switchs que tienen conectados a sus interfaces
+b. Con los protocolos vector distancia el router conoce la topología exacta de la red hasta los nodos que se encuentran a 5 saltos de distancia
+c. Con los protocolos vector-distancia el router conoce la topología exacta de la red debido a que recibe información actualizada y periódica del resto de nodos
+d. Con los protocolos vector-distancia el router no conoce la topología exacta de la red
+Respuesta correcta: d
+
+Pregunta 82: El protocolo RIP (Routing Information Protocol) fue el algoritmo de encaminamiento original de la red ARPANET. Seleccione una:
+a. RIP es un protocolo de encaminamiento por vector-distancia que utiliza el algoritmo de Dijkstra para el establecimiento de las tablas de routing.Las actualizaciones de red se envían cada 30 segundos y la métrica para una ruta no válida se considera de 8 saltos
+b. RIP es un protocolo de encaminamiento por vector-distancia que utiliza el algoritmo de Bellman-Ford para el establecimiento de las tablas de routing.Las actualizaciones de red se envían solamente en cada cambio de la topología de red y la métrica para una ruta no válida se considera de 16 saltos
+c. RIP es un protocolo de encaminamiento por vector-distancia que utiliza el algoritmo de Bellman-Ford para el establecimiento de las tablas de routing.Las actualizaciones de red se envían cada 30 segundos y la métrica para una ruta no válida se considera de 16 saltos
+d. RIP es un protocolo de encaminamiento por vector-distancia que utiliza el algoritmo de Bellman-Ford para el establecimiento de las tablas de routing.Las actualizaciones de red se envían cada 30 segundos y la métrica que utiliza es el número de switchs conectados a sus interfaces
+Respuesta correcta: c
+
+Pregunta 83: La versión 1 del protocolo RIP (RIPv1) tiene algunas ventajas como son la sencillez de configuración y que lo soporta casi cualquier router del mercado. Sin embargo, presenta algunos inconvenientes, mejorados con RIPv2, entre los que se encuentran: Seleccione una:
+a. RIPv1 no soporta VLSM, obligando a trabajar con subredes de tamaño idéntico. RIPv2 introduce la máscara de red en los anuncios. RIP v1 sí soporta autenticación de los mensajes. RIPv2 también implementa autenticación de los mensajes basada en password.
+b. RIPv1 no soporta VLSM, obligando a trabajar con subredes de tamaño idéntico. RIPv2 introduce la máscara de red en los anuncios. RIP v1 no soporta autenticación de los mensajes. RIPv2 implementa autenticación de los mensajes basada en password.
+c. RIPv2 no supuso ninguna mejora significativa en cuanto a seguridad y subnetting respecto a RIPv1
+d. RIPv1 sí soporta VLSM, obligando a trabajar con subredes de tamaño idéntico. RIPv2 introduce la máscara de red en los anuncios. RIP v1 no soporta autenticación de los mensajes. RIPv2 implementa autenticación de los mensajes basada en password.
+Respuesta correcta: b
+
+Pregunta 84: En un protocolo de estado de enlace Seleccione una:
+a. Los routers disponen de la información completa de la topología de la red, con una base de datos más compleja que los protocolos de vector-distancia
+b. Los routers no pueden disponer de la información completa de la topología de la red, ya que mantienen una base de datos más simple que los protocolos de vectordistancia
+c. Los routers utilizan el protocolo de Bellman-Ford distribuido para buscar el camino más corto a un destino determinado
+d. Los routers tienen configurado BGP (Border Gateway Protocol) como protocolo de encaminamiento
+Respuesta correcta: a
+
+Pregunta 85: Los mensajes LSA (Link State Advertisements) son mensajes de pequeño tamaño difundidos por los routers que comunican los cambios en la topología de la red Seleccione una:
+a. Estos mensajes se utilizan en los protocolos de encaminamiento exterior
+b. Estos mensajes se utilizan en los protocolos de vector-distancia
+c. Estos mensajes se utilizan en los protocolos de estado de enlace
+d. Estos mensajes se utilizan en el protocolo RIP
+Respuesta correcta: c
+
+Pregunta 86: En OSPF, cuando un router recibe una actualización de la topología por parte de otro route. Seleccione una:
+a. No envía una confirmación si no es requerida por el router que envía el mensaje LSA
+b. Envía una confirmación sólo si el enlace tiene una disponibilidad superior al 50% de su capacidad
+c. Debe enviar una confirmación, con el inconveniente de generar más tráfico en la red
+d. No envía una confirmación, ya que así se evita sobrecargar la red con el tráfico de encaminamiento
+Respuesta correcta: c
+
+Pregunta 87: ¿Qué métrica utiliza OSPF para establecer las rutas de camino más corto?. Seleccione una:
+a. OSPF utiliza como métrica el coste de cada salto en cada dirección
+b. OSPF utiliza como métrica el mayor número de equipos de los diferentes switchs conectados a sus interfaces
+c. OSPF no necesita ninguna métrica porque las tablas de encaminamiento se configura manualmente
+d. OSPF utiliza como métrica el número de saltos para alcanzar el destino
+Respuesta correcta: a
+
+Pregunta 88: Uno de los problemas de RIPv1 es que los mensajes del protocolo viajan en claro sobre tráfico broadcast. Cualquier equipo de la red puede introducir mensajes UDP destinados a 255.255.255.2555 y puerto 520 para crear inconsistencias en las tablas de rutas o redirigir el tráfico a través de él. Seleccione una:
+a. OSPF no permite la autenticación de mensajes para disminuir la complejidad de ejecución del protocolo
+b. En OSPF no es necesario tomar medidas de seguridad ya que nadie puede acceder a la información que se intercambian los routers
+c. En OSPF los mensajes van obligatoriamente cifrados con el objetivo de aumentar la confidencialidad de las transmisiones LSA
+d. OSPF permite la autenticación de mensajes para evitar ese problema de seguridad
+Respuesta correcta: d
+
+Pregunta 89: La convergencia en una red se produce cuando todos los routers operan con el mismo conocimiento en sus tablas de encaminamiento. Seleccione una:
+a. En redes de gran tamaño, empleando OSPF, pueden darse situaciones de distribución incorrecta de paquetes LSA lo que puede causar problemas de convergencia
+b. Con protocolos de estado de enlace, debido a la técnica de distribución de paquetes LSA, nunca se da el problema de la convergencia en las tablas de encaminamiento
+c. Con OSPF, aunque existan problemas de convergencia debido a las dificultades de distribución de los paquetes LSA, nunca se puede dar el caso de que algunas redes sean inaccesibles
+d. El problema de la convergencia solamente afecta a los protocolos de vectordistancia, como RIP
+Respuesta correcta: a
+
+Pregunta 90: Diferencias entre protocolos de vector-distancia (DV) y estado de enlace (LS) Seleccione una:
+a. DV sí tiene conocimiento de la topología de la red, mientras que LS no tiene una visión de la topología de red completa. DV converge mediante intercambios periódicos de las tablas de routing entre vecinos. En LS las actualizaciones proviene de cambios en la topología. Los tiempos de convergencia son menores en LS que en DV
+b. DV no tiene conocimiento de la topología de la red, mientras que LS sí tiene una visión de la topología de red completa. DV converge mediante intercambios periódicos de las tablas de routing entre vecinos. En LS las actualizaciones proviene de cambios en la topología. Los tiempos de convergencia son menores en LS que en DV
+c. No hay prácticamente diferencias entre los protocolos DV y LV
+d. DV no tiene conocimiento de la topología de la red, mientras que LS sí tiene una visión de la topología de red completa. LS converge mediante intercambios periódicos de las tablas de routing entre vecinos. En DV las actualizaciones proviene de cambios en la topología. Los tiempos de convergencia son menores en DV que en LS
+Respuesta correcta: b
+
+Pregunta 91: BGP (Border Gateway Protocol) es un ejemplo de protocolo de encaminamiento exterior (ERP) .Seleccione una:
+a. Los protocolos ERP utilizan el coste de los enlaces para el establecimiento de sus tablas de rutas
+b. Los protocolos ERP utilizan la métrica del número de saltos para el establecimiento de sus tablas de rutas
+c. Los protocolos ERP, como BGP, toman las decisiones de encaminamiento en el interior de cada sistema autónomo, como lo hacen RIP y OSPF
+d. Los protocolos ERP no incluyen el envío de información de distancia o estimación de costes a todos los routers para la determinación de la ruta a seguir para alcanzar el destino
+Respuesta correcta: d
+
+Pregunta 92: Para transportar paquetes de datos a través de la red
+a. Los routers con MPLS utilizan la dirección IP de destino del paquete y la tabla de rutas para alcanzar la red destino
+b. Los routers con MPLS utilizan un mecanismo basado en etiquetas para alcanzar la red destino
+c. Los routers con MPLS utilizan la dirección MAC (layer 2) de destino del paquete y la tabla MAC para alcanzar la red destino
+d. MPLS no proporciona servicio de transporte de datos a través de las redes
+Respuesta correcta: b
+
+Pregunta 93: Protocolos que puede soportar MPLS
+a. MPLS solamente soporta IPv4 en layer 3, aunque puede hacerlo sobre cualquier protocolo Layer 2 (Ethernet, ATM, Frame Relay, PPP, etc)
+b. MPLS trabaja en la capa 4 por lo que puede soportar todos los protocolos layer 3 y layer 2
+c. MPLS puede soportar diferentes protocolos layer 3 (IPv4, IPv6, etc) y diferentes protocolos layer 2 (Ethernet, ATM, Frame Relay, PPP, etc)
+d. MPLS puede soportar cualquier protocolo layer 3 (IPv4, IPv6, etc) pero en nivel de enlace solamente soporta IEEE 802.3 (Ethernet)
+Respuesta correcta: c
+
+Pregunta 94: Organizaciones que desarrollan los estándares y especificaciones MPLS
+a. ICANN es la organización que lidera el desarrollo de especificaciones y estándares relacionados con MPLS
+b. IANA es la organización que lidera el desarrollo de especificaciones y estándares relacionados con MPLS
+c. Internet Engineering Task Force (IETF) es la organización que lidera el desarrollo de especificaciones y estándares relacionados con MPLS
+d. En Europa, RIPE NCC es la organización que lidera el desarrollo de especificaciones y estándares relacionados con MPLS
+Respuesta correcta: c
+
+Pregunta 95: En MPLS se pueden apilar etiquetas (label stacking) para permitir, por ejemplo, la creación de túneles VPN
+a. Para apilar etiquetas se utiliza el campo TC (Traffic Class) de la cabecera MPLS. TC=1 indica que hay más etiquetas apiladas y TC=0 indica la última etiqueta MPLS del stack
+b. Para apilar etiquetas se utiliza el campo TC (Traffic Class) de la cabecera MPLS. TC=0 indica que hay más etiquetas apiladas y TC=1 indica la última etiqueta MPLS del stack
+c. Para apilar etiquetas se utiliza el campo S de la cabecera MPLS. S=1 indica que hay más etiquetas apiladas y S=0 indica la última etiqueta MPLS del stack
+d. Para apilar etiquetas se utiliza el campo S de la cabecera MPLS. S=0 indica que hay más etiquetas apiladas y S=1 indica la última etiqueta MPLS del stack
+Respuesta correcta: d
+
+Pregunta 96: A continuación se muestra una captura de un paquete IP con las cabeceras Ethernet, MPLS e IPv4. Los datos están en hexadecimal.
+a. En el paquete capturado el campo TYPE a nivel 2 indica la cabecera MPLS a continuación de Ethernet: TYPE=0X8847
+b. No hay diferenciación de MPLS e IP a nivel 2. El campo TYPE en la cabecera Ethernet indica que se trata de un enlace GigabitEthernet a 1Gbps
+c. En el paquete capturado el campo TYPE a nivel 2 indica que no hay cabecera MPLS a continuación de Ethernet, sólo un paquete IPv4: TYPE=0X0800
+d. En el paquete capturado el campo TYPE a nivel 2 indica que no hay cabecera MPLS a continuación de Ethernet, sólo un paquete IPv6: TYPE=0X86DD
+Respuesta correcta: a
+
+Pregunta 97: A continuación se muestra una captura de un paquete IP con las cabeceras Ethernet, MPLS e IPv4. Los datos están en hexadecimal.
+a. En el paquete de datos capturado la etiqueta (label) MPLS toma el valor 0x362B0 = 221872
+b. En el paquete de datos capturado la etiqueta (label) MPLS toma el valor 0x14045 = 81989
+c. En el paquete de datos capturado la etiqueta (label) MPLS toma el valor 0x8847 = 34887
+d. En el paquete de datos capturado la etiqueta (label) MPLS toma el valor 0x2B0140 = 2818368
+Respuesta correcta: a
+
+Pregunta 98: A continuación se muestra una captura de un paquete IP con las cabeceras Ethernet, MPLS e IPv4. Los datos están en hexadecimal.
+a. En el paquete de datos capturado el campo Botton of label Stack toma el valor S=0 lo que indica que es la última etiqueta y a continuación se encapsula un datagrama IPv4
+b. En el paquete de datos capturado el campo Botton of label Stack toma el valor S=1 lo que indica que hay otra etiqueta MPLS apilada con contenido 0x450004
+c. En el paquete de datos capturado el campo Botton of label Stack toma el valor S=0 lo que indica que hay otra etiqueta MPLS apilada con contenido 0x404500
+d. En el paquete de datos capturado el campo Botton of label Stack toma el valor S=1 lo que indica que es la última etiqueta y a continuación se encapsula un datagrama IPv4
+Respuesta correcta: d
+
+Pregunta 99: A continuación se muestra una captura de un paquete IP con las cabeceras Ethernet, MPLS e IPv4. Los datos están en hexadecimal.
+a. El campo TTL en MPLS es 0x40=64
+b. El campo TTL en MPLS vale 0x01=1
+c. No hay campo TTL en MPLS. Hay que buscarlo en el campo TTL del paquete IPv4
+d. El campo TTL en MPLS vale 0x45=69
+Respuesta correcta: a
+
+Pregunta 100: A continuación se muestra una captura de un paquete IP con las cabeceras Ethernet, MPLS e IPv4. Los datos están en hexadecimal.
+a. El campo TTL en la cabecera del paquete IPv4 vale 0x40=64
+b. No hay campo TTL en las cabeceras IPv4, sólo lo hay en las cabeceras MPLS
+c. El campo TTL en la cabecera del paquete IPv4 vale 0x01=1 
+d. El campo TTL en la cabecera del paquete IPv4 vale 0xE3=227
+Respuesta correcta: a
+
+Pregunta 101: En el circuito de la figura los routers asignan las etiquetas que se indican a la red 10.0.0.0/24, que previamente fue difundida por OSPF. Luego, difunden las etiquetas a los routers vecinos mediante LDP para construir el path LSP. Si un equipo de la red 10.0.0.0/24 envía un paquete de datos a 192.168.0.10, ¿qué etiquetas MPLS se añaden a lo largo del path LSP?
+a. Red 10.0.0.0/24 ->R1: Paquete IP (no label MPLS); R1->R2: Label=87; R2->R3: Label=11; R3->R4: Label=65; R4->R5: Label=23; R5->Red 192.168.0.0/24: Paquete IP (no label MPLS) 
+b. Red 10.0.0.0/24 ->R1: Paquete IP (no label MPLS); R1->R2: Label=23; R2->R3: Label=23; R3->R4: Label=23; R4->R5: Label=19; R5->Red 192.168.0.0/24: Paquete IP (no label MPLS) 
+c. Red 10.0.0.0/24 ->R1: Paquete IP (no label MPLS); R1->R2: Label=19; R2->R3: Label=19; R3->R4: Label=19; R4->R5: Label=23; R5->Red 192.168.0.0/24: Paquete IP (no label MPLS) 
+d. Red 10.0.0.0/24 ->R1: Paquete IP (no label MPLS); R1->R2: Label=19; R2->R3: Label=87; R3->R4: Label=11; R4->R5: Label=65; R5->Red 192.168.0.0/24: Paquete IP (no label MPLS)
+Respuesta correcta: a
+
+Pregunta 102: Penultimate Hop Popping (PHP)
+a. Con PHP el router ELSR advierte al penúltimo router LSR para insertar (push) una nueva etiqueta MPLS apilada (label stacking) antes de enviar el paquete al último ELSR con destino a una red final. Este mecanismo aumenta la fiabilidad de la transmisión de datos
+b. En MPLS no existe la posibilidad de configurar PHP ya que este mecanismo rompe el modelo extremo a extremo basado en etiquetas
+c. Con PHP el último router ELSR en el LSP advierte al penúltimo router LSR en el LSP para eliminar (pop) la etiqueta MPLS antes de enviar el paquete al último ELSR con destino a una red final. Esto descarga al ELSR de hacer dos lookup para eliminar la etiqueta final y reenviar el paquete IP al destino
+d. Con PHP el router LSR (penúltimo en el LSP) advierte al último router ELSR que va a eliminar (pop) la etiqueta MPLS antes de que le envíe un paquete (ELSR->LSR). Este mecanismo descarga al penúltimo router (LSR) al no tener que abrir la etiqueta MPLS para reenviar el paquete IP al destino
+Respuesta correcta: c
+
+Pregunta 103: Con MPLS Layer 3 VPN se pretende proporcionar conectividad peer-to-peer entre redes privadas de clientes (customer C-network) a través de redes públicas compartidas de proveedores (provider P-network). Utilizando MPLS Layer 3 VPN:  
+a. Layer 3 VPN es una aplicación software en la que un cliente remoto se conecta a su red corporativa mediante sus credenciales privadas 
+b. Dos clientes diferentes (Customer A y Customer B) tienen que estar usando obligatoriamente el mismo espacio de direcciones IP privadas para poder hacer la diferenciación por VRF 
+c. Dos clientes diferentes (Customer A y Customer B) pueden estar usando el mismo espacio de direcciones IP privadas 
+d. Dos clientes diferentes (Customer A y Customer B) no pueden estar usando el mismo espacio de direcciones IP privadas porque habría colisión de direcciones
+Respuesta correcta: c
+
+Pregunta 104: Para comunicar redes privadas de cliente con MPLS Layer 3 VPN se requiere apilar etiquetas (label stack) para enviar tráfico a través del dominio MPLS: 
+a. Son necesarias dos etiquetas: Etiqueta para identificar al router ingress ELSR y Etiqueta final para identificar al router egress ELSR 
+b. Se pueden comunicar redes privadas de cliente con MPLS LAyer 3 VPN envian tráfico a través del dominio MPLS únicamente con la etiqueta identificativa de la VPN 
+c. Son necesarias dos etiquetas: Etiqueta para identificar la VPN y Etiquetas LDP para transportar el tráfico a través del dominio MPLS 
+d. Es necesario utilizar tres etiquetas apiladas gracias al bit S: Etiqueta identificativa del router ingress ELSR, Etiqueta para identificar la VPN y Etiqueta identificativa del router egress ELSR
+Respuesta correcta: c
+
+Pregunta 105: En la red de la figura se indican las etiquetas VPN Label Switched Path para enviar un paquete IP de Customer B: Site1 a Customer B: Site 2. El contenido de las etiquetas a lo largo del LSP es el siguiente (con formato [MAC Header | Label_1 | Label_2| IP packet]):
+a. CE_RA->PE_R1: [MAC Header | IP packet]; PE_R1->P_R2: [MAC Header | 16 | 48 | IP packet]; P_R2->P_R3: [MAC Header | 25 | 48 | IP packet]; P_R3->P_R4: [MAC Header | 87 | 48 | IP packet]; P_R4->PE_R5: [MAC Header | 48 | IP packet]; PE_R5 -> CE_RB: P_R2->P_R3: [MAC Header | IP packet] 
+b. CE_RA->PE_R1: [MAC Header | IP packet]; PE_R1->P_R2: [MAC Header | 16 | IP packet]; P_R2->P_R3: [MAC Header | 25 | IP packet]; P_R3->P_R4: [MAC Header | 87 | IP packet]; P_R4->PE_R5: [MAC Header | 48 | IP packet]; PE_R5 -> CE_RB: P_R2->P_R3: [MAC Header | IP packet] 
+c. CE_RA->PE_R1: [MAC Header | 48 | IP packet]; PE_R1->P_R2: [MAC Header | 16 | 48 | IP packet]; P_R2->P_R3: [MAC Header | 25 | 48 | IP packet]; P_R3->P_R4: [MAC Header | 87 | 48 | IP packet]; P_R4->PE_R5: [MAC Header | 48 | IP packet]; PE_R5 -> CE_RB: P_R2->P_R3: [MAC Header | 48 | IP packet] 
+d. CE_RA->PE_R1: [MAC Header | IP packet]; PE_R1->P_R2: [MAC Header | 48 | 16 | IP packet]; P_R2->P_R3: [MAC Header | 48 | 25 | IP packet]; P_R3->P_R4: [MAC Header | 48 | 87 | IP packet]; P_R4->PE_R5: [MAC Header | 48 | IP packet]; PE_R5 -> CE_RB: P_R2->P_R3: [MAC Header | IP packet]
+Respuesta correcta: a
+
+Pregunta 106: Ingeniería de tráfico: MPLS soporta la creación de rutas diferentes entre un origen y un destino en un backbone de routers en Internet. Seleccione una:
+a. Verdadero 
+b. Falso
+c. -
+d. -
+Respuesta correcta: a
+
+Pregunta 107: Las redes HFC tienen son una evolución de las redes de distribución de TV por cable coaxial. Seleccione una:
+a. En las redes HFC se utiliza fibra óptica en la red de transporte y red troncal (parte de la red próxima a la cabecera del operador de cable) y cable coaxial en la red de distribución y la acometida hasta la localización del usuario
+b. En las redes HFC se utiliza fibra óptica multimodo en la red de transporte y red troncal (parte de la red próxima a la cabecera del operador de cable) y fibra óptica monomodo en la red de distribución y la acometida hasta la localización del usuario
+c. En las redes HFC se utiliza fibra óptica en la red de transporte y red troncal (parte de la red próxima a la cabecera del operador de cable) y cable de pares telefónico en la red de distribución y la acometida hasta la localización del usuario
+d. En las redes HFC se utiliza cable coaxial en la red de transporte y red troncal (parte de la red próxima a la cabecera del operador de cable) y fibra óptica en la red de distribución y la acometida hasta la localización del usuario
+Respuesta correcta: a
+
+Pregunta 108: Para poder transmitir datos sobre las redes de cable HFC, que inicialmente estaban pensadas para distribuir canales de TV al usuario, se utiliza el protocolo: Seleccione una:
+a. AM-VSB
+b. DOCSIS
+c. IEEE 802.11
+d. IEEE 802.16
+Respuesta correcta: b
+
+Pregunta 109: Mediante la tecnología ADSL se pueden transmitir datos de alta velocidad sobre el par trenzado telefónico. Las evoluciones ADSL2 y ADSL2+ permiten obtener mayores capacidades en el bucle de abonado y mayores alcances. Seleccione una:
+a. Con ADSL2+ la tasa de transferencia es simétrica y puede llegar a 24Mbps, lo que se consigue sustituyendo el par de cobre telefónico hasta el usuario por fibra óptica monomodo con una capacidad prácticamente ilimitada
+b. Con ADSL2+ la tasa de transferencia en sentido descendente puede llegar a 24Mbps, lo cual posibilita la oferta de 2 canales de TV estándar y TV de alta definición en bucles cortos
+c. Con ADSL2+ la tasa de transferencia en sentido descendente puede llegar a 24Mbps y es simétrica (24Mbps en sentido ascendente), lo cual posibilita la oferta de varios canales de TV estándar y de alta definición
+d. Con ADSL2+ la tasa de transferencia en sentido descendente puede llegar a 100Mbps, lo cual posibilita la oferta de 50 canales de TV estándar y 10 de TV de alta definición en bucles corto
+Respuesta correcta: b
+
+Pregunta 110: Una evolución más significativa de la tecnología ADSL posibilita la utilización de un ancho de banda mayor sobre el par de cable, hasta alcanzar los 30MHz.Esto sólo es posible para alcances más reducidos que ADSL y necesita el despliegue de fibra óptica hasta los nodos que dan servicio al abonado por cable de cobre. Esta tecnología se conoce como: Seleccione una:
+a. VDSL2: Very high speed Digital Subscriber Line
+b. DOCSIS: Data Over Cable System Interface Specification
+c. ADSL2: Asymmetric Digital Subscriber Line
+d. WLAN: Wireless Local Area Network
+Respuesta correcta: a
+
+Pregunta 111: La tecnología FTTH proporciona mejores prestaciones para los servicios de banda ancha del usuario final. Seleccione una:
+a. Con FTTH el tendido de fibra óptica llega hasta la localización del usuario final
+b. FTTH es una tecnología inalámbrica de altas prestaciones que permite alcanzar velocidades de gigabit por segundo al usuario final de la red. Para ello emplea tecnologías wireless de cuarta generación (4G)
+c. Con FTTH el tendido de fibra óptica llega hasta un punto intermedio (llamado Área de Servicio) y desde ahí se alcanza la localización del usuario final mediante cable coaxial de altas prestaciones
+d. Con FTTH el tendido de fibra óptica llega hasta un dispositivo llamado "Hub" que hace la conversión óptico-electrónica y desde ahí se alcanza la localización del usuario final mediante cable de par telefónico de altas prestaciones
+Respuesta correcta: a
+
+Pregunta 112: IEEE 802.16/WiMAX proporciona acceso de banda ancha inalámbrico. Seleccione una:
+a. WiMax es una solución para el despliegue de banda ancha en entornos rurales ya que la zona de cobertura de las estaciones base es de varios kilómetros y puede proporcionar grandes anchos de banda (decenas de Mbit/seg)
+b. WiMax es una solución para el despliegue de banda ancha en entornos locales ya que la zona de cobertura de las estaciones base es inferior a 100 metros y puede proporcionar grandes anchos de banda (decenas de Mbit/seg)
+c. WiMax no es una solución para el despliegue de banda ancha en entornos rurales. No puede proporcionar grandes anchos de banda y la zona de cobertura de las estaciones base es de pocos metros
+d. WiMax es una solución para el despliegue de banda ancha en entornos urbanos. En los entornos urbanos, al no haber tendido de otros operadores de banda ancha (ADSL, HFC, FTTH) se necesita acceso inalámbrico. WiMax proporciona anchos de banda de hasta 64Kbps en un radio de 200 m.
+Respuesta correcta: a
+
+Pregunta 113: Las redes de satélite se caracterizan, entre otras cosas, por proporcionar muy amplia cobertura, rapidez de instalación de terminales y un coste independiente de las distancia. Seleccione una:
+a. Las redes de satélites en órbita geoestacionaria (GEO) no son adecuadas para aplicaciones como juegos en red debido a los grandes retardos que se producen en las comunicaciones
+b. Las redes de satélites en órbita baja (LEO) son adecuadas para la difusión de TV ya que posibilitan el acceso directo de los usuarios al satélite sin necesidad de grandes antenas VSAT.
+c. Las redes de satélites en órbita geoestacionaria (GEO) son adecuadas para aplicaciones como juegos en red debido a los grandes anchos de banda y cobertura que proporcionan estas redes
+d. Las redes de satélites en órbita baja (LEO) son adecuadas para aplicaciones como juegos en red debido a que permiten acceso a Internet a muy alta velocidad
+Respuesta correcta: a
+
+Pregunta 114: Las bandas de frecuencia utilizadas en los enlaces por satélite son del orden de GHz (aproximadamente, desde 1,5GHz hasta 31GHz, dependiendo de la banda). Seleccione una:
+a. En cada banda, la frecuencia del enlace descendente es mayor que la del enlace ascendente
+b. En cada banda, la frecuencia del enlace ascendente es mayor que la del enlace descendente
+c. En cada banda, la frecuencia del enlace ascendente es la misma que la del enlace descendente
+d. Hay bandas en las que la frecuencia del enlace ascendente es mayor que la del enlace descendente y otras en las que ocurre lo contrario
+Respuesta correcta: b
+
+Pregunta 115: Las redes WLAN son redes inalámbricas de área local que proporcionan anchos de banda de varios Mbit/seg sin necesidad de utilizar cables. Seleccione una:
+a. Para aplicaciones de voz sobre IP (VoIP) la eficiencia de esta tecnología puede ser baja debido a la gran sobrecarga de las cabeceras de los protocolos MAC y capa física en comparación con el pequeño tamaño de los paquetes de voz
+b. La capacidad de las redes WLAN es de 10Mbps, o que hace imposible que se pueda transmitir sobre estas redes tráfico de Voz sobre IP (VoIP), ya que esta aplicación produce tráfico superior a 15Mbps.
+c. Para aplicaciones de voz sobre IP (VoIP) la eficiencia de esta tecnología puede ser baja debido a la poca sobrecarga de las cabeceras de los protocolos MAC y capa física en comparación con el gran tamaño de los paquetes de voz
+d. Las redes WLAN no son adecuadas para aplicaciones de voz sobre IP (VoIP) ya que no proporcionan ancho de banda sufiente para soportar las tasas de transmisión de VoIP, que es superior a 10Mbps
+Respuesta correcta: a
+
+Pregunta 116: En los sistemas UMTS el área de cobertura de la estación base depende, entre otras cosas, de las condiciones atmosféricas, obstáculos y distancia. Seleccione una:
+a. En la comunicación entre el terminal móvil y la estación base, la relación señalruido (SNR) es mayor a medida que aumenta el nivel de las interferencias y ruido producidos por otros equipos.
+b. En la comunicación entre el terminal móvil y la estación base, cuanto mayor sea la relación señal-ruido (SNR) mayor será la capacidad (en bits/seg) del enlace.
+c. En la comunicación entre el terminal móvil y la estación base, cuanto mayor sea la relación señal-ruido (SNR) menor será la capacidad (en bits/seg) del enlace.
+d. En la comunicación entre el terminal móvil y la estación base, la capacidad (en bits/seg) del enlace es independiente de la relación señal-ruido (SNR).
+Respuesta correcta: b
+
+Pregunta 117: Los sistemas GSM (Global System for Mobile Communications) operan en las bandas de 900MHz y 1800MHz. En estas bandas de frecuencia, el ancho de banda (Hz) de los canales que utilizan es de: Seleccione una:
+a. 2.4GHz.
+b. 2MHz.
+c. 5MHz.
+d. 200KHz.
+Respuesta correcta: d
+
+Pregunta 118: Los sistemas UMTS (Universal Mobile Telecommunications System) operan habitualmente en la banda de 2100MHz. En esta banda de frecuencia, el ancho de banda (Hz) de los canales que utilizan es de: Seleccione una:
+a. 200KHz.
+b. 2MHz.
+c. 2.4GHz.
+d. 5MHz.
+Respuesta correcta: d
+
+Pregunta 119: Los sistemas móviles de cuarta generación LTE (Long Term Evolution) pueden operar en todas las bandas de frecuencia actuales. El ancho de banda (Hz) de los canales que utilizan es de: Seleccione una:
+a. Hasta 2.4 GHz para conseguir altas velocidades.
+b. Hasta 200 MHz para conseguir altas velocidades.
+c. Hasta 2 MHz para conseguir altas velocidades.
+d. Hasta 20 MHz para conseguir altas velocidades.
+Respuesta correcta: d
+
+Pregunta 120: GSM utiliza conmutación de circuitos tanto para el tráfico de voz como para el tráfico de datos. Seleccione una:
+a. Con conmutación de cirtuitos solamente se puede transmitir tráfico de voz digitalizada. No es posible transmitir datos. Se tarifica por tiempo de uso de la coversación telefónica.
+b. Con conmutación de cirtuitos, una vez establecido un cirtuito se utiliza en exclusiva durante la comunicación, aunque no haya datos para transmitir. Se tarifica por tiempo de uso.
+c. Con conmutación de cirtuitos, una vez establecido un cirtuito si no hay datos para transmitir se permite que otras comunicaciones hagan uso del circuito, con el objetivo de aprovechar al máximo su utilización. Se tarifica por tiempo de uso.
+d. Con conmutación de cirtuitos, no se establece un circuito exclusivo para la comunicación, sino que cada paquete de datos sigue un camino independiente del anterior. Se tarifica por volumen de datos
+Respuesta correcta: b
+
+Pregunta 121: Una de las características de las diferentes tecnologías móviles es el acceso al medio. Para controlar que varios dispositivos puedan conectarse simultáneamente con la estación base (BTS, Nodo-B, eNode-B) se utilizan las siguientes técnicas:. Seleccione una:
+a. Todas las tecnologías utilizan TDMA porque no hay colisiones en el acceso a la estación base, ya que cada terminal móvil transmite en un slot de tiempo distinto.
+b. GSM y GPRS: WCDMA; UMTS: TDMA; LTE: OFDMA.
+c. GSM: CSMA/CD; GPRS y UMTS: FDMA; LTE: TDMA.
+d. GSM y GPRS: FDMA/TDMA; UMTS: WCDMA; LTE: OFDMA.
+Respuesta correcta: d
+
+Pregunta 122: Los sistemas 2.5G,GPRS (General Packet Radio System), surgen por la necesidad de incrementar la capacidad de transmisión de datos de las redes GSM y no tener que renovar todo el despliegue GSM realizado hasta estos momentos. Seleccione una:
+a. GPRS incorpora un elemento que separa voz de datos. La voz se transmite por conmutación de circuitos a otras redes telefónicas y la transmisión de datos es en forma de paquetes a las redes de datos IP.
+b. GPRS incorpora un elemento que separa voz de datos. La voz se transmite por conmutación de circuitos a otras redes telefónicas y la transmisión de datos es también por conmutación de circuitos, pero con destino a las redes de datos IP.
+c. GPRS utiliza conmutación de paquetes tanto para el tráfico de voz como el de datos. De esta forma, el tráfico de voz se tarifica por el volumen de información telefónica intercambiado.
+d. GPRS es una evolución de GSM, que utiliza WCDMA en el acceso al medio y canales de 5MHz para las comunicaciones.
+Respuesta correcta: a
+
+Pregunta 123: UMTS (Universal Mobile Telecommunications System) en la Release 99 del 3GPP utiliza canales de 5MHz, lo que posibilita una capacidad máxima agregada 2Mbps en bajada y de 384Kbps en subida. Seleccione una:
+a. UMTS emplea en la red de acceso radio (UTRAN) FDMA/TDMA para el acceso al medio y conmutadores IP en la comunicación entre los controladores RNC.
+b. UMTS emplea en la red de acceso radio (UTRAN) WCDMA para el acceso al medio y ATM en la comunicación entre los controladores RNC.
+c. UMTS emplea en la red de acceso radio (UTRAN) los nodos SGSN y GGSN para la conmutación y el enrutado de llamadas.
+d. UMTS emplea en la red de acceso radio (UTRAN) los nodos SGSN y GGSN para la conmutación y la conexión de datos con las redes externas IP.
+Respuesta correcta: b
+
+Pregunta 124: LTE (Long Term Evolution) en la Release 8 del 3GPP utiliza una arquitectura simplificada respecto a evoluciones anteriores, agrupando Nodo-B y RNC en un único elemento eNode-B, lo que confiere más funcionalidad al Nodo-B. Seleccione una:
+a. En LTE el objetivo es que todas las comunicaciones sean IP "All-IP", excepto en la red UTRAN que se seguirá utilizando ATM. Tanto el tráfico de voz como el de datos se transmitirá por conmutación de paquetes IP..
+b. En LTE el objetivo es que todas las comunicaciones sean ATM "All-ATM". La comunicación en la red UTRAN será ATM y tanto el tráfico de voz como el de datos se transmitirá por conmutación de paquetes en ATM.
+c. En LTE el objetivo es que todas las comunicaciones sean IP "All-IP". La comunicación en la red UTRAN será IP y tanto el tráfico de voz como el de datos se transmitirá por conmutación de paquetes IP.
+d. En LTE el objetivo es que las comunicaciones sean IP en la red UTRAN, a diferencia de UMTS que utiliza ATM en la red de acceso radio. El el núcleo de red (Core Network), al igual que UMTS, se seguirá utilizando conmutación de circuitos para voz y conmutación de paquetes para datos.
+Respuesta correcta: c
+
+Pregunta 125: Tipo de red que define la tecnología IEEE 802.15.4 (Zigbee) Seleccione una:
+a. Red de área personal (PAN)
+b. Red de área metropolitana (MAN)
+c. Red de área local (LAN)
+d. Red de área amplia (WAN)
+Respuesta correcta: a
+
+Pregunta 126: Las redes wireless ad-hoc. Seleccione una:
+a. No hay comunicación directa entre los equipos de la red
+b. Necesitan obligatoriamente de un punto de acceso
+c. Permiten la comunicación directa entre los terminales de usuario
+d. Ningún elemento puede tener movilidad
+Respuesta correcta: c
+
+Pregunta 127: El estándar 802.11g permite velocidades de transmisión hasta. Seleccione una:
+a. 11Mbps
+b. 150Mbps
+c. 54Mbps
+d. 1Mbps
+Respuesta correcta: c
+
+Pregunta 128: IEEE 802.11 define las capas. Seleccione una:
+a. Red (IP) y física (PHY)
+b. Control de acceso al medio (MAC) y física (PHY)
+c. Red (IP) y control de acceso al medio (MAC)
+d. Transporte (TCP/UDP) y red (IP)
+Respuesta correcta: b
+
+Pregunta 129: Los BSS (Basic Service Set) Seleccione una:
+a. No pueden configurarse en modo infraestructura
+b. Son agrupaciones de puntos de acceso (AP) a través de un backbone
+c. No pueden configurarse en modo ad-hoc
+d. Son un grupo de estaciones que se comunican entre sí
+Respuesta correcta: d
+
+Pregunta 130: 802.11 no contempla. Seleccione una:
+a. Autenticación después del proceso de asociación
+b. Comunicación entre los terminales de usuario y los puntos de acceso
+c. Tránsito entre ESS (Extended Service Set)
+d. Tránsito entre BSS (Basic Service Set)
+Respuesta correcta: c
+
+Pregunta 131: Para el acceso al medio en IEEE 802.11 se utiliza. Seleccione una:
+a. Mecanismo RTS-CTS
+b. CSMA/CD
+c. Detección de portadora (Carrier Sense)
+d. Detección de colisión (Collision Detection)
+Respuesta correcta: a
+
+Pregunta 132: El problema del terminal oculto. Seleccione una:
+a. Se evita con el protocolo CSMA/CD
+b. Se da también en redes Ethernet entre estaciones muy alejadas
+c. Posibilita que dos estaciones detecten el medio libre y transmitan a la vez
+d. Permite que la transmisión esté libre de colisiones al no haber interferencias entre los nodos transmisores
+Respuesta correcta: c
+
+Pregunta 133: El modo de funcionamiento DCF (Distributed Coordination Function) Seleccione una:
+a. Se utiliza en prácticamente todas las implementaciones de redes wireless
+b. La transmisión de datos se realiza en periodos libres de contención
+c. Está escasamente implementado
+d. Una estación coordina la gestión de utilización del medio
+Respuesta correcta: a
+
+Pregunta 134: Los intervalos de tiempo SIFS (Short Inter-Frame Space). Seleccione una:
+a. Son intervalos de tiempos de espera mayores que DIFS (DCF Inter-Frame Space)
+b. Representan el tiempo de espera para las transmisiones de más alta prioridad, como ACK, RTS-CTS
+c. Indican el tiempo de espera antes de una transmisión de datos de capas superiores
+d. Representan el tiempo de espera ante errores de transmisión en una trama
+Respuesta correcta: b
+
+Pregunta 135: Los mensajes NAV (Network Allocation Vector), que se utilizan para estimar la duración de una operación de transmisión Seleccione una:
+a. Se envían únicamente asociados a los mensajes RTS
+b. Los envía siempre el punto de acceso al resto de nodos
+c. Se envían únicamente asociados a los mensajes CTS
+d. Se envían tanto en los RTS como en los CTS
+Respuesta correcta: d
+
+Pregunta 136: En el acceso al medio por contienda DCF, cuando una estación (A) está transmitiendo datos. Seleccione una:
+a. La siguiente estación en transmitir es siempre la primera que tiene su trama lista durante la transmisión de A y espera un tiempo igual a DIFS más el tiempo de back-off
+b. La siguiente estación en transmitir es siempre la primera que tiene su trama lista durante la transmisión de A
+c. La siguiente estación en transmitir es siempre la que tiene su trama lista durante la transmisión de A y su tiempo de back-off es menor
+d. Las otras estaciones pueden transmitir simultáneamente
+Respuesta correcta: c
+
+Pregunta 137: Las direcciones de las estaciones wireless en 802.11. Seleccione una:
+a. Tienen un formato similar a las direcciones IPv4, con 32 bits
+b. Tienen un formato similar a las direcciones IPv6, con 128 bits
+c. No son únicas para cada estación
+d. Tienen un formato similar a las direcciones MAC Ethernet, con 48 bits
+Respuesta correcta: d
+
+Pregunta 138: Las tramas Beacon en redes 802.11. Seleccione una:
+a. Son transmitidas por las estaciones para asociarse a la red
+b. Es un mecanismo de seguridad en las redes inalámbricas
+c. Se transmiten cada hora para sincronizar los relojes de las estaciones
+d. Son transmitidas por el punto de acceso para anunciar la existencia de una red
+Respuesta correcta: d
+
+Pregunta 139: A nivel físico, en la banda de 2.4GHz no se encuentran superpuestos los canales. Seleccione una:
+a. CH1, CH6, CH11
+b. CH3, CH7, CH11
+c. CH4, CH9, CH13
+d. CH2, CH5, CH12
+Respuesta correcta: a
+
+Pregunta 140: El estándar 802.11n. Seleccione una:
+a. Tiene una velocidad de transmisión inferior a 802.11g
+b. Permite velocidades útiles por encima de 100Mbps
+c. Sólo puede trabajar con canales de 20MHz
+d. Es incompatible con equipos 802.11a/g
+Respuesta correcta: b
+
+Pregunta 141: El estándar IEEE 802.11n. Seleccione una:
+a. Trabaja en la banda de frecuencia de 11GHz
+b. Sólo permite trabajar en la banda de 5GHz
+c. Sólo permite trabajar en la banda de 2.4GHz
+d. Permite trabajar en las bandas de frecuencia de 2.4GHz y 5GHz
+Respuesta correcta: d
+
+Pregunta 142: En las redes WiFi malladas, definidas en 802.11s. Seleccione una:
+a. Es obligatorio que haya un solo punto de acceso y todos los terminales móviles estarán asociados a él
+b. La información a transmitir puede dar más de un salto en la red a través de los Mesh Point
+c. No existen puntos de acceso
+d. Los elementos etiquetados como MP representan dispositivos Multi-Protocolo y operan en el nivel de aplicación de la arquitectura TCP/IP
+Respuesta correcta: b
+
+Pregunta 143: La "Alianza Wi-Fi" (http://www.wi-fi.org) Seleccione una:
+a. Es una agrupación de hackers con el objetivo de publicar redes inalábricas desprotegidas
+b. Tiene un programa "Wi-Fi CERTIFIED" para chequear productos 802.11 para interoperabilidad, seguridad, facilidad de instalación y fiabilidad
+c. No tiene ningún producto certificado 802.11n
+d. Tiene un programa "Wi-Fi CERTIFIED" para asegurar la cobertura de las redes Wi-Fi ya instaladas
+Respuesta correcta: b
+
+Pregunta 144: La velocidad de transmisión, en bits/seg, depende de la relación SNR y del tipo de modulación. Seleccione una:
+a. Cuanto más alejados estén los dispositivos menor será la relación SNR y, por tanto, mayor será la velocidad de transmisión
+b. En igualdad de condiciones, la velocidad de transmisión con una modulación 64QAM es mayor que con una modulación QPSK
+c. Cuanto más alejados estén los dispositivos mayor será la relación SNR y, por tanto, mayor será la velocidad de transmisión
+d. En igualdad de condiciones, la velocidad de transmisión con una modulación QPSK es mayor que con una modulación 64QAM
+Respuesta correcta: b
+
+Pregunta 145: La tecnología WiMax, basada en el estándar 802.16. Seleccione una:
+a. Proporciona acceso de banda ancha inalámbrico en redes de área local (LAN)
+b. Permite anchos de banda de hasta 10Gbits/s
+c. Proporciona acceso de banda ancha inalámbrico en redes de área metropolitana (MAN)
+d. Proporciona acceso de banda ancha inalámbrico en redes de área personal (PAN)
+Respuesta correcta: c
+
+Pregunta 146: El término "backhaul" se refiere a. Seleccione una:
+a. El modelo de referencia IEEE 802.16
+b. La arquitectura de una red WiMax
+c. La conexión entre una estación base y la red del usuario final
+d. La red que conecta las diferentes estaciones base en un sistema WiMax
+Respuesta correcta: d
+
+Pregunta 147: IEEE 802.16e-2005. Seleccione una:
+a. Permite acceso a terminales fijos y móviles y no es necesaria visión directa (NLOS)
+b. Solamente permite acceso a terminales fijos pero no es necesario tener visión directa (NLOS)
+c. Solamente permite acceso a terminales fijos con visión directa (LOS)
+d. Es un estándar que actualmente está en fase de desarrollo
+Respuesta correcta: a
+
+Pregunta 148: El estándar IEEE 802.16 define las capas física y MAC. Las operaciones de la subcapa MAC "Convergence Sublayer (CS)" son. Seleccione una:
+a. Clasificación de paquetes y supresión de cabeceras (PHS)
+b. Gestión de potencia y gestión de movilidad
+c. Punto de acceso al servicio (SAP) y clasificación de paquetes
+d. Planificación de la calidad de servicio y control del enlace
+Respuesta correcta: a
+
+
+Pregunta 149: IEEE 802.16m se propone en 2009 como posible candidata a tecnología estándar 4G. Entre los objetivos de ancho de banda que se persiguen están: Seleccione una:
+a. Proporcionar mayor tasa de transmisión en movilidad que para accesos fijos
+b. Proporcionar tasas de transmisión de hasta 100Mbps en movilidad y hasta 1Gbps para accesos fijos
+c. Proporcionar accesos de banda ancha hasta 54Mbps a terminales fijos y a terminales con movilidad reducida
+d. Trabajar con canales de 10GHz de ancho de banda y radios de célula de hasta 500Kms
+Respuesta correcta: b
+
+Pregunta 150: Para la transmisión de voz sobre IP (VoIP) sin supresión de silencios en IEEE 802.16 es recomendable configura la clase de servicio. Seleccione una:
+a. BE: Best Effort
+b. nrtPS: Non Real-Time Polling Service
+c. UGS: Unsolicited Grant Service
+d. rtPS: Real-Time Polling Service
+Respuesta correcta: c
+
+Pregunta 151: Para un acceso genérico a Internet a servicios sin requisitos de calidad de servicio, como pueden ser acceso web o e-mail, lo habitual es configurar. Seleccione una:
+a. UGS: Unsolicited Grant Service
+b. BE: Best Effort
+c. rtPS: Real-Time Polling Service
+d. nrtPS: Non Real-Time Polling Service
+Respuesta correcta: b
+
+Pregunta 152: Con la técnica de modulación adaptativa se selecciona la mejor estrategia de modulación en función de la calidad del enlace. Seleccione una:
+a. Si la calidad del enlace es deficiente se cambia de QPSK a 16QAM
+b. La calidad del enlace depende solamente de la distancia a la estación base y no del ruido y las interferencias en el canal
+c. Con una buena calidad del enlace (pocos errores de transmisión) es preferible seleccionar QPSK a 16QAM ya que posibilita una tasa de transmisión mayor
+d. Con una buena calidad del enlace (pocos errores de transmisión) es preferible seleccionar 64QAM a QPSK ya que posibilita una tasa de transmisión mayor
+Respuesta correcta: d
+
+Pregunta 153: Los radios de cobertura típicos en WiMax son. Seleccione una:
+a. De 1 a 3 Kms en entornos urbanos, con alta densidad de usuarios y de 5 a 10 Kms en entornos rurales, con baja densidad de usuarios
+b. De 10 a 30 Kms en entornos urbanos, con alta densidad de usuarios y de 50 a 100 Kms en entornos rurales, con baja densidad de usuarios
+c. 10 veces mayor en entornos urbanos que en entornos rurales
+d. De 5 a 10 Kms en entornos urbanos, con alta densidad de usuarios y de 1 a 3 Kms en entornos rurales, con baja densidad de usuarios
+Respuesta correcta: a
+
+Pregunta 154: La transmisión de televisión estándar (SDTV) requiere un ancho de banda de 2-5Mbps por canal. Seleccione una:
+a. La tecnología WiMax es también la recomendada para la transmisión de High Definitio TV (HDTV)
+b. La tecnología WiMax es la más adecuada para la transmisión de un número elevado de canales de distribución SDTV
+c. WiMax no es adecuado para el servicio de VoIP
+d. La tecnología WiMax no es adecuada para la distribución de SDTV
+Respuesta correcta: d
+
+Pregunta 155: Algunas características de las redes MANETs son. Seleccione una:
+a. Son redes con movilidad, que no necesitan infraestructura y los propios terminales son nodos de comunicación
+b. Son redes ad-hoc, que necesitan de una infraestructura de comunicaciones y en las que no se permite la movilidad de los usuarios
+c. Son redes móviles ad-hoc, en las que hay separación entre los nodos de comunicación y los terminales de usuario
+d. Son redes con movilidad, se necesita una infraestructura previa de comunicaciones
+Respuesta correcta: a
+
+Pregunta 156: Los protocolos de routing en redes MANETs. Seleccione una:
+a. El protocolo IP se utiliza para el routing en redes MANETs
+b. Deben tener en cuenta las desconexiones en la red y adaptarse a los cambios de topología
+c. No se necesitan roputing en redes MANETs para alcanzar el destino
+d. No necesitan ninguna característica especial y son iguales que el resto de protocolos de routing en redes convencionales (p.e. RIP, OSPF)
+Respuesta correcta: b
+
+Pregunta 157: En los protocolos reactivos en redes MANETs, el routing es iniciado por los nodos fuente en demand. Cuando un nodo requiere una ruta a un destino se inicia un proceso de “descubrimiento de ruta” dentro de la red ManeT. El procedimiento de “descubrimiento de ruta” finaliza cuando se ha encontrado una ruta y además se han analizado todas las posibles permutaciones de rutas. Seleccione una:
+a. El protocolo "Optimized Link State Routing" (OLSR) es un protocolo reactivo en redes MANETs
+b. El protocolo RIP es un ejemplo de protocolo reactivo en redes MANETs
+c. Los protocolos reactivos son adecuados para aplicaciones en tiempo real ya que el retardo de descubrimiento de la ruta es mínimo
+d. El protocolo "Ad Hoc On-Demand Distance Vector Routing" (AODV) es un protocolo reactivo en redes MANETs
+Respuesta correcta: d
+
+Pregunta 158: Los protocolos pro-activos en redes MANETs evalúan rutas continuamente y usan actualizaciones periódicas para mantener la tabla de rutas. Con este método se reduce la latencia en el descubrimiento de las rutas. Seleccione una:
+a. El protocolo OSPF es un ejemplo de protocolo pro-activo en redes MANETs
+b. El protocolo AODV es un ejemplo de protocolo pro-activo en redes MANETs
+c. El protocolo OLSR es un ejemplo de protocolo pro-activo en redes MANETs
+d. El protocolo RIP es un ejemplo de protocolo pro-activo en redes MANETs
+Respuesta correcta: c
+
+Pregunta 159: Las redes Sparse Disconneted Networks (SDNET) son redes poco densas en las que hay desconexiones temporales entre algunos nodos y en ocasiones no se tiene conexión extremo a extremo. Seleccione una:
+a. En estas redes, la estrategia para progresar en la transmitir los datos al destino consiste en almacenar la información en un nodo, transportarla durante un tiempo y retransmitirla a otro nodo
+b. No se requiere ninguna actuación especial para enrutar los paquetes en las redes SDNETs
+c. En estas redes es apropiado el protocolo de routing RIP utilizado en redes cableadas
+d. En estas redes, al haber tan pocos nodos es imposible transmitir los datos al destino final
+Respuesta correcta: a
+
+Pregunta 160: La tecnología de acceso de banda ancha HFC. Seleccione una:
+a. Permite el acceso de banda ancha mediante el tendido de fibra óptica, en la parte inicial de la red y de cable coaxial hasta la localización del usuario
+b. Al igual que FTTH permite llegar con fibra óptica hasta la localización del usuario final
+c. Son las siglas de "Cable Hasta Final", indicando que se llega al usuario final mediante cable de pares
+d. Permite el acceso de banda ancha mediante cable coaxial desde la cabecera de red hasta el usuario final
+Respuesta correcta: a
+
+Pregunta 161: El protocolo DOCSIS. Seleccione una:
+a. Especifica la transmisión de datos entre dos CMTS de una red de cable
+b. Describe las especificaciones de interfaz para la definición, diseño, desarrollo y despliegue de sistemas de datos sobre redes de cable
+c. Describe las especificaciones de interfaz para la definición, diseño, desarrollo y despliegue de sistemas de datos sobre redes inalámbricas
+d. Describe las especificaciones de interfaz para la definición, diseño, desarrollo y despliegue de sistemas de datos sobre redes satélite
+Respuesta correcta: b
+
+Pregunta 162: El protocolo DOCSIS, diseñado para la transmisión de datos sobre redes de cable. Seleccione una:
+a. Especifica las capas de controlo de acceso al medio (MAC) y física (PHY)
+b. Únicamente especifica la capa física (PHY), siendo la capa de control de acceso al medio (MAC) igual que en Ethernet
+c. Especifica las capas IP y MAC para la transmisión sobre cable coaxial
+d. No permite la comunicación del equipo de usuario con un servidor localizado en Internet
+Respuesta correcta: a
+
+Pregunta 163: Para la transmisión de datos en sentido downstream, se utilizan las bandas de frecuencia de 88-860 MHz en Norte América y de 108-862 MHz (Europa). Seleccione una:
+a. El ancho de cada canal downstream es de 6MHz en Europa y de 8MHz en Norte América
+b. El ancho de banda de los canales downstream es menor que el ancho de banda de los canales upstream
+c. El ancho de cada canal downstream es de 8MHz en Europa y de 8MHz en Norte América
+d. El ancho de cada canal downstream es de 8MHz en Europa y de 6MHz en Norte América
+Respuesta correcta: d
+
+Pregunta 164: La transmisión de datos por una red de cable se realiza a través de un medio compartido. Por ello, Seleccione una:
+a. El controlo de acceso al medio se realiza mediante el protocolo de Internet IP
+b. A medida que más usuarios se conectan al sistema las velocidades de transferencia individuales disminuyen
+c. A medida que más usuarios se conectan al sistema las velocidades de transferencia aumentan, al haber más usuarios en la red
+d. La velocidad de transferencia individual es independiente del número de usuarios en el sistema
+Respuesta correcta: b
+
+Pregunta 165: Para la transmisión de datos en DOCSIS 1.0 y DOCSIS 1.1, en sentido upstream (US) el ancho de banda máximo configurable es de 3.2MHz. En estas condiciones, la señal portadora tiene una velocidad de símbolo de 2560Ksymb/sec. Para transmitir datos a la máxima velocidad posible en US, se utiliza la modulación 16QAM con 16 símbolos (4bits/symb) diferentes. Según esto, ¿cuál es la máxima velocidad de transmisión posible en upstream? Seleccione una:
+a. 27 Mbps
+b. 5.12 Mbps
+c. 10.24 Mbps
+d. 320 Kbps
+Respuesta correcta: c
+
+Pregunta 166: Para la transmisión de datos en DOCSIS 1.0 y DOCSIS 1.1, en sentido upstream (US) el ancho de banda máximo configurable es de 3.2MHz. En estas condiciones, la señal portadora tiene una velocidad de símbolo de 2560Ksymb/sec. Si ahora se selecciona una modulación QPSK para transmitir datos (modulación QPSK con 4 símbolos, 2 bits/symb, diferentes), ¿cuál es la velocidad de transmisión en sentido upstream? Seleccione una:
+a. 5.12 Mbps
+b. 640 Kbps
+c. 2.56 Mbps
+d. 10.24 Mbps
+Respuesta correcta: a
+
+Pregunta 167: En DOCSIS 1.1, para configurar una velocidad de transferencia de 2.56Mbps en sentido upstream: Seleccione una:
+a. Sólo es posible seleccionando un canal de 800KHz de ancho de banda (640 Ksymb/sec) y una modulación 16QAM (4 bits/symb)
+b. Sólo es posible seleccionando un canal de 1.6MHz de ancho de banda (1.28Msymb/sec) y una modulación QPSK (2 bits/symb)
+c. Las dos configuraciones anteriores son válidas
+d. Ninguna de las configuraciones anteriores es válida
+Respuesta correcta: c
+
+Pregunta 168: En EuroDOCSIS 1.1 se utilizan canales de TV de ancho de banda 8MHz en sentido downstream (DS). En estos canales, utilizando una modulación 256QAM (256 símbolos, 8 bits/symb) la señal portadora tiene una frecuencia de 7.15MHz ("symbol rate" de 7.15 symb/sec). En estas condiciones, ¿Cuál es la velocidad de transferencia máxima (bps o bits/sec) en DS con EuroDOCSIS 1.1? Seleccione una:
+a. 57.20Mbps
+b. 56Mbps
+c. 114.4Mbps
+d. 28.6Mbps
+Respuesta correcta: a
+
+Pregunta 169: En DOCSIS se gestiona el uso de ancho de banda en sentido upstream mediante la utilización de mensajes MAP (Bandwidth Allocation MAP message) Seleccione una:
+a. Los mensajes MAP son difundidos periódicamente por el CMTS a los CM en downstream, describen el uso de los minislots en upstream y son usados por los CM para determinar cuándo enviar datos en upstream
+b. Los mensajes MAP son difundidos periódicamente por los CM al CMTS en upstream, describen el uso de los minislots en upstream y son usados por el CMTS para determinar cuándo enviar datos
+c. Los mensajes MAP los utiliza el protocolo IP para determinar las direcciones origen y destino de la comunicación
+d. Los mensajes MAP son difundidos alternativamente por los CM y el CMTS, describen el uso de los minislots en upstream y son usados por los CM y el CMTS para determinar cuándo enviar datos en downstream
+Respuesta correcta: a
+
+Pregunta 170: Para gestionar la transmisión de datos en sentido upstream (US), el controlador CMTS envía un mensaje MAP por cada uno de los N canales US configurados. El envío de estos mensajes MAP consume ancho de banda adicional en sentido downstream (DS). Algunos estudios cifran este consumo entre el 3% y 10% del ancho de banda disponible en DS. Considerando una red de cable con 1 canal DS y 8 canales US, en la que cada mensaje MAP tiene una longitud típica de 64 bytes y se configura un envío de 1 MAP cada 2 msec. ¿Cuánto ancho de banda se consume en DS con mensajes MAP para gestionar la transmisión? Seleccione una:
+a. 256Kbps
+b. 512Kbps
+c. 2.048Mbps
+d. 5.72Mbps
+Respuesta correcta: c
+
+Pregunta 171: La comunicación de datos en redes de cable, utilizando el protocolo DOCSIS. Seleccione una:
+a. Es bidireccional, proporcionando más velocidad de transferencia en sentido downstream que en sentido upstream
+b. Es bidireccional, proporcionando más velocidad de transferencia en sentido upstream que en sentido downstream
+c. Es bidireccional y simétrica, por lo que se proporciona igual velocidad de transferencia en sentido downstream que en sentido upstream
+d. Utiliza siempre el protocolo TCP en la capa de transporte
+Respuesta correcta: a
+
+Pregunta 172: Para el control de acceso al medio de las estaciones que quieren transmitir en sentido upstream. Seleccione una:
+a. La estación, sin reserva previa, transmite cuando tiene datos que enviar y en caso de colisión se ejecuta un algoritmo de back-off
+b. Al igual que en 802.11, el acceso al medio en DOCSIS se realiza en el modo de funcionamiento distribuido DCF
+c. Se reserva tiempo de transmisión durante unos intervalos de tiempo a los que se accede en contienda y se transmite una vez concedido el tiempo de transmisión en otros intervalos de tiempo sin colisión
+d. Las estaciones que tengan datos para transmitir en upstream siempre lo hacen durante los intervalos de tiempo dedicados al mantenimiento
+Respuesta correcta: c
+
+Pregunta 173: Uno de los mecanismos de transmisión en DOCSIS consiste en el modo de acceso isócrono. Seleccione una:
+a. En este modo de acceso es necesario reservar tiempo de transmisión y una vez resueltas las posibles colisiones se espera la concesión por parte del CMTS y la oportunidad para transmitir
+b. El modo de acceso isócrono sólo se utiliza para el envío de información en sentido dowsntream por parte del CMTS a los CM
+c. En este modo de acceso no es necesario reservar tiempo de transmisión ya que el CMTS sondea a la estación si tiene datos para enviar, en cuyo caso tiene concedida una oportunidad para transmitir
+d. En este modo de acceso no es necesario reservar tiempo de transmisión ya que el CMTS permite a esa estación transmitir datos a intervalos regulares
+Respuesta correcta: d
+
+Pregunta 174: Una de las características más relevantes de DOCSIS 1.1 es la posibilidad de garantizar calidades de servicio (QoS), diferenciando entre servicios "Best Effort", nrtPS, rtPS, UGS-AD y UGS. El tipo de servicio "Best Effort" se configura habitualmente para el acceso a Internet sin ningún tipo de prioridad. Seleccione una:
+a. Las estaciones configuradas con "Best Effort" utilizan un modo de acceso de sondeo periódico de solicitud para que el CMTS les asigne tiempo de transmisión cuando tengan datos que enviar, sin necesidad de reservar tiempo de transmisión
+b. Las estaciones configuradas con "Best Effort" sólo pueden trasmitir durante los "mini-slots" dedicados a la reserva de tiempo de transmisión
+c. Las estaciones configuradas con "Best Effort" utilizan un modo de acceso isócrono para poder transmitir datos de forma periódica
+d. Las estaciones configuradas con "Best Effort" utilizan, principalmente, el modo de reserva normal, reservando ancho de banda y esperando la concesión correspondiente por parte del CMTS
+Respuesta correcta: d
+
+Pregunta 175: Una de las características más relevantes de DOCSIS 1.1 es la posibilidad de garantizar calidades de servicio (QoS), diferenciando entre servicios "Best Effort", nrtPS, rtPS, UGS-AD y UGS. El tipo de servicio UGS "Unsolicited Grant Service" se configura para servicios de comunicaciones que requieren cierta prioridad en el tráfico, como VoIP. Seleccione una:
+a. El tipo de servicio UGS utiliza el modo de acceso isócrono y es adecuado para flujos de tráfico en tiempo real que generan paquetes de datos de tamaño variable de forma periódica
+b. El tipo de servicio UGS utiliza el modo de acceso normal y el patrón "request, grant" para es adecuado para transmitir flujos de tráfico en tiempo real que generan paquetes de datos de tamaño fijo de forma periódica
+c. El tipo de servicio UGS utiliza el modo de acceso isócrono y es adecuado para flujos de tráfico en tiempo real que generan paquetes de datos de tamaño fijo de forma periódica
+d. El tipo de servicio UGS utiliza el modo de acceso inmediato o el de reserva "piggybacking" y es adecuado para flujos de tráfico que generan paquetes de datos de tamaño fijo de forma periódica
+Respuesta correcta: c
+
+Pregunta 176: DOCSIS 2.0 fue propuesto con el objetivo de aumentar las capacidades de transmisión de datos sobre redes de cable, especialmente en sentido upstream. De esta forma se proporciona más simetría en la transmisión US-DS. Para ello, en sentido US se incrementa el ancho de banda y se mejora la eficiencia espectral de las modulaciones. Los anchos de banda, aproximados, que se consiguen con DOCSIS 2.0 son: Seleccione una:
+a. Upstream: 50 Mbps; Downstream: 60 Mbps
+b. Upstream: 100 Mbps; Downstream: 140 Mbps
+c. Upstream: 30 Mbps; Downstream: 40 Mbps
+d. Upstream: 10 Mbps; Downstream: 15 Mbps
+Respuesta correcta: c
+
+Pregunta 177: En DOCSIS 3.0 se utiliza una técnica de vinculación de canales (channel bonding) que permite el uso de múltiples canales US y DS al mismo tiempo por un único abonado. Con esta técnica se aumenta considerablemente la capacidad de transmisión de datos. La capacidad, aproximada, de DOCSIS 3.0 es de: Seleccione una:
+a. Upstream: 30 Mbps; Downstream: 40 Mbps
+b. Upstream: 350 Mbps; Downstream: 360 Mbps
+c. Upstream: 230 Mbps; Downstream: 240 Mbps
+d. Upstream: 120 Mbps; Downstream: 160 Mbps
+Respuesta correcta: d
+
+Pregunta 178: El tráfico de voz, utilizando un codec G.728 puede ser comprimido a una tasa binaria de 16Kbps. Para ello, cada 10mseg se envía una trama de 20 bytes o bien cada 20 mseg se envía una trama de 40 bytes. Considerando todas las cabeceras (RTP, UDP, IP) hasta el nivel IP, ¿qué tasa binaria correspondería a una muestra de 10mseg con G.728? Nota: Consultar transparencias 4 y 5 del documento "Ingeniería de tráfico de voz" Seleccione una:
+a. R = 32 Kbps
+b. R = 48 Kbps
+c. R = 96 Kbps
+d. R = 80 Kbps
+Respuesta correcta: b
+
+Pregunta 179: Una de las características de DOCSIS es la posibilidad de suprimir parte de las cabeceras de capas superiores, mediante la opción PHS (Payload Header Supression). Esta opción es interesante para tráficos como VoIP donde la sobrecarga de los protocolos puede llegar a ser superior al tráfico de aplicación. Sabiendo que se mantienen los 4 bytes de CRC en Ethernet, la reducción que se obtiene con PHS es la siguiente: Nota: Consultar las transparencias 6-9 del documento "Ingeniería de tráfico de voz" Seleccione una:
+a. Ethernet (14bytes), IP (20 bytes), UDP (8 bytes), RTP (12 bytes) se reducen a 32 bytes en la extensión PHS.
+b. PHS no es configurable para tráfico de voz
+c. Ethernet (14bytes), IP (20 bytes), UDP (8 bytes) se reducen a 2 bytes en la extensión PHS.
+d. Ethernet (14bytes), IP (20 bytes), UDP (8 bytes), RTP (12 bytes) se reducen a 2 bytes en la extensión PHS.
+Respuesta correcta: c
+
+Pregunta 180: En el BOJA 125 se hace una tipificación de sedes atendiendo a los criterios siguientes: Seleccione una:
+a. Sedes con una planta, plantas con más de 5000m2 y plantas con menos de 100m2
+b. Número de plantas, dedicación administrativa de la sede, superficie por planta
+c. Ninguna de las anteriores
+d. Número de plantas, superficie por planta y número de edificios que componen la sede
+Respuesta correcta: d
+
+Pregunta 181: En la matriz de relación de sedes-subsistemas se indican, a modo de recomendación, los sistemas aplicables a cada sede según la tipificación general. En el caso de una sede correspondiente a tres edificios de dos plantas, cada una de ellas con 400m2 de superficie: Seleccione una:
+a. Es recomendable la inclusión de un repartidor de edificio por cada uno de los edificios de la sede
+b. Es obligatorio incluir un repartidor de Campus, tres repartidores de edificio y dos repartidores de planta por edificio
+c. Al ser la superficie menor de 500m2 no es recomendable incluir repartidores de planta
+d. Se recomienda considerar dos repartidores de planta y un repartidor de Campus
+Respuesta correcta: d
+
+Pregunta 182: En el caso de un edificio aislado con una sola planta y con una superficie entre 500m2 y 1000m2: Seleccione una:
+a. Para el diseño del SCE solamente es necesario un repartidor de Campus (RC) y el repartidor de interconexión (RX) estará integrado en en RC
+b. Para el diseño del SCE es necesario un repartidor de planta (RP), un repartidor de edificio (RE) y el repartidor de interconexión (RX) estará integrado en el RP
+c. Para el diseño del SCE es necesario un repartidor de edificio (RE) y el repartidor de interconexión (RX) estará integrado en el RE
+d. Para el diseño del SCE es necesario un repartidor de planta (RP) y el repartidor de interconexión (RX) estará integrado en el RP
+Respuesta correcta: d
+
+Pregunta 183: En un edificio aislado con tres plantas y una superficie entre 500m2 y 1000m2 por planta: Seleccione una:
+a. Para el diseño del SCE es necesario un repartidor de Campus (RC), un repartidor de edificio (RE) por planta y el repartidor de interconexión (RX) estará integrado en los RE
+b. Al tratarse de un solo edifico, no es necesario el repartidor de edificio (RE) y el repartidor de interconexión (RX) está integrado en cada repartidor de planta (RP)
+c. Para el diseño del SCE es necesario un repartidor de Campus (RC), un repartidor horizontal (RP) por planta y el repartidor de interconexión (RX) estará integrado en el RC
+d. Para el diseño del SCE es necesario un repartidor de edificio (RE), un repartidor horizontal (RP) por planta y el repartidor de interconexión (RX) estará integrado en el RE
+Respuesta correcta: d
+
+Pregunta 184: Requerimientos de diseño y dimensionado del Subsistema Horizontal: Si se desconocen el número de usuarios previstos y los despachos que tendrá la nueva sede, en una planta de 700m2´, ¿cuántas tomas de telecomunicaciones se calcularán? Seleccione una:
+a. 200 tomas de telecomunicaciones para APs WiFi y 140 tomas para los usuarios del sistema
+b. 144 tomas de telecomunicaciones, correspondientes a 70 tomas dobles y 4 tomas simples para APs WiFi
+c. Al ser la superficie menor de 1000m2 solamente son necesarias 10 tomas dobles para puestos de trabajo y una toma simple para APs WiFi
+d. 74 tomas de telecomunicaciones, correspondientes a una toma por cada 10m2 y 4 tomas para APs WiFi
+Respuesta correcta: b
+
+Pregunta 185: Requerimientos de diseño y dimensionado del Subsistema Horizontal: La distancia máxima entre la toma de usuario y el conector ubicado en el repartidor de planta será de: Seleccione una:
+a. No está regulada la distancia máxima. Se establece un mínimo de 10 metros
+b. 200 mts. La ubicación será preferentemente próxima a la vertical del edificio, dando prioridad a ubicaciones centradas
+c. 90 mts. La ubicación será preferentemente próxima a la vertical del edificio, dando prioridad a ubicaciones centradas.
+d. 50 mts. La ubicación será preferentemente próxima a la vertical del edificio, dando prioridad a ubicaciones centradas.
+Respuesta correcta: c
+
+Pregunta 186: Siguiendo las recomendaciones para el cálculo del tamaño del repartidor de planta, considerando los pasahilos correspondientes, determinar cuántas unidades de armario (U) son necesarias para una planta de 1400m2. Debe tenerse en cuenta que en cada puesto de usuario una TT se dedica a tráfico de datos y otra a voz. NOTA: Seleccionar la que más se aproxime a vuestros cálculos (+/-2 U) Seleccione una:
+a. Se ocupan 50 unidades de armario
+b. Se ocupan 60 unidades de armario
+c. Se ocupan 40 unidades de armario
+d. Se ocupan 30 unidades de armario
+Respuesta correcta: a
+
+Pregunta 187: Las tomas de telecomunicaciones deben ser como mínimo de Categoría 6 para cuatro pares. En los casos en que se llegue con fibra óptica a la toma, se instalará un conector normalizado de fibra del tipo: Seleccione una:
+a. Conector tipo ST duplex
+b. Conector tipo SC duplex
+c. Conector tipo LC duplex
+d. Conector RJ45 Categoria 6 UTP
+Respuesta correcta: b
+
+Pregunta 188: El subsistema horizontal es independiente de la aplicación, por lo que el cableado será el mismo para aplicaciones de datos y de voz. Lo más habitual es utilizar cobre, con cables de cuatro pares con cubiertas libres de halógenos y de baja emisión de humos (LSZH). Los requerimientos mínimos de estos cables son: Seleccione una:
+a. Categoría 5, de cuatro pares, normalmente FTP, aportando clase E al enlace horizontal
+b. Cable de cobre categoría 6 multimodo de índice gradual 50/125 micras
+c. Categoría 6, de cuatro pares, para datos y categoría 3, de cuatro pares, para aplicaciones de voz
+d. Categoría 6, de cuatro pares, normalmente UTP, aportando clase E al enlace horizontal
+Respuesta correcta: d
+
+Pregunta 189: El RP deberá estar adecuadamente dimensionado para albergar las conexiones, tanto de voz como de datos y la electrónica de red de planta. Para fijar la ubicación de los armarios, debe respetarse una distancia mínima a cualquier pared, de forma que se permita manipular su interior fácilmente para trabajos de instalación y mantenimiento. Esta distancia mínima será de: Seleccione una:
+a. 2 metros a cualquier pared
+b. 1 metro a las paredes delantera y trasera y 0.5 metros a las paredes laterales
+c. 1 metro a cualquier pared
+d. Solamente es necesario dejar 1 metro a la pared delantera para poder abrir fácilmente la puerta del armario
+Respuesta correcta: c
+
+Pregunta 190: En los repartidores de planta, se utilizan paneles de 24 tomas RJ45 Categoría 6 en cada U para el enlace horizontal y paneles de 50 tomas RJ45 Categoría 3 en cada U para la voz en el enlace vertical. Las bandejas de fibra, en cada unidad de armario, serán de: Seleccione una:
+a. Bandejas de fibra de 15 puertos SC duplex para la conexión con el RE
+b. Bandejas de fibra de 12 puertos LT duplex para la conexión con el RE
+c. Bandejas de fibra de 12 puertos SC duplex para la conexión con el RE
+d. Bandejas de fibra de 24 puertos SC duplex para la conexión con el RE
+Respuesta correcta: c
+
+Pregunta 191: Requerimientos de diseño y dimensionado del Subsistema Troncal de Edificio: En una instalación con 84 tomas de datos y 80 tomas de voz por planta, el número de cables que componen la vertical, para la conexión con cada RP, es de: Seleccione una:
+a. Al menos 18 pares de fibra óptica multimodo 50/125 para datos y al menos dos mangueras de 100 pares de cobre Categoría 3 para las tomas de voz
+b. Al menos 9 pares de fibra óptica multimodo 50/125 para datos y al menos una manguera de 100 pares de cobre Categoría 3 para las tomas de voz
+c. El subsistema troncal de edificio es independiente de la aplicación y sólo se necesita una manguera de 24 pares de fibra óptica multimodo
+d. Al menos 5 pares de fibra óptica multimodo 50/125 para datos y al menos una manguera de 50 pares de cobre Categoría 3 para las tomas de voz
+Respuesta correcta: b
+
+Pregunta 192: La distancia máxima entre los RP y el RE viene dada por la categoría del cable de fibra y la tecnología de transmisión. Si se planifica la instalación para las aplicaciones más exigentes, con 10G y se trabaja con fibra óptica en primera ventana (850nm), en el caso de que la distancia entre el RP y el RE sea de 150m, se utilizará para las aplicaciones de datos: Seleccione una:
+a. Cable de cobre UTP categoría 3
+b. Fibra óptica multimodo OM3
+c. Fibra óptica multimodo OM2
+d. Fibra óptica multimodo OM1
+Respuesta correcta: b
+
+Pregunta 193: Los estudios de dimensionamiento para el cálculo del tamaño del repartidor de edificio indican que se necesitan, al menos 135 unidades de armario. Teniendo en cuenta que se van a utilizar armarios tipo rack de 19" de 42U de altura y 800x800mm, ¿cuántos armarios son necesarios? Seleccione una:
+a. 4 armarios
+b. 8 armarios
+c. 2 armarios
+d. 5 armarios
+Respuesta correcta: d
+
+Pregunta 194: En el subsistema troncal de edificio, el cableado para datos se realizará con cables de hasta 24 fibras. El tipo de fibra a utilizar será Seleccione una:
+a. Fibra óptica monomodo 9/125 micras
+b. Se recomienda utilizar cable de cobre de cuatro pares UTP Categoría 6
+c. Fibra óptica multimodo de índice gradual 50/125 micras
+d. Fibra óptica multimodo de índice gradual 90/125 micras
+Respuesta correcta: c
+
+Pregunta 195: En el subsistema troncal de edificio, el cableado de cobre para voz serán cables multipar de 25, 50 ó 100 pares. El tipo de cable a emplear será: Seleccione una:
+a. Cable de cobre categoría 6 multimodo de índice gradual 50/125 micras
+b. Cable multipar categoría 3 o superior, con o sin pantalla
+c. Cable coaxial de 0,5 cm de diámetro
+d. Fibra óptica monomodo 9/125 micras
+Respuesta correcta: b
+
+Pregunta 196: En el repartidor de edificio, para las conexiones de voz se utilizan paneles RJ45 hembra con características mínimas para cumplir con categoría 3 para cuatro pares con o sin pantalla. Para cada unidad de armario (U) Seleccione una:
+a. Se utilizarán paneles de 150 tomas RJ45
+b. Se utilizarán paneles de 24 tomas RJ45
+c. Se utilizarán paneles de 50 tomas RJ45
+d. Se utilizarán paneles de 100 tomas RJ45
+Respuesta correcta: c
+
+Pregunta 197: En el repartidor de edificio se utilizan bandejas de fibra para su conexión con los RP y el RP. Seleccione una:
+a. Se utilizarán bandejas de fibra de 12 puertos SC duplex y 1U
+b. Se utilizarán bandejas de fibra de 12 puertos SC duplex y 2U
+c. Se utilizarán bandejas de fibra de 24 puertos SC duplex y 1U
+d. Se utilizarán bandejas de fibra de 12 puertos ST duplex y 1U
+Respuesta correcta: a
+
+Pregunta 198: Indicar cuál de las siguientes afirmaciones es válida. Seleccione una:
+a. El cableado de campus se realizará de una sola tirada entre los dos distribuidores a unir
+b. En el cableado de campus se permite el uso de empalmes o inserciones de otros dispositivos intermedios
+c. Ninguna de las anteriores es válida
+d. Las dos son válidas
+Respuesta correcta: a
+
+Pregunta 199: El cableado de campus para datos estará realizado con: Seleccione una:
+a. Enlaces de fibra monomodo 9/125 micras. Se emplearán cables de hasta 24 fibras
+b. Enlaces de fibra multimodo 50/125 micras. Se emplearán cables de hasta 24 fibras
+c. Enlaces de fibra multimodo OM1 62,5/125 micras. Se emplearán cables de hasta 24 fibras
+d. Enlaces de cable de pares UTP categoría 6
+Respuesta correcta: a
+
+Pregunta 200: Subsistema de interconexión con proveedores de servicio: Indicar cuál de las siguientes afirmaciones es válida Seleccione una:
+a. El repartidor de interconexión (RX) albergará los equipos de cliente de los proveedores de servicio de red corporativa (routers, conversores, etc)
+b. El repartidor de campus (RC) albergará, además de las conexiones con los RE, la electrónica de red, la centralita de telefonía y las unidades de armario reservadas para el RX
+c. Las dos afirmaciones anteriores son falsas
+d. Las dos afirmaciones anteriores son ciertas
+Respuesta correcta: d
+
+Pregunta 201: Las funciones de IANA (Internet Assigned Numbers Authority) son, entre otras:
+a. IANA es un protocolo de routing externo que se encarga de encaminar los paquetes de datos entre diferentes sistemas autónomos (AS)
+b. IANA es el protocolo de nueva generación (IPnG) creado para abordar los problemas derivados del agotamiento de direcciones IPv4
+c. IANA es un foro de múltiples partes interesadas para abordar cuestiones de política pública relacionadas con Internet
+d. IANA se encarga de la gestión del "DNS Root", coordinación del pool global de direcciones IP y sistemas autónomos IP, así como otros recursos del protocolo de Internet
+Respuesta correcta: d
+
+Pregunta 202: IANA delega rangos de direcciones a los RIR (Regional Internet Registry). El registro que asigna rangos de direcciones IP en Europa es:
+a. RIPE NCC
+b. EURNIC
+c. APNIC
+d. ARIN
+Respuesta correcta: a
+
+Pregunta 203: En la red de la Figura 1 (documento "Figuras_test_sesion3_interconexion_redes", si se utiliza OSPF como protocolo de encaminamiento, ¿qué rutan seguirán los paquetes con origen en la red A y destino en la red B?
+a. R1-R4-R2
+b. Los paquetes serán descartados en el router R4
+c. R1-R3-R4-R2
+d. R1-R2
+Respuesta correcta: c
+
+Pregunta 204: En la red de la figura 2 (documento "Figuras_test_interconexion_redes") si se utiliza RIP como protocolo de encaminamiento, ¿qué ruta siguen los paquetes con origen en la red B y destino en la red D?
+a. Router B-Router E-Router D
+b. Los paquetes son descartados en el router D
+c. Router B-Router C-Router D
+d. Router B-Router D
+Respuesta correcta: d
+

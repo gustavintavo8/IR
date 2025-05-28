@@ -1,0 +1,295 @@
+EDIFICIO A -> 23.27.24.0/22 -> 24.77.24.0/24
+
+VLAN 2 Dirección 24.77.24.64/28 -> 255.255.255.240 -> Gateway 24.77.24.65 (23.27.24.33)
+2023:DB8:27:A13::/64 -> 2024:ABCD:77:A2::/64 // 2024:ABCD:77:A2::1/64
+
+VLAN 3 Contabilidad 24.77.24.96/27 ->  255.255.255.224 -> Gateway 24.77.24.97 (23.27.24.65)
+2023:DB8:27:A16::/64 -> 2024:ABCD:77:A3::/64 // 2024:ABCD:77:A3::1/64
+
+VLAN 4 Ingenieria 24.77.24.128/27 -> 255.255.255.224 -> Gateway 24.77.24.129 (23.27.24.193)
+2023:DB8:27:A14::/64 -> 2024:ABCD:77:A4::/64 // 2024:ABCD:77:A4::1/64
+
+VLAN 5 RRHH 24.77.24.192/26 -> 255.255.255.192 -> Gateway 24.77.24.193 (23.27.24.17)
+2023:DB8:27:A15::/64 -> 2024:ABCD:77:A5::/64 // 2024:ABCD:77:A5::1/64
+
+VLAN 10 24.77.24.0/26 -> 255.255.255.192 -> Gateway 24.77.24.1 (23.27.24.1)
+2023:DB8:27:A12::/64 -> 2024:ABCD:77:A10::/64 -> 2024:ABCD:77:A10::1/64
+--------------------------------------------------------------------------------------------------------------------------------------------
+EDIFICIO B -> 23.27.25.0/24 -> 24.77.25.0/22
+
+VLAN 10 10.23.27.0/24 -> VLAN 20 (Red privada) 172.16.77.0/24 -> DHCP -> 255.255.255.224 -> Gateway 172.16.77.1
+2024:ABCD:77:B20::1/64
+
+VLAN 35 23.27.25.64  -> VLAN 10 24.77.25.64 -> IP Manual -> 255.255.255.192 -> Gateway 24.77.25.65
+2024:ABCD:77:B10::1/64
+
+VLAN 40 23.27.25.0 -> VLAN 30 24.77.25.0 -> DHCP -> 255.255.255.224 -> Gateway 24.77.25.1
+2024:ABCD:77:B30::1/64
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+EDIFICIO C -> 23.27.26.0/24 -> 24.77.26.0/24
+
+VLAN20 10.23.27.0/24 -> VLAN 20 172.16.77.0 -> 255.255.255.224 -> Gateway 172.16.77.1
+2023:DB8:27:C20::1/64 -> 2024:ABCD:77:C20::1/64
+
+VLAN35 23.27.26.0/24 -> VLAN 40 24.77.26.0 -> 255.255.255.192 -> Gateway 24.77.26.1
+2023:DB8:27:C35::1/64 -> 2024:ABCD:77:C40::1/64
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+EDIFICIO D -> 23.27.27.0/24 -> 24.77.27.0/22
+
+VLAN10 23.27.27.64 -> VLAN 10 24.77.27.64 -> 255.255.255.240 -> Gateway 24.77.27.65
+2023:DB8:27:C10::1/64 -> 2024:ABCD:77:C10::1/64
+
+VLAN10 10.23.27.128 -> VLAN 30 172.16.77.128 -> 255.255.255.224 -> Gateway 172.16.77.129
+2023:DB8:27:C10::1/64 -> 2024:ABCD:77:C30::1/64
+
+VLAN40 23.27.27.0 -> VLAN 25 24.77.27.0 -> 255.255.255.224 -> Gateway 24.77.27.1 
+2023:DB8:27:C40::1/64 -> 2024:ABCD:77:C25::1/64
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+*Hay que anunciar cada red en rip?? (No funcionan las rutas estaticas)
+*En el SW15 comando 'ip nat outside'
+*Es necesario meter las VLAN en las rutas
+*ACL edificios C-D ¿todas las salas de trabajadores?
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+R0
+ip route 0.0.0.0 0.0.0.0 24.77.77.81
+
+R1
+ip route 24.77.25.0 255.255.255.0 24.77.77.86
+ip route 24.77.24.0 255.255.255.0 24.77.77.82
+ip route 24.77.24.0 255.255.255.192 24.77.77.82
+ip route 24.77.24.64 255.255.255.240 24.77.77.82
+ip route 24.77.24.96 255.255.255.224 24.77.77.82
+ip route 24.77.24.128 255.255.255.224 24.77.77.82
+ip route 24.77.24.192 255.255.255.192 24.77.77.82
+
+
+R2
+ip route 24.77.25.0 255.255.255.0 24.77.77.97
+ip route 24.77.24.0 255.255.255.0 24.77.77.85
+ip route 24.77.24.0 255.255.255.192 24.77.77.85
+ip route 24.77.24.64 255.255.255.240 24.77.77.85
+ip route 24.77.24.96 255.255.255.224 24.77.77.85
+ip route 24.77.24.128 255.255.255.224 24.77.77.85
+ip route 24.77.24.192 255.255.255.192 24.77.77.85
+
+R4
+ip route 24.77.25.0 255.255.255.0 24.77.77.102
+ip route 24.77.24.0 255.255.255.0 24.77.77.90
+ip route 24.77.24.0 255.255.255.192 24.77.77.90
+ip route 24.77.24.64 255.255.255.240 24.77.77.90
+ip route 24.77.24.96 255.255.255.224 24.77.77.90
+ip route 24.77.24.128 255.255.255.224 24.77.77.90
+ip route 24.77.24.192 255.255.255.192 24.77.77.90
+
+R3
+ip route 24.77.25.0 255.255.255.0 24.77.77.106
+ip route 24.77.24.0 255.255.255.0 24.77.77.101
+ip route 24.77.24.0 255.255.255.192 24.77.77.101
+ip route 24.77.24.64 255.255.255.240 24.77.77.101
+ip route 24.77.24.96 255.255.255.224 24.77.77.101
+ip route 24.77.24.128 255.255.255.224 24.77.77.101
+ip route 24.77.24.192 255.255.255.192 24.77.77.101
+
+R5
+ip route 0.0.0.0 0.0.0.0 24.77.77.105
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RIPv2 NETWORKS
+
+R0 -> 	network 24.77.24.0
+	network 24.77.77.80
+	passive-interface GigabitEthernet0/0
+
+R1 ->	network 24.77.77.80
+ 	network 24.77.77.208
+ 	network 24.77.77.180
+ 	network 24.77.77.84
+
+R2 ->  	network 24.77.77.112
+ 	network 24.77.77.92
+ 	network 24.77.77.84
+ 	network 24.77.77.88
+
+R3 ->   network 24.77.77.100
+ 	network 24.77.77.104
+ 	network 24.77.77.180
+
+R4 -> 	network 24.77.77.96
+ 	network 24.77.77.100
+
+R5 ->	network 24.77.77.104
+ 	network 24.77.25.0
+ 	network 24.77.25.64
+	passive-interface GigabitEthernet0/0
+
+SW15 -> passive-interface GigabitEthernet1/0/2
+ 	passive-interface GigabitEthernet1/0/3
+ 	passive-interface GigabitEthernet1/0/4
+ 	network 24.77.26.0
+ 	network 24.77.27.0
+ 	network 24.77.77.92
+
+R6 ->  	passive-interface GigabitEthernet0/1
+ 	passive-interface GigabitEthernet0/2
+ 	network 23.24.77.0
+ 	network 20.24.0.0
+ 	network 24.77.77.208
+ 	network 24.77.77.112
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+RIPng Comandos
+
+ipv6 router rip RIP-77
+interface G0/1/0
+ipv6 rip RIP-77 enable
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+ACL
+
+R0 ->
+ip access-list extended R0
+remark Permitir acceso a servidores web y correo de A
+permit tcp 24.77.0.0 0.0.255.255 host 24.77.24.10 eq www
+permit tcp 24.77.0.0 0.0.255.255 host 24.77.24.10 eq smtp
+permit tcp 20.24.0.0 0.0.255.255 host 24.77.24.10 eq www
+permit tcp 20.24.0.0 0.0.255.255 host 24.77.24.10 eq smtp
+
+remark Restringir acceso a otros puertos solo al personal de A
+permit ip 24.77.24.0 0.0.0.15 host 24.77.24.10
+permit ip 24.77.24.0 0.0.0.15 host 24.77.24.11
+
+remark Denegar acceso a otros equipos
+deny ip any host 24.77.24.10
+deny ip any host 24.77.24.11
+
+remark Permitir todo otro tráfico IP
+permit ip any any
+
+remark Permitir acceso a servidores corporativos A
+permit ip 24.77.24.0 0.0.0.15 host 24.77.24.12
+permit ip 24.77.26.1 0.0.0.255 host 24.77.24.12
+
+remark Denegar acceso desde otras fuentes
+deny ip any host 24.77.24.12
+
+remark Permitir todo otro tráfico IP
+permit ip any any
+
+
+R3 -> 
+ip access-list extended R3
+remark Denegar tráfico hacia direcciones IPv4 privadas
+deny ip 10.0.0.0 0.255.255.255 any    
+deny ip 172.16.0.0 0.15.255.255 any
+deny ip 192.168.0.0 0.0.255.255 any
+permit ip any any
+
+
+R5 -> 
+
+ip access-list extended R5
+remark Permitir acceso desde la sala de invitados del edificio B hacia servicios específicos
+permit tcp 172.16.77.0 0.0.0.255 host 24.77.25.66 eq www   
+permit tcp 172.16.77.0 0.0.0.255 host 24.77.24.10 eq www  
+permit tcp 172.16.77.0 0.0.0.255 host 24.77.25.66 eq smtp
+permit tcp 172.16.77.0 0.0.0.255 host 24.77.24.11 eq smtp  
+permit tcp 172.16.77.0 0.0.0.255 20.24.0.0 0.0.255.255 eq www
+
+remark Permitir acceso desde la oficina remota en Internet a los servidores del edificio B
+permit ip 23.24.77.0 0.0.0.255 24.77.25.0 0.0.0.255
+
+remark Denegar acceso desde la sala de invitados del edificio B a otros equipos de la empresa
+deny ip 172.16.77.0 0.0.0.255 24.77.0.0 0.0.255.255
+
+remark Permitir acceso al personal de la empresa a servidores corporativos B
+permit ip 24.77.0.0 0.0.255.255 host 24.77.25.68
+permit ip 24.77.0.0 0.0.255.255 host 24.77.25.69
+
+remark Denegar acceso desde otros equipos a servidores corporativos B
+deny ip any host 24.77.25.68
+deny ip any host 24.77.25.69
+
+remark Permitir todo otro tráfico IP
+permit ip any any
+
+
+R6 -> 
+
+ip access-list extended R6
+
+permit tcp 20.24.0.0 0.0.255.255 host 24.77.24.10 eq www
+permit tcp 20.24.0.0 0.0.255.255 host 24.77.24.11 eq smtp
+permit tcp 20.24.0.0 0.0.255.255 host 24.77.25.67 eq www
+permit tcp 20.24.0.0 0.0.255.255 host 24.77.25.66 eq smtp
+permit tcp 20.24.0.0 0.0.255.255 host 24.77.27.66 eq www
+
+permit tcp 20.24.0.0 0.0.255.255 24.77.0.0 0.0.255.255 established
+
+permit ip 23.24.77.0 0.0.0.255 24.77.25.0 0.0.0.255
+
+permit ip 23.24.77.0 0.0.0.255 24.77.27.0 0.0.0.255
+
+deny ip any any
+
+
+SW15 -> 
+
+ip access-list extended ACL_SALAS_INVITADOS
+remark Permitir acceso desde salas de invitados a servicios específicos
+permit tcp 172.16.77.0 0.0.0.255 host 24.77.24.10 eq www
+permit tcp 172.16.77.0 0.0.0.255 host 24.77.25.67 eq www 
+permit tcp 172.16.77.0 0.0.0.255 host 24.77.27.66 eq www  
+permit tcp 172.16.77.0 0.0.0.255 host 24.77.24.11 eq smtp
+permit tcp 172.16.77.0 0.0.0.255 host 24.77.25.66 eq smtp 
+permit tcp 172.16.77.0 0.0.0.255 20.24.0.0 0.0.255.255 eq www
+
+remark Denegar acceso a otros servicios y redes
+deny ip 172.16.77.0 0.0.0.255 24.77.0.0 0.0.255.255     
+deny ip 172.16.77.0 0.0.0.255 24.77.26.0 0.0.0.255              
+deny ip 172.16.77.0 0.0.0.255 20.24.0.0 0.0.255.255          
+
+permit ip any any
+
+ip access-list extended ACL_SALAS_TRABAJO_PERSONAL
+remark Permitir acceso desde salas de trabajo del personal a servicios específicos
+permit tcp 24.77.26.0 0.0.0.255 24.77.24.0 0.0.0.63 any 
+permit tcp 24.77.27.0 0.0.0.255 24.77.24.0 0.0.0.255 eq www
+
+remark Denegar acceso a Internet y red empresarial
+deny ip 24.77.26.0 0.0.0.255 20.24.0.0 0.0.255.255           
+deny ip 24.77.26.0 0.0.0.255 24.77.0.0 0.0.255.255         
+
+permit ip any any
+
+ip access-list extended ACL_SERVIDORES_CORP_CD
+remark Permitir acceso a servidores corporativos C-D desde fuentes específicas
+permit ip 24.77.27.0 0.0.0.255 24.77.27.64 0.0.0.63            
+permit ip 23.24.77.0 0.0.0.255 24.77.27.64 0.0.0.63          
+permit ip 24.77.24.64 0.0.0.31 24.77.27.64 0.0.0.63              
+permit ip 24.77.24.96 0.0.0.31 24.77.27.64 0.0.0.63   
+
+deny ip any any
+
+interface Vlan20
+ip access-group ACL_SALAS_INVITADOS in
+
+interface Vlan30
+ip access-group ACL_SALAS_INVITADOS in
+
+interface Vlan40
+ip access-group ACL_SALAS_TRABAJO_PERSONAL in
+
+interface Vlan25
+ip access-group ACL_SALAS_TRABAJO_PERSONAL in
+
+interface Vlan10
+ip access-group ACL_SERVIDORES_CORP_CD in
+
+

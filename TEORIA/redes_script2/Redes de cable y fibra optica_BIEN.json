@@ -1,0 +1,132 @@
+[
+  {
+    "pregunta": "Para el control de acceso al medio de las estaciones que quieren transmitir en sentido upstream, ¿cuál es la estrategia utilizada?",
+    "respuesta_correcta": "c. Se reserva tiempo de transmisión durante unos intervalos de tiempo a los que se accede en contienda y se transmite una vez concedido el tiempo de transmisión en otros intervalos de tiempo sin colisión",
+    "opciones": [
+      "a. Las estaciones que tengan datos para transmitir en upstream siempre lo hacen durante los intervalos de tiempo dedicados al mantenimiento",
+      "b. Al igual que en 802.11, el acceso al medio en DOCSIS se realiza en el modo de funcionamiento distribuido DCF",
+      "c. Se reserva tiempo de transmisión durante unos intervalos de tiempo a los que se accede en contienda y se transmite una vez concedido el tiempo de transmisión en otros intervalos de tiempo sin colisión",
+      "d. La estación, sin reserva previa, transmite cuando tiene datos que enviar y en caso de colisión se ejecuta un algoritmo de back-off"
+    ]
+  },
+  {
+    "pregunta": "El protocolo DOCSIS, diseñado para la transmisión de datos sobre redes de cable",
+    "respuesta_correcta": "c. Especifica las capas de controlo de acceso al medio (MAC) y física (PHY)",
+    "opciones": [
+      "a. No permite la comunicación del equipo de usuario con un servidor localizado en Internet",
+      "b. Únicamente especifica la capa física (PHY), siendo la capa de control de acceso al medio (MAC) igual que en Ethernet",
+      "c. Especifica las capas de controlo de acceso al medio (MAC) y física (PHY)",
+      "d. Especifica las capas IP y MAC para la transmisión sobre cable coaxial"
+    ]
+  },
+  {
+    "pregunta": "En DOCSIS 3.0 se utiliza una técnica de vinculación de canales (channel bonding) que permite el uso de múltiples canales US y DS al mismo tiempo por un único abonado. Con esta técnica se aumenta considerablemente la capacidad de transmisión de datos. La capacidad, aproximada, de DOCSIS 3.0 es de:",
+    "respuesta_correcta": "d. Upstream: 120 Mbps; Downstream: 160 Mbps",
+    "opciones": [
+      "a. Upstream: 30 Mbps; Downstream: 40 Mbps",
+      "b. Upstream: 350 Mbps; Downstream: 360 Mbps",
+      "c. Upstream: 230 Mbps; Downstream: 240 Mbps",
+      "d. Upstream: 120 Mbps; Downstream: 160 Mbps"
+    ]
+  },
+  {
+    "pregunta": "En DOCSIS se gestiona el uso de ancho de banda en sentido upstream mediante la utilización de mensajes MAP (Bandwidth Allocation MAP message)",
+    "respuesta_correcta": "a. Los mensajes MAP son difundidos periódicamente por el CMTS a los CM en downstream, describen el uso de los minislots en upstream y son usados por los CM para determinar cuándo enviar datos en upstream",
+    "opciones": [
+      "a. Los mensajes MAP son difundidos periódicamente por el CMTS a los CM en downstream, describen el uso de los minislots en upstream y son usados por los CM para determinar cuándo enviar datos en upstream",
+      "b. Los mensajes MAP son difundidos periódicamente por los CM al CMTS en upstream, describen el uso de los minislots en upstream y son usados por el CMTS para determinar cuándo enviar datos",
+      "c. Los mensajes MAP los utiliza el protocolo IP para determinar las direcciones origen y destino de la comunicación",
+      "d. Los mensajes MAP son difundidos alternativamente por los CM y el CMTS, describen el uso de los minislots en upstream y son usados por los CM y el CMTS para determinar cuándo enviar datos en downstream"
+    ]
+  },
+  {
+    "pregunta": "La tecnología de acceso de banda ancha HFC",
+    "respuesta_correcta": "a. Permite el acceso de banda ancha mediante el tendido de fibra óptica, en la parte inicial de la red y de cable coaxial hasta la localización del usuario",
+    "opciones": [
+      "a. Permite el acceso de banda ancha mediante el tendido de fibra óptica, en la parte inicial de la red  y de cable coaxial hasta la localización del usuario",
+      "b. Permite el acceso de banda ancha mediante cable coaxial desde la cabecera de red hasta el usuario final",
+      "c. Son las siglas de \"Cable Hasta Final\", indicando que se llega al usuario final mediante cable de pares",
+      "d. Al igual que FTTH permite llegar con fibra óptica hasta la localización del usuario final"
+    ]
+  },
+  {
+    "pregunta": "El protocolo DOCSIS",
+    "respuesta_correcta": "d. Describe las especificaciones de interfaz para la definición, diseño, desarrollo y despliegue de sistemas de datos sobre redes de cable",
+    "opciones": [
+      "a. Especifica la transmisión de datos entre dos CMTS de una red de cable",
+      "b. Describe las especificaciones de interfaz para la definición, diseño, desarrollo y despliegue de sistemas de datos sobre redes inalámbricas",
+      "c. Describe las especificaciones de interfaz para la definición, diseño, desarrollo y despliegue de sistemas de datos sobre redes satélite",
+      "d. Describe las especificaciones de interfaz para la definición, diseño, desarrollo y despliegue de sistemas de datos sobre redes de cable"
+    ]
+  },
+  {
+    "pregunta": "Uno de los mecanismos de transmisión en DOCSIS consiste en el modo de acceso isócrono, que se utiliza en el servicio UGS (Unsolicited Grant Service) para VoIP. ¿Cuál de las siguientes afirmaciones es correcta?",
+    "respuesta_correcta": "a. En este modo de acceso no es necesario reservar tiempo de transmisión ya que el CMTS permite a esa estación transmitir datos a intervalos regulares",
+    "opciones": [
+      "a. En este modo de acceso no es necesario reservar tiempo de transmisión ya que el CMTS permite a esa estación transmitir datos a intervalos regulares",
+      "b. En este modo de acceso es necesario reservar tiempo de transmisión y una vez resueltas las posibles colisiones se espera la concesión por parte del CMTS y la oportunidad para transmitir",
+      "c. El modo de acceso isócrono sólo se utiliza para el envío de información en sentido dowsntream por parte del CMTS a los CM",
+      "d. En este modo de acceso no es necesario reservar tiempo de transmisión ya que el CMTS sondea a la estación si tiene datos para enviar, en cuyo caso tiene concedida una oportunidad para transmitir"
+    ]
+  },
+  {
+    "pregunta": "DOCSIS 2.0 fue propuesto con el objetivo de aumentar las capacidades de transmisión de datos sobre redes de cable, especialmente en sentido upstream. De esta forma se proporciona más simetría en la transmisión US-DS. Para ello, en sentido US se incrementa el ancho de banda y se mejora la eficiencia espectral de las modulaciones. Los anchos de banda, aproximados, que se consiguen con DOCSIS 2.0 son:",
+    "respuesta_correcta": "d. Upstream: 30 Mbps; Downstream: 40 Mbps",
+    "opciones": [
+      "a. Upstream: 50 Mbps; Downstream: 60 Mbps",
+      "b. Upstream: 100 Mbps; Downstream: 140 Mbps",
+      "c. Upstream: 10 Mbps; Downstream: 15 Mbps",
+      "d. Upstream: 30 Mbps; Downstream: 40 Mbps"
+    ]
+  },
+  {
+    "pregunta": "Para la transmisión de datos en sentido downstream, se utilizan las bandas de frecuencia de 88-860 MHz en Norte América y de 108-862 MHz (Europa)",
+    "respuesta_correcta": "d. El ancho de cada canal downstream es de 8MHz en Europa y de 6MHz en Norte América",
+    "opciones": [
+      "a. El ancho de cada canal downstream es de 6MHz en Europa y de 8MHz en Norte América",
+      "b. El ancho de banda de los canales downstream es menor que el ancho de banda de los canales upstream",
+      "c. El ancho de cada canal downstream es de 8MHz en Europa y de 8MHz en Norte América",
+      "d. El ancho de cada canal downstream es de 8MHz en Europa y de 6MHz en Norte América"
+    ]
+  },
+  {
+    "pregunta": "La transmisión de datos por una red de cable se realiza a través de un medio compartido. Por ello,",
+    "respuesta_correcta": "d. A medida que más usuarios se conectan al sistema las velocidades de transferencia individuales disminuyen",
+    "opciones": [
+      "a. La velocidad de transferencia individual es independiente del número de usuarios en el sistema",
+      "b. El controlo de acceso al medio se realiza mediante el protocolo de Internet IP",
+      "c. A medida que más usuarios se conectan al sistema las velocidades de transferencia aumentan, al haber más usuarios en la red",
+      "d. A medida que más usuarios se conectan al sistema las velocidades de transferencia individuales disminuyen"
+    ]
+  },
+  {
+    "pregunta": "Para la transmisión de datos en DOCSIS 1.0 y DOCSIS 1.1, en sentido upstream (US) el ancho de banda máximo configurable es de 3.2MHz. En estas condiciones, la señal portadora tiene una velocidad de símbolo de 2560Ksymb/sec. Para transmitir datos a la máxima velocidad posible en US, se utiliza la modulación 16QAM con 16 símbolos (4bits/symb) diferentes. Según esto, ¿cuál es la máxima velocidad de transmisión posible en upstream?",
+    "respuesta_correcta": "b. 10.24 Mbps",
+    "opciones": ["a. 5.12 Mbps", "b. 10.24 Mbps", "c. 320 Kbps", "d. 27 Mbps"]
+  },
+  {
+    "pregunta": "Para la transmisión de datos en DOCSIS 1.0 y DOCSIS 1.1, en sentido upstream (US) el ancho de banda máximo configurable es de 3.2MHz. En estas condiciones, la señal portadora tiene una velocidad de símbolo de 2560Ksymb/sec. Si ahora se selecciona una modulación QPSK para transmitir datos (modulación QPSK con 4 símbolos, 2 bits/symb, diferentes), ¿cuál es la velocidad de transmisión en sentido upstream?",
+    "respuesta_correcta": "a. 5.12 Mbps",
+    "opciones": ["a. 2.56 Mbps", "b. 5.12 Mbps", "c. 640 Kbps", "d. 10.24 Mbps"]
+  },
+  {
+    "pregunta": "Para gestionar la transmisión de datos en sentido upstream (US), el controlador CMTS envía un mensaje MAP por cada uno de los N canales US configurados. El envío de estos mensajes MAP consume ancho de banda adicional en sentido downstream (DS). Algunos estudios cifran este consumo entre el 3% y 10% del ancho de banda disponible en DS.\n\nConsiderando una red de cable con 1 canal DS y 8 canales US, en la que cada mensaje MAP tiene una longitud típica de 64 bytes y se configura un envío de 1 MAP cada 2 msec. ¿Cuánto ancho de banda se consume en DS con mensajes MAP para gestionar la transmisión?",
+    "respuesta_correcta": "c. 2.048Mbps",
+    "opciones": ["a. 512Kbps", "b. 256Kbps", "c. 2.048Mbps", "d. 5.72Mbps"]
+  },
+  {
+    "pregunta": "La comunicación de datos en redes de cable, utilizando el protocolo DOCSIS",
+    "respuesta_correcta": "c. Es bidireccional, proporcionando más velocidad de transferencia en sentido downstream que en sentido upstream",
+    "opciones": [
+      "a. Es bidireccional, proporcionando más velocidad de transferencia en sentido upstream que en sentido downstream",
+      "b. Es bidireccional y simétrica, por lo que se proporciona igual velocidad de transferencia en sentido downstream que en sentido upstream",
+      "c. Es bidireccional, proporcionando más velocidad de transferencia en sentido downstream que en sentido upstream",
+      "d. Utiliza siempre el protocolo TCP en la capa de transporte"
+    ]
+  },
+  {
+    "pregunta": "En EuroDOCSIS 1.1 se utilizan canales de TV de ancho de banda 8MHz en sentido downstream (DS). En estos canales, utilizando una modulación 256QAM (256 símbolos, 8 bits/symb) la señal portadora tiene una frecuencia de 7.15MHz (\"symbol rate\" de 7.15 Msymb/sec). En estas condiciones, ¿Cuál es la velocidad de transferencia máxima (bps o bits/sec) en DS con EuroDOCSIS 1.1?",
+    "respuesta_correcta": "b. 57.20Mbps",
+    "opciones": ["a. 114.4Mbps", "b. 57.20Mbps", "c. 28.6Mbps", "d. 56Mbps"]
+  }
+]

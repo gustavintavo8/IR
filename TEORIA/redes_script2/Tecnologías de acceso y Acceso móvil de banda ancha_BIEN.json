@@ -1,0 +1,167 @@
+[
+  {
+    "pregunta": "GSM utiliza conmutación de circuitos tanto para el tráfico de voz como para el tráfico de datos.",
+    "respuesta_correcta": "b. Con conmutación de circuitos, una vez establecido un circuito se utiliza en exclusiva durante la comunicación, aunque no haya datos para transmitir. Se tarifica por tiempo de uso.",
+    "opciones": [
+      "a. Con conmutación de circuitos, no se establece un circuito exclusivo para la comunicación, sino que cada paquete de datos sigue un camino independiente del anterior. Se tarifica por volumen de datos.",
+      "b. Con conmutación de circuitos, una vez establecido un circuito se utiliza en exclusiva durante la comunicación, aunque no haya datos para transmitir. Se tarifica por tiempo de uso.",
+      "c. Con conmutación de circuitos solamente se puede transmitir tráfico de voz digitalizada. No es posible transmitir datos. Se tarifica por tiempo de uso de la conversación telefónica.",
+      "d. Con conmutación de circuitos, una vez establecido un circuito si no hay datos para transmitir se permite que otras comunicaciones hagan uso del circuito, con el objetivo de aprovechar al máximo su utilización. Se tarifica por tiempo de uso."
+    ]
+  },
+  {
+    "pregunta": "Los sistemas móviles de cuarta generación LTE (Long Term Evolution) pueden operar en todas las bandas de frecuencia actuales. El ancho de banda (Hz) de los canales que utilizan es de:",
+    "respuesta_correcta": "b. Hasta 20 MHz para conseguir altas velocidades.",
+    "opciones": [
+      "a. Hasta 200 MHz para conseguir altas velocidades.",
+      "b. Hasta 20 MHz para conseguir altas velocidades.",
+      "c. Hasta 2.4 GHz para conseguir altas velocidades.",
+      "d. Hasta 2 MHz para conseguir altas velocidades."
+    ]
+  },
+  {
+    "pregunta": "Las redes WLAN son redes inalámbricas de área local que proporcionan anchos de banda de varios Mbit/seg sin necesidad de utilizar cables.",
+    "respuesta_correcta": "c. Para aplicaciones de voz sobre IP (VoIP) la eficiencia de esta tecnología puede ser baja debido a la gran sobrecarga de las cabeceras de los protocolos MAC y capa física en comparación con el pequeño tamaño de los paquetes de voz.",
+    "opciones": [
+      "a. Para aplicaciones de voz sobre IP (VoIP) la eficiencia de esta tecnología puede ser baja debido a la poca sobrecarga de las cabeceras de los protocolos MAC y capa física en comparación con el gran tamaño de los paquetes de voz.",
+      "b. Las redes WLAN no son adecuadas para aplicaciones de voz sobre IP (VoIP) ya que no proporcionan ancho de banda suficiente para soportar las tasas de transmisión de VoIP, que es superior a 10Mbps.",
+      "c. Para aplicaciones de voz sobre IP (VoIP) la eficiencia de esta tecnología puede ser baja debido a la gran sobrecarga de las cabeceras de los protocolos MAC y capa física en comparación con el pequeño tamaño de los paquetes de voz.",
+      "d. La capacidad de las redes WLAN es de 10Mbps, lo que hace imposible que se pueda transmitir sobre estas redes tráfico de Voz sobre IP (VoIP), ya que esta aplicación produce tráfico superior a 15Mbps."
+    ]
+  },
+  {
+    "pregunta": "Mediante la tecnología ADSL se pueden transmitir datos de alta velocidad sobre el par trenzado telefónico. Las evoluciones ADSL2 y ADSL2+ permiten obtener mayores capacidades en el bucle de abonado y mayores alcances.",
+    "respuesta_correcta": "a. Con ADSL2+ la tasa de transferencia en sentido descendente puede llegar a 24Mbps, lo cual posibilita la oferta de 2 canales de TV estándar y TV de alta definición en bucles cortos.",
+    "opciones": [
+      "a. Con ADSL2+ la tasa de transferencia en sentido descendente puede llegar a 24Mbps, lo cual posibilita la oferta de 2 canales de TV estándar y TV de alta definición en bucles cortos.",
+      "b. Con ADSL2+ la tasa de transferencia es simétrica y puede llegar a 24Mbps, lo que se consigue sustituyendo el par de cobre telefónico hasta el usuario por fibra óptica monomodo con una capacidad prácticamente ilimitada.",
+      "c. Con ADSL2+ la tasa de transferencia en sentido descendente puede llegar a 100Mbps, lo cual posibilita la oferta de 50 canales de TV estándar y 10 de TV de alta definición en bucles cortos.",
+      "d. Con ADSL2+ la tasa de transferencia en sentido descendente puede llegar a 24Mbps y es simétrica (24Mbps en sentido ascendente), lo cual posibilita la oferta de varios canales de TV estándar y de alta definición."
+    ]
+  },
+  {
+    "pregunta": "Una de las características de las diferentes tecnologías móviles es el acceso al medio. Para controlar que varios dispositivos puedan conectarse simultáneamente con la estación base (BTS, Nodo-B, eNode-B) se utilizan las siguientes técnicas:",
+    "respuesta_correcta": "d. GSM y GPRS: FDMA/TDMA; UMTS: WCDMA; LTE: OFDMA.",
+    "opciones": [
+      "a. GSM: CSMA/CD; GPRS y UMTS: FDMA; LTE: TDMA.",
+      "b. GSM y GPRS: WCDMA; UMTS: TDMA; LTE: OFDMA.",
+      "c. Todas las tecnologías utilizan TDMA porque no hay colisiones en el acceso a la estación base, ya que cada terminal móvil transmite en un slot de tiempo distinto.",
+      "d. GSM y GPRS: FDMA/TDMA; UMTS: WCDMA; LTE: OFDMA."
+    ]
+  },
+  {
+    "pregunta": "En los sistemas UMTS el área de cobertura de la estación base depende, entre otras cosas, de las condiciones atmosféricas, obstáculos y distancia.",
+    "respuesta_correcta": "d. En la comunicación entre el terminal móvil y la estación base, cuanto mayor sea la relación señal-ruido (SNR) mayor será la capacidad (en bits/seg) del enlace.",
+    "opciones": [
+      "a. En la comunicación entre el terminal móvil y la estación base, la capacidad (en bits/seg) del enlace es independiente de la relación señal-ruido (SNR).",
+      "b. En la comunicación entre el terminal móvil y la estación base, la relación señal-ruido (SNR) es mayor a medida que aumenta el nivel de las interferencias y ruido producidos por otros equipos.",
+      "c. En la comunicación entre el terminal móvil y la estación base, cuanto mayor sea la relación señal-ruido (SNR) menor será la capacidad (en bits/seg) del enlace.",
+      "d. En la comunicación entre el terminal móvil y la estación base, cuanto mayor sea la relación señal-ruido (SNR) mayor será la capacidad (en bits/seg) del enlace."
+    ]
+  },
+  {
+    "pregunta": "Para poder transmitir datos sobre las redes de cable HFC, que inicialmente estaban pensadas para distribuir canales de TV al usuario, se utiliza el protocolo:",
+    "respuesta_correcta": "c. DOCSIS",
+    "opciones": ["a. IEEE 802.16", "b. IEEE 802.11", "c. DOCSIS", "d. AM-VSB"]
+  },
+  {
+    "pregunta": "Una evolución más significativa de la tecnología ADSL posibilita la utilización de un ancho de banda mayor sobre el par de cable, hasta alcanzar los 30MHz. Esto sólo es posible para alcances más reducidos que ADSL y necesita el despliegue de fibra óptica hasta los nodos que dan servicio al abonado por cable de cobre. Esta tecnología se conoce como:",
+    "respuesta_correcta": "a. VDSL2: Very high speed Digital Subscriber Line",
+    "opciones": [
+      "a. VDSL2: Very high speed Digital Subscriber Line",
+      "b. DOCSIS: Data Over Cable System Interface Specification",
+      "c. ADSL2: Asymmetric Digital Subscriber Line",
+      "d. WLAN: Wireless Local Area Network"
+    ]
+  },
+  {
+    "pregunta": "LTE (Long Term Evolution) en la Release 8 del 3GPP utiliza una arquitectura simplificada respecto a evoluciones anteriores, agrupando Nodo-B y RNC en un único elemento eNode-B, lo que confiere más funcionalidad al Nodo-B.",
+    "respuesta_correcta": "b. En LTE el objetivo es que todas las comunicaciones sean IP 'All-IP'. La comunicación en la red UTRAN será IP y tanto el tráfico de voz como el de datos se transmitirá por conmutación de paquetes IP.",
+    "opciones": [
+      "a. En LTE el objetivo es que las comunicaciones sean IP en la red UTRAN, a diferencia de UMTS que utiliza ATM en la red de acceso radio. El el núcleo de red (Core Network), al igual que UMTS, se seguirá utilizando conmutación de circuitos para voz y conmutación de paquetes para datos.",
+      "b. En LTE el objetivo es que todas las comunicaciones sean IP 'All-IP'. La comunicación en la red UTRAN será IP y tanto el tráfico de voz como el de datos se transmitirá por conmutación de paquetes IP.",
+      "c. En LTE el objetivo es que todas las comunicaciones sean ATM 'All-ATM'. La comunicación en la red UTRAN será ATM y tanto el tráfico de voz como el de datos se transmitirá por conmutación de paquetes en ATM.",
+      "d. En LTE el objetivo es que todas las comunicaciones sean IP 'All-IP', excepto en la red UTRAN que se seguirá utilizando ATM. Tanto el tráfico de voz como el de datos se transmitirá por conmutación de paquetes IP."
+    ]
+  },
+  {
+    "pregunta": "Los sistemas 2.5G,GPRS (General Packet Radio System), surgen por la necesidad de incrementar la capacidad de transmisión de datos de las redes GSM y no tener que renovar todo el despliegue GSM realizado hasta estos momentos.",
+    "respuesta_correcta": "b. GPRS utiliza conmutación de paquetes tanto para el tráfico de voz como el de datos. De esta forma, el tráfico de voz se tarifica por el volumen de información telefónica intercambiado.",
+    "opciones": [
+      "a. GPRS incorpora un elemento que separa voz de datos. La voz se transmite por conmutación de circuitos a otras redes telefónicas y la transmisión de datos es en forma de paquetes a las redes de datos IP.",
+      "b. GPRS utiliza conmutación de paquetes tanto para el tráfico de voz como el de datos. De esta forma, el tráfico de voz se tarifica por el volumen de información telefónica intercambiado.",
+      "c. GPRS es una evolución de GSM, que utiliza WCDMA en el acceso al medio y canales de 5MHz para las comunicaciones.",
+      "d. GPRS incorpora un elemento que separa voz de datos. La voz se transmite por conmutación de circuitos a otras redes telefónicas y la transmisión de datos es también por conmutación de circuitos, pero con destino a las redes de datos IP."
+    ]
+  },
+  {
+    "pregunta": "La tecnología FTTH proporciona mejores prestaciones para los servicios de banda ancha del usuario final.",
+    "respuesta_correcta": "d. Con FTTH el tendido de fibra óptica llega hasta la localización del usuario final.",
+    "opciones": [
+      "a. Con FTTH el tendido de fibra óptica llega hasta un punto intermedio (llamado Área de Servicio) y desde ahí se alcanza la localización del usuario final mediante cable coaxial de altas prestaciones.",
+      "b. FTTH es una tecnología inalámbrica de altas prestaciones que permite alcanzar velocidades de gigabit por segundo al usuario final de la red. Para ello emplea tecnologías wireless de cuarta generación (4G).",
+      "c. Con FTTH el tendido de fibra óptica llega hasta un dispositivo llamado 'Hub' que hace la conversión óptico-electrónica y desde ahí se alcanza la localización del usuario final mediante cable de par telefónico de altas prestaciones.",
+      "d. Con FTTH el tendido de fibra óptica llega hasta la localización del usuario final."
+    ]
+  },
+  {
+    "pregunta": "Las redes de satélite se caracterizan, entre otras cosas, por proporcionar muy amplia cobertura, rapidez de instalación de terminales y un coste independiente de la distancia.",
+    "respuesta_correcta": "c. Las redes de satélites en órbita geoestacionaria (GEO) no son adecuadas para aplicaciones como juegos en red debido a los grandes retardos que se producen en las comunicaciones",
+    "opciones": [
+      "a. Las redes de satélites en órbita baja (LEO) son adecuadas para la difusión de TV ya que posibilitan el acceso directo de los usuarios al satélite sin necesidad de grandes antenas VSAT.",
+      "b. Las redes de satélites en órbita geoestacionaria (GEO) son adecuadas para aplicaciones como juegos en red debido a los grandes anchos de banda y cobertura que proporcionan estas redes",
+      "c. Las redes de satélites en órbita geoestacionaria (GEO) no son adecuadas para aplicaciones como juegos en red debido a los grandes retardos que se producen en las comunicaciones",
+      "d. Las redes de satélites en órbita baja (LEO) son adecuadas para aplicaciones como juegos en red debido a que permiten acceso a Internet a muy alta velocidad"
+    ]
+  },
+  {
+    "pregunta": "Los sistemas UMTS (Universal Mobile Telecommunications System) operan habitualmente en la banda de 2100MHz. En esta banda de frecuencia, el ancho de banda (Hz) de los canales que utilizan es de:.",
+    "respuesta_correcta": "a. 5MHz.",
+    "opciones": ["a. 5MHz.", "b. 200KHz.", "c. 2MHz.", "d. 2.4GHz."]
+  },
+  {
+    "pregunta": "IEEE 802.16/WiMAX proporciona acceso de banda ancha inalámbrico.",
+    "respuesta_correcta": "c. WiMax es una solución para el despliegue de banda ancha en entornos rurales ya que la zona de cobertura de las estaciones base es de varios kilómetros y puede proporcionar grandes anchos de banda (decenas de Mbit/seg)",
+    "opciones": [
+      "a. WiMax no es una solución para el despliegue de banda ancha en entornos rurales. No puede proporcionar grandes anchos de banda y la zona de cobertura de las estaciones base es de pocos metros",
+      "b. WiMax es una solución para el despliegue de banda ancha en entornos urbanos. En los entornos urbanos, al no haber tendido de otros operadores de banda ancha (ADSL, HFC, FTTH) se necesita acceso inalámbrico. WiMax proporciona anchos de banda de hasta 64Kbps en un radio de 200 m.",
+      "c. WiMax es una solución para el despliegue de banda ancha en entornos rurales ya que la zona de cobertura de las estaciones base es de varios kilómetros y puede proporcionar grandes anchos de banda (decenas de Mbit/seg)",
+      "d. WiMax es una solución para el despliegue de banda ancha en entornos locales ya que la zona de cobertura de las estaciones base es inferior a 100 metros y puede proporcionar grandes anchos de banda (decenas de Mbit/seg)"
+    ]
+  },
+  {
+    "pregunta": "Las redes HFC tienen son una evolución de las redes de distribución de TV por cable coaxial.",
+    "respuesta_correcta": "a. En las redes HFC se utiliza fibra óptica en la red de transporte y red troncal (parte de la red próxima a la cabecera del operador de cable) y cable coaxial en la red de distribución y la acometida hasta la localización del usuario",
+    "opciones": [
+      "a. En las redes HFC se utiliza fibra óptica en la red de transporte y red troncal (parte de la red próxima a la cabecera del operador de cable) y cable coaxial en la red de distribución y la acometida hasta la localización del usuario",
+      "b. En las redes HFC se utiliza cable coaxial en la red de transporte y red troncal (parte de la red próxima a la cabecera del operador de cable) y fibra óptica en la red de distribución y la acometida hasta la localización del usuario",
+      "c. En las redes HFC se utiliza fibra óptica en la red de transporte y red troncal (parte de la red próxima a la cabecera del operador de cable) y cable coaxial en la red de distribución y la acometida hasta la localización del usuario",
+      "d. En las redes HFC se utiliza fibra óptica multimodo en la red de transporte y red troncal (parte de la red próxima a la cabecera del operador de cable) y fibra óptica monomodo en la red de distribución y la acometida hasta la localización del usuario"
+    ]
+  },
+  {
+    "pregunta": "UMTS (Universal Mobile Telecommunications System) en la Release 99 del 3GPP utiliza canales de 5MHz, lo que posibilita una capacidad máxima agregada 2Mbps en bajada y de 384Kbps en subida.",
+    "respuesta_correcta": "c. UMTS emplea en la red de acceso radio (UTRAN) WCDMA para el acceso al medio y ATM en la comunicación entre los controladores RNC.",
+    "opciones": [
+      "a. UMTS emplea en la red de acceso radio (UTRAN) FDMA/TDMA para el acceso al medio y conmutadores IP en la comunicación entre los controladores RNC.",
+      "b. UMTS emplea en la red de acceso radio (UTRAN) los nodos SGSN y GGSN para la conmutación y el enrutado de llamadas.",
+      "c. UMTS emplea en la red de acceso radio (UTRAN) WCDMA para el acceso al medio y ATM en la comunicación entre los controladores RNC.",
+      "d. UMTS emplea en la red de acceso radio (UTRAN) los nodos SGSN y GGSN para la conmutación y la conexión de datos con las redes externas IP."
+    ]
+  },
+  {
+    "pregunta": "Las bandas de frecuencia utilizadas en los enlaces por satélite son del orden de GHz (aproximadamente, desde 1,5GHz hasta 31GHz, dependiendo de la banda).",
+    "respuesta_correcta": "b. En cada banda, la frecuencia del enlace ascendente es mayor que la del enlace descendente",
+    "opciones": [
+      "a. En cada banda, la frecuencia del enlace descendente es mayor que la del enlace ascendente",
+      "b. En cada banda, la frecuencia del enlace ascendente es mayor que la del enlace descendente",
+      "c. Hay bandas en las que la frecuencia del enlace ascendente es mayor que la del enlace descendente y otras en las que ocurre lo contrario",
+      "d. En cada banda, la frecuencia del enlace ascendente es la misma que la del enlace descendente"
+    ]
+  },
+  {
+    "pregunta": "Los sistemas GSM (Global System for Mobile Communications) operan en las bandas de 900MHz y 1800MHz. En estas bandas de frecuencia, el ancho de banda (Hz) de los canales que utilizan es de:.",
+    "respuesta_correcta": "d. 200KHz.",
+    "opciones": ["a. 2.4GHz.", "b. 2MHz.", "c. 5MHz.", "d. 200KHz."]
+  }
+]
